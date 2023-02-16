@@ -1806,7 +1806,30 @@ https://typescripttolua.github.io/
 
 • HT stands for Holtek [[{use_case.alarms,hardware.pcb,hardware.mcpu.Holtek,01_PM.price.to_0.5$,network.wireless.lora,01_PM.TODO]]
 https://www.holtek.com/productdetail?p_p_auth=q0FpqQ4D
-• HT48C06: 8-bit mCPU, 64 bytes of RAM, 1024 words of ROM, 13 GPIO, 4/8mhz.
+- HT48C06: 8-bit mCPU, 64 bytes of RAM, 1024 words of ROM, 13 GPIO, 4/8mhz.
+
+• https://github.com/openwch/ch32v003  [[{hardware.mcpu,oltek,01_PM.price.to_0.1$,01_PM.TODO]]
+  CH32V003: ultra-cheap RISC-V MCU:
+  - sells for under $0.10 !!!!
+
+  FEATURES:
+  - QingKe 32-bit RISC-V2A processor, supporting 2 levels of interrupt nesting
+  - Maximum 48MHz system main frequency
+  - 2KB SRAM, 16KB Flash
+  - Power supply voltage: 3.3/5V
+  - Multiple low-power modes: SLEEP, STANDBY
+  - Power on/off reset, programmable voltage detector
+  - 1 group of 1-channel general-purpose DMA controller
+  - 1 group of op-amp comparator
+  - 1 group of 10-bit ADC
+  - 1×16-bit advanced-control timer, 1×16-bit general-purpose timer
+  - 2 WDOG, 1×32-bit SysTick
+  - 1 USART interface, 1 group of I2C interface, 1 group of SPI interface
+  - 18 I/O ports, mapping an external interrupt
+  - 64-bit chip unique ID
+  - 1-wire serial debug interface (SDI)
+  - Package: TSSOP20, QFN20, SOP16, SOP8
+[[}]]
 
 • pregnant chip powerful as first IBM PCs: 2 photosensors + 2 LEDs + LCD + battery + mCPU.
 @[https://twitter.com/Foone/status/1301707401024827392]
