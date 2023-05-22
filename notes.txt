@@ -1,4 +1,4 @@
-●  Apropos:
+##  Apropos:
 - Visit next Web site for a great experience:
   https://earizon.github.io/txt_world_domination/viewer.html?payload=../IoT/notes.txt
 
@@ -9,7 +9,7 @@
   in the Pantheon of the Unicode Gods.
 ────────────────────────────────────────────────────────────────────────────────
 
-● External Resources: [[{]]
+## External Resources [[{]]
 - IoT Tags at stackExchange:
 @[https://iot.stackexchange.com/tags]
 - Free tutorials:
@@ -18,7 +18,7 @@
 https://electronics.stackexchange.com/
 
 - circuitpython IoT Catalog:
-• Extensive Catalog/DDBB of mCPU "ready to run" boards on circuitpython.org:
+* Extensive Catalog/DDBB of mCPU "ready to run" boards on circuitpython.org:
   ej., to check LoRa enabled IoT Devices:
  @[https://circuitpython.org/downloads?q=lora]
   From "top" IoT builders (Adafruit ,Arduino ,Electronic Cats ,Espressif
@@ -27,9 +27,221 @@ https://electronics.stackexchange.com/
 
 [[}]]
 
+# OSeS  @mb
 
-[[{]]
-● Azure Sphere  [[{os.linux.sphere,01_PM.TODO]]
+
+## OPC_Unified_Architecture: [[{use_case.industrial.m2m,01_PM.TODO]]
+@[https://en.wikipedia.org/wiki/OPC_Unified_Architecture]
+* OPC Unified Architecture (OPC UA) is a machine to machine communication
+  protocol for industrial automation developed by the OPC Foundation.
+  Distinguishing characteristics are:
+   Focus on communicating with industrial equipment and systems for data
+collection and control
+    Open - freely available and implementable under GPL 2.0 license [1]
+    Cross-platform - not tied to one operating system or programming language
+    Service-oriented architecture (SOA)
+    Inherent complexity - the specification consists of 1250 pages in 14 documents
+    Robust security
+    Integral information model, which is the foundation of the infrastructure
+necessary for information integration where vendors and organizations can
+model their complex data into an OPC UA namespace to take advantage of the
+rich service-oriented architecture of OPC UA. There are over 35
+collaborations with the OPC Foundation currently. Key industries include
+pharmaceutical, oil and gas, building automation, industrial robotics,
+security, manufacturing and process control.
+[[}]]
+
+[[{os.freertos,01_PM.TODO]]
+## FreeRTOS
+@[http://linuxgizmos.com/amazon-aims-an-aws-savvy-version-of-freertos-at-iot-gizmos/]
+[[}]]
+
+## Yocto [[{]]
+@[https://www.devprojournal.com/technology-trends/internet-of-things/why-iot-system-developers-need-the-yocto-project-for-custom-linux-solutions/]
+### www.reliableembeddedsystems.com
+@[https://www.reliableembeddedsystems.com/]
+* Yocto Linux.
+* Free RTOS.
+* Zephyr.
+[[}]]
+
+[[{os.android,os.linux.yocto,01_PM.low_code,hardware.mcpu.freescale,01_PM.TODO]]
+## Boot2Qt
+@[https://boundarydevices.com/boot2qt-getting-started-guide/]
+* Developing an embedded product requires 3 main steps:
+  • selection of the proper hardware platform
+    exclusively based on powerful i.MX cpus.
+  • OS selection/setup.
+  • User Interface (UI) development. (Qt!)
+    Thanks to a Qt for Device Creation image (formerly calle Boot2Qt)
+    working on all our platforms, one can download the IDE and start
+    developing within minutes!
+[[}]]
+
+## W3C Web Thing Model [[{standards.w3c,01_PM.backlog]]
+@[http://model.webofthings.io/]
+* *WARN*: no updates since 2017-04-25
+
+* Mozilla IoT Web Thing API:
+@[https://iot.mozilla.org/wot/]
+* Updated to 2022-01-13?
+[[}]]
+
+[[{standards,01_PM.TODO]]
+## Mozilla WebOfThings
+@[https://www.infoq.com/news/2019/05/mozilla-web-things/]
+[[}]]
+
+
+[[{use_case.fleet_tracking,01_PM.TODO]]
+## Eclipse Hono
+@[https://www.ecomotion.org.il/]
+@[https://projects.eclipse.org/projects/iot.hono]
+* EcoMotion is a dynamic community with over 600 start-ups (constantly growing)
+  and 7,000 members in the Smart Transportation sector. Understanding startups
+  do not grow in a void, we bring together entrepreneurs, academics, government
+  officials, local & global automotive industry representatives, investors and
+  much more; providing a support platform for knowledge-sharing, networking and
+  collaboration.
+[[}]]
+
+[[{use_case.cognitive,01_PM.TODO]]
+## Voice assistant
+@[https://blog.mozilla.org/blog/2018/02/21/snips-uses-rust-embedded-voice-assistant/]
+- The team at Paris-based Snips has created a voice assistant that can be
+  embedded in a single device or used in a home network to control lights,
+  thermostat, music, and more. You can build a home hub on a Raspberry Pi and
+  ask it for a weather report, to play your favorite song, or to brew up a
+  double espresso. Manufacturers like Keecker are adding Snips’ technology to
+  products like multimedia home robots. And Snips works closely with leaders
+  across the value chain, like NVIDIA, EBV, and Analog Devices, in order to
+  voice-enable an increasingly wider range of device types, from speakers to
+  home automation systems to cars.
+[[}]]
+
+## Apache IoTDB [[{data.analytics,01_PM.TODO]]
+https://iotdb.apache.org/
+[[}]]
+
+
+## OSADL Automation&Industry [[{use_case.industrial,standards,real_time,os.linux,01_PM.TODO]]
+@[https://www.osadl.org/]
+* Open Source Software for Automation and Other Industries.
+* OSADL explained with a "Socrates Discourse":
+  Project Manager:
+    "We need to get someone to develop a Linux driver for our new
+     machine controller. Here's a purchase order for the work."
+  Purchase Department:
+    "Okay. Let me check the purchase order to make sure it follows our
+     standard procedure: NDA to be executed, source going into company's
+     safe ... "
+  Project Manager:
+    "Nope, we're going with Open Source - source gets published to the
+     Internet."
+  Purchase Department:
+     "What? We're paying for the development but the source code goes
+      out to the Internet? If everybody can use the source code, why are we
+      the only ones paying for this? No way this can fly!"
+
+  The solution: OSADL:
+      OSADL allows those members interested in developing particular Open
+    Source software to come together in an OSADL project supported by
+    membership fees. With the agreement of a majority of members, OSADL
+    can delegate the development of Open Source software components.
+    Thus, what is (financially) impossible for the individual (company),
+    many (OSADL members) can do.
+
+  • OSADL QA Farm:
+- monitors and optimizes hardware/software of ~200 linux based computer systems.
+- ensures general reliability+stability, provides fine-tunning of individual systems.
+- helps companies slect the most appropiate embedded system for a particular app.
+- offers a wide variety of research opportunities for scientific studies.
+- rack space is include in the regular OSADL membership
+
+* OSADL real-time Linux services:
+  - are based on the so-called PREEMPt_Rt patches
+  - help companies get the most out of Linux-based RT systems
+  - include kenrel additions to detect the origin of unsatisfying RT
+     behaviour (latency fighting")
+  - closely cooperate with the Linux Foundation RTL Collaborative
+    project and provide funding for it.
+
+* OSADL OPC UA PubSub over TSN project
+  - is commited to foster the deve. of next gen RT communication via
+    Ethernet
+  - is closely related to the open62541.org project on an Open Sou.
+    implementation of PC UA PubSub.
+  - Includes activites to improv TSN support of Linux kernel
+  - uses the OSADL QA Farm to continuously demonstrate the performance
+    progress of the project.
+
+* OSADL's safety and security projects
+  - include th SIL2LinuxMP project aiming to provide documents to
+    facilitate safety certification.
+  - aim to collectknowledger and stragegies of anew way of OOSS safety
+    cert.
+  - support development of methods and services to protect embedded
+    systems against malware.
+  - Intent to develop test and stress tools to ensure systems withstand
+    cyber attacks.
+[[}]]
+
+## OCKAM IoT+Blockchain Identity [[{use_case.identity,01_PM.TODO]]
+@[https://www.infoq.com/news/2019/01/ockam-blockchain-iot-identity]
+  Ockam is a serverless platform that aims to make it easier for IoT
+  developers to add blockchain-based identity, trust, and interoperability
+  in their IoT devices. Ockam has recently open sources its SDK for Golang.
+
+  By embedding the Ockam SDK into their devices, developers can make them
+  part of the Ockam blockchain network, a decentralized, open platform that
+  enables secure cryptographic identity management based on a recent W3C
+  standard called Decentralized Identifiers (DID).
+[[}]]
+
+### Autonome: smartphone for Home automation [[{use_case.domotic,hardware,01_PM.TODO]]
+@[https://github.com/autonome]
+* Turn old smartphone into a home automation gizmo
+* Mozilla Technical Evangelist Dietrich Ayala proposed a simple and
+  affordable solution to home automation: A discarded smartphone can
+  handle some of the most useful home automation tasks without
+  requiring expensive hubs and sensors
+  "Many phones have proximity|ambient light sensors, orientation, and battery"
+
+     Ayala introduced his “Context” JavaScript program for
+   turning an old Firefox OS smartphone into a combination hub and
+   sensor array for remote home monitoring.
+
+    " Many hacker-oriented automation products avoid using the cloud, but
+    t the price of greater complexity. You get more privacy and open
+    ource personalization, “but at a high cost in experimentation in
+    ime and learning ,"
+
+* IoT’s killer app: presence or absence
+ *A greater challenge affecting commercial and DIY IoT systems alike is the   *
+ *lack of a compelling purpose. “You have to ask yourself, what problems am I *
+ *addressing?” said Ayala. “Do I really need to have the light reflect my mood*
+ *or do automated shopping? To me these aren’t solving day to day problems.   *
+ *People have problems like not having enough money or time, or worrying about*
+ *sick relatives. Maybe they need to know if someone is in their house or     *
+ *whether basic services are working. What you need is physical awareness put *
+ *in context — the presence/absence of things like noise, motion, or services.*
+
+  Ayala spent a lot of time studying the readouts from sensors, as well as from
+  the phone’s microphone, camera, and, radios, that would enable a remote user
+  to draw conclusions about what was happening at home. This contextual
+  information could then be codified into more useful notifications.
+
+  With ambient light, for example, if it suddenly goes dark in the daytime,
+  maybe someone is standing over a device, explained Ayala.*Feedback from the *
+ *accelerometer can be analyzed to determine the difference between footsteps,*
+ *an earthquake, or someone picking up the device. Scripts can use radio APIs *
+ *to determine if a person moving around is carrying a phone with a potentially*
+ *revealing Bluetooth signature.*
+
+@[https://www.youtube.com/watch?list=PLGeM09tlguZRbcUfg4rmRZ1TjpcQQFfyr&v=4RWSXlai6PE]
+[[}]]
+
+## Azure Sphere [[{os.linux.sphere,01_PM.TODO]]
 @[https://azure.microsoft.com/en-us/services/azure-sphere/]
 - How Azure Sphere ensures IoT security within a 4MB Linux stack(Sep 26, 2018)
 @[http://linuxgizmos.com/how-azure-sphere-ensures-iot-security-within-a-4mb-linux-stack/]
@@ -133,7 +345,460 @@ UPDATE POLICY:
   SELinux or AppArmor.
 [[}]]
 
-● Bricklets [[{sensors,hardware.display,hardware.input,01_PM.TODO]]
+## zephyrproject.org [[{101,os.zephyr,os.linux,02_doc_has.comparative,hardware.mcpu.stm32,]]
+@[https://www.zephyrproject.org/]
+- Alternative to Linux for IoT devices.
+- Small, Scalable Open Source RTOS for IoT Embedded Devices
+  The Zephyr™ Project is a scalable real-time operating system (RTOS)
+  supporting multipe hardware architectures, optimized for resource
+  constrained devices, and built with security in mind.
+
+* Asymetic Muli Processing in Zephyr (STM32MP1):
+@[https://www.collabora.com/news-and-blog/blog/2021/03/03/asymmetric-multi-processing-with-linux-and-zephyr-on-stm32mp1/]
+[[}]]
+
+[[{hardware.gpio,hardware.raspberry,01_PM.TODO]]
+## rust_gpiozero
+https://opensource.com/article/19/3/physical-computing-rust-raspberry-pi
+- port of the awesome GPIO Zero library to Rust-lang.
+[[}]]
+
+# Network Protocols @md
+
+## droplit.io (Integration) [[{network.cloud,01_PM.TODO]]
+@[https://www.qualcomm.com/news/onq/2018/12/14/using-droplit-bring-cloud-edge]
+* Context:
+  If you’re an IoT device developer, you know the "I" in "IoT" means
+  your device will, at some point, need to communicate with the cloud.
+
+  But what if your device development expertise or schedule doesn't
+  extend to cloud development?
+
+    Enter droplit.io, a cloud-based, protocol-agnostic platform, that
+  provides a rich API for integrating networked devices through the
+  cloud, such as consumer wireless products, building automation
+  systems, and PLCs.
+[[}]]
+
+## MQTT Protocol: up to x93 faster than HTTP!!  [[{protocol,02_doc_has.comparative]] @[#mqtt_summary]
+  MQTT: Message Queue Telemetry Transport <!-- @ma -->
+* Binary packet payload with compressed headers of <2Bytes.
+* Simple: just five API methods.
+* originally developed out of IBM's pervasive computing team
+  moved to open source community.
+* (much) simpler that AMQP, designed for resource-constrained devices
+ *LOW-BANDWIDTH/HIGH-LATENCY*  (dial up lines, LoWa, satellite links,
+  marine communication...)
+* Suitable for unreliable mobile connections.
+  (Facebook and others are using it as part of their mobile applications).
+- Extracted from: @[https://medium.com/mqtt-buddy/mqtt-vs-http-which-one-is-the-best-for-iot-c868169b3105]
+  """According to measurements in 3G networks, throughput of MQTT is 93 times
+   faster than HTTP’s.  """
+* does not define the message format at all
+* Some MQTT-based brokers support THOUSANDS OF CONCURRENT DEVICE CONNECTIONS.
+* It offers THREE QUALITIES OF SERVICE:
+  1) fire-and-forget / unreliable: Best effort.
+  2) "at least once" : ensure it is sent a minimum of one time
+                       (maybe more)
+  3) "exactly once".
+  • It provides users with options of:
+    ✓*LAST WILL TESTAMENT*: In case of unexpected disconnection of a client
+                            all subscribed clients will get a message from a broker.
+    ✓*RETAINED MESSAGES*  : newly subscribed client will get an immediate
+                            status update.
+  *WARN: HTTP Protocol has none of these abilities.*
+
+* See also:
+  @[https://github.com/tldr-pages/tldr/blob/master/pages/common/mosquitto.md]
+  @[https://github.com/tldr-pages/tldr/blob/master/pages/common/mosquitto-*.md]
+
+## MQTT Alternatives
+* COAP: Constrained Application Protocol.
+      MQTT                        │        COAP
+  ==============================  │ ===========================
+  · publish-subscribe prototype.  │ · request-response prototype.
+    (no queues)                   │
+  · only async mode               │ · async+synch messaging.
+  · TCP-based                     │ · UDP-based
+  · Header size: 2 bytes.         │ · Header size: 4 bytes.
+  · not RESTful based.            │ · RESTful based.
+  · use: live communication       │ · use: ???
+  · persistence support.          │ · NOT persistence support.
+  · ─                             │ · message have labels
+  · focus on IoT apps             │ · focus on Utility area networks.
+  · Low Latency and NAT issues.   │ · Low Latency and NAT issues.
+
+* AMQP:
+* XMPP:
+* DD :
+* LwM2M:
+* RHIOT:
+@[https://rhiot.gitbooks.io/rhiotdocumentation/content/]
+* IoT Messaging (with Camel Connector)
+  Rhiot is a messaging platform for the Internet Of Things.
+  focused on an adoption of the Red Hat JBoss middleware
+  portfolio to provide solutions to the common IoT-related challenges.
+  An apache camel connector exists to connect to the bricklet.
+[[}]]
+
+
+## Zigbee.org  [[{network.mesh,protocol.zigbee,01_PM.TODO]]
+@[https://www.zigbee.org/]
+- IEEE 802.15.4-based specification for a suite of high-level
+communication protocols used to create personal area networks with
+small, low-power digital radios, such as for home automation, ...
+[[}]]
+
+## Bluetooth [[{protocol.bluethooth,01_PM.TODO]]
+-  Ubicación casi exacta con Bluetooth
+ @[https://www.xataka.com/internet-of-things/bluetooth-5-1-oficial-ahora-dispositivos-podran-conocer-ubicacion-casi-exacta-senal-bluetooth]
+
+
+* Bateryless-Bluetooth:
+@[https://www.adslzone.net/2019/01/15/wiliot-bluetooth-sin-bateria/amp/]
+- Crean un chip Bluetooth que no necesita batería: ¿cómo lo han hecho?
+  Wiliot: creadora del chip Bluetooth que no necesita batería
+[[}]]
+
+* WiGig: [[{network.wireless.WiGIg,01_PM.TODO]]
+- 10Gbps line-of-view WiFi
+[[}]]
+
+
+[[{]]
+## Narrow-band [[{network.101,network.wireless,01_PM.TODO]]
+@[https://en.wikipedia.org/wiki/Narrowband]
+* In radio, narrowband describes a channel in which the bandwidth of the
+  message does not significantly exceed the channel's coherence bandwidth.
+
+* In the study of wired channels, narrowband implies that the channel under
+  consideration is sufficiently narrow that its frequency response can be
+  considered flat. The message bandwidth will therefore be less than the
+  coherence bandwidth of the channel. That is, no channel has perfectly flat
+  fading, but the analysis of many aspects of wireless systems is greatly
+  simplified if flat fading can be assumed.
+
+* Narrowband can also be used with the audio spectrum to describe sounds which
+  occupy a narrow range of frequencies.
+
+* In telephony, narrowband is usually considered to cover frequencies 300–3400 Hz.
+[[}]]
+
+## Sigfox Global Low Power WAN [[{network.wireless.lora,01_PM.TODO]]
+@[https://www.sigfox.com/en]
+@[https://es.wikipedia.org/wiki/Cellnex_Telecom]
+- Sigfox Global Low Power Wide Area Network drastically brings down cost
+  and energy consumption required for securely connecting IoT sensors
+  to the Cloud.
+- With its simple approach to connectivity, Sigfox provides extremely price-
+  competitive connectivity subscriptions and even more importantly, enables
+  extremely simple and cost-efficient silicon modules.
+
+- Provider for other companies. Example:
+  "...Securitas Direct prevé incementar gradualmente la tipología y
+  número de dispositivos conectados a la red IoT de Cellnex, basada en
+  tecnología Sigfox. Por su parte, Cellnex ampliará con Sigfox la
+  capacidad de su red IoT en España y extenderá su cobertura a
+  Portugal..."
+  SRC: @[https://es.wikipedia.org/wiki/Cellnex_Telecom]
+[[}]]
+
+## Z-Wave [[{use_case.domotic,protocol.z-wave,network.mesh,01_PM.TODO]]
+@[https://en.wikipedia.org/wiki/Z-Wave]
+* wireless communications protocol used primarily for home automation.
+* It is a mesh network using low-energy radio waves to communicate
+  from appliance to appliance, allowing for wireless control of residential
+  appliances and other devices, such as lighting control, security systems,
+  thermostats, windows, locks, swimming pools and garage door openers.
+* Like other protocols and systems aimed at the home and office automation
+  market, a Z-Wave automation system can be controlled from a wireless keyfob,
+  a wall-mounted keypad or through smartphones, tablets or computers, with a Z-
+  Wave gateway or central control device serving as both the hub controller and
+  portal to the outside. It provides interoperability between home
+  control systems of different manufacturers that are a part of its alliance.
+  There are a growing number of interoperable Z-Wave products; over 1,700 in
+  2017, and over 2,400 by 2018.
+[[}]]
+
+## LPWAN [[{network.lpwan,01_PM.TODO]]
+@[https://www.qwant.com/?q=LPWA++wikipedia]
+* A low-power wide-area network (LPWAN) or low-power wide-area
+  (LPWA) network or low-power network (LPN) is a type of wireless
+  telecommunication wide area network designed to allow long range
+  communications at a low bit rate among things (connected objects),
+  such as sensors operated on a battery. The low power, low bit
+  rate and intended use distinguish this type of network from a
+  wireless WAN that is designed to connect users or businesses, and
+  carry more data, using more power. The LPWAN data rate ranges from
+  0.3 kbit/s to 50 kbit/s per channel.
+
+* A LPWAN may be used to create a private wireless sensor network,
+  but may also be a service or infrastructure offered by a third party,
+  allowing the owners of sensors to deploy them in the field without
+  investing in gateway technology.
+
+* what is lpwa for the IoT (part-1)?
+@[https://www.sierrawireless.com/iot-blog/iot-blog/2016/07/what_is_lpwa_for_the_internet_of_things_part-1_the_thre_-cs_of_iot/]
+
+## Narrowband IoT
+@[https://en.wikipedia.org/wiki/Narrowband_IoT]
+Narrowband IoT (NB-IoT) is a Low Power Wide Area Network (LPWAN) radio
+technology standard developed by 3GPP to enable a wide range of cellular
+devices and services.[1][2] The specification was frozen in 3GPP Release 13 (
+LTE Advanced Pro), in June 2016.[3] Other 3GPP IoT technologies include eMTC (
+enhanced Machine-Type Communication) and EC-GSM-IoT.[4]
+[[}]]
+
+## Apache plc4x  [[{]]
+https://plc4x.apache.org/, Universal Protocol Adapter for Industrial IoT
+
+"""While with OPC-UA every device has to be retrofitted with the
+ability to speak a new protocol and use a common client to speak with
+these devices, PLC4X tries to provide a unified API by implementing
+drivers for communicating with most industrial controllers in the
+protocols they natively understand."""
+
+Each of these drivers is being implemented from the specs or by
+reverse engineering protocols in order to be fully Apache 2.0
+licensed.
+
+The*major benefits*of PLC4X™ over OPC-UA, from our point of view are:
+  - No need to modify existing hardware
+  - Activating OPC-UA support on existing PLCs greatly increases the load on the PLCs
+  - No need to pay for licenses to activate OPC-UA support
+
+- At first we will be concentrating on providing adapters for the most widely used
+  protocol such as:
+
+  PROTOCOLS SUPPORTED:
+  • AB-ETH
+  • ADS/AMS
+  • BACnet/IP
+  • CANopen
+  • DeltaV
+  • DF1
+  • EtherNet/IP
+  • Firmata
+  • KNXnet/IP
+  • OPC UA (TCP)
+   Modbus (TCP)         https://en.wikipedia.org/wiki/Modbus
+  •  S7-STEP7/S7-TIA(TCP)
+  • Simulated
+  • Profinet https://en.wikipedia.org/wiki/PROFINET
+             Profinet (usually styled as PROFINET, as a portmanteau for Process Field Net)
+             is an industry technical standard for data communication over Industrial
+             Ethernet, designed for collecting data from, and controlling equipment in
+             industrial systems, with a particular strength in delivering data under tight
+             time constraints (on the order of 1ms or less).[1] The standard is maintained
+             and supported by Profibus & Profinet International, an umbrella organization
+             headquartered in Karlsruhe, Germany.
+  •  Beckhoff ADS (TCP)
+  •  Emerson DeltaV (UDP)
+  •  EtherNet/IP (TCP)
+  •  KNXNet/IP (UDP)
+  •  OPC-UA (TCP)
+
+* (planned) Support for C++, Go, Java, Python
+
+* TRANSPORTS:    INTEGRATIONS:          TOOLS:
+  • TCP          • Apache Calcite       • Capture Replay
+  • UDP          • Apache Camel         • Connection Pool
+  • Serial       • Apache Edgent        • Connection Cache
+  • SocketCAN    • Apache IoTDB         • Object PLC Mapping (OPM)
+  • Raw Socket   • Apache Kafka         • Scraper
+  • PCAP Replay  • Apache NiFi          • PLC4X without a PLC and Unit Testing
+                 • Apache StreamPipes
+                 • Eclipse Ditto
+                 • Eclipse Milo OPC UA Server
+[[}]]
+
+[[}]]
+
+
+## Multicast DNS: [[{protocol.multicast_dns,01_PM.TODO]]
+@[https://en.wikipedia.org/wiki/Multicast_DNS]
+* multicast DNS (mDNS) protocol resolves host names to IP addresses
+  within small networks lacking a local name server.
+* ZERO-CONFIGURATION SERVICE, using essentially the same
+  programming interfaces, packet formats and operating semantics as
+  the unicast Domain Name System (DNS).
+* Although Stuart Cheshire designed mDNS as an stand-alone protocol,
+  it can work in concert with standard DNS servers.
+
+* The mDNS protocol is published as RFC 6762, uses IP multicast User Datagram
+  Protocol (UDP) packets, and is implemented by the Apple Bonjour and open
+  source Avahi software packages. Android contains an mDNS implementation.
+  mDNS has also been implemented in Windows 10, but its use there is limited to
+  discovering networked printers.
+
+* mDNS can work in conjunction with DNS Service Discovery (DNS-SD), a companion
+  zero-configuration technique specified separately in RFC 6763.
+[[}]]
+
+## LoRa(WAN) [[{network.101,network.wireless.LoRa,01_PM.TODO]]
+@[https://en.wikipedia.org/wiki/LoRa]
+LoRa (Long Range) is a patented[1] digital wireless data communication
+technology developed by Cycleo of Grenoble, France, and acquired by Semtech
+in 2012.[2] LoRa is a long-range wireless communication protocol that competes
+against other low-power wide-area network (LPWAN) wireless such as narrowband
+IoT (NB IoT) or LTE Cat M1. Compared to those, LoRa achieves its extremely
+long range connectivity, possible 100km+, by trading off data rate. Because
+its data rates are below 50kbps and because LoRa is limited by duty cycle and
+other restrictions, it is suitable in practice for non-real time applications
+in which one can tolerate delays.[3]
+[[}]]
+
+## Radio-frequency identification [[{network.radio,01_PM.TODO]]
+@[https://en.m.wikipedia.org/wiki/Radio-frequency_identification]
+[[}]]
+
+## devguard.io [[{qa,01_PM.TODO]]
+@[https://devguard.io/]
+Created by Avid Picciani , author of ZZ, C-dialect for formally verified code.
+
+Don’t let traditional IoT clouds become a third-party privacy and security
+risk. Switch to cloudless iot-managment for full data sovereignty.
+[[}]]
+
+# Hardware&Components @mc  [[{]]
+
+# DiY: ICs at home [[{101]]
+@[https://hackaday.com/2012/07/09/make-your-own-integrated-circuits-at-home/]
+* The Nyan Cat you see above is only 600 micrometers from head to tail.
+  To put that into perspective, that’s about 10 times the diameter of
+  a human hair. Also, that Nyan is etched into 200 nanometer thick
+  copper foil and is the work of the HomeCMOS team, who is developing a
+  hobbyist-friendly process to make integrated circuits and MEMS
+  devices at home.
+* The project is far from complete; HomeCMOS has yet to produce a
+  working IC but a few experiments – getting wet etching down pat and
+  even building an almost working quantum qbit – are remarkable given
+  the small amount of equipment and tools involved.
+* The HomeCMOS team has yet to actually make an integrated circuit or
+  MEMS device, [Jeri Ellsworth] has shown this is possible by making
+  transistors and integrated circuits at home. While there won’t be
+  chips with millions of transistors coming out of the HomeCMOS lab
+  anytime soon, it’s more than possible to see a few small-scale
+  integration-level tech such as a few logic gates or a regulator.
+[[}]]
+
+
+
+## PLC Programable Logic Controller [[{101,hardware.sbc.plc,use_case.industrial,real_time.PLC,01_PM.TODO]]
+@[https://en.wikipedia.org/wiki/Programmable_logic_controller]
+(Autómata programable en Español)
+* PLCs were first developed in the automobile manufacturing industry to
+  provide flexible, ruggedized and easily programmable controllers to
+  replace hard-wired relays, timers and sequencers. Since then, they
+  have been widely adopted as high-reliability automation controllers
+  suitable for harsh environments. A PLC is an example of a "hard"
+  real-time system since output results must be produced in response to
+  input conditions within a limited time, otherwise unintended
+  operation will result.
+* A programmable logic controller (PLC) or programmable controller is an
+  industrial digital computer which has been ruggedized and adapted for the
+  control of manufacturing processes, such as assembly lines, or robotic devices
+  , or any activity that requires high reliability control and ease of
+  programming and process fault diagnosis.
+* Examples include Siemens S7 ,Allen Bradley ,Omron ,...
+
+* First PLC were designed to replace logical relés systems.
+[[}]]
+
+## ESP32 Ultra-low power CPU [[{101,hardware.mcpu.ESP32,01_PM.TODO]]
+http://esp32.net/
+Ultra low power co-processor: allows you to do ADC conversions, computation,
+and level thresholds while in deep sleep.
+Created by Espressif Systems, ESP32 is a low-cost, low-power system on a chip
+(SoC) series with Wi-Fi & dual-mode Bluetooth capabilities! The ESP32 family
+includes the chips ESP32-D0WDQ6 (and ESP32-D0WD), ESP32-D2WD, ESP32-S0WD, and
+the system in package (SiP) ESP32-PICO-D4. At its heart, there's a dual-core
+or single-core Tensilica Xtensa LX6 microprocessor with a clock rate of up to
+240 MHz. ESP32 is highly integrated with built-in antenna switches, RF balun,
+power amplifier, low-noise receive amplifier, filters, and power management
+modules. Engineered for mobile devices, wearable electronics, and IoT
+applications, ESP32 achieves ultra-low power consumption through power saving
+features including fine resolution clock gating, multiple power modes, and
+dynamic power scaling.
+
+
+## ESP miPyShell
+https://github.com/vsolina/mipyshell
+
+  This is a simple shell implementation that enables you to
+*use your ESP almost as a normal *nix computer*
+  If you have an ESP32 version with external PSRAM and SD card support,
+  you can do some serious sh...stuff
+  Should work with other MicroPython-supported controllers like
+  pyboard, but did not test so far
+
+
+- Standard commands integrated in sh.py:
+  - ls, pwd, cd, cp, mv, mkdir, rmdir - Filesystem commands
+  - cat - Print or write contents of a file
+  - reboot, restart, reset - Hard reset
+  - ps - List running threads
+  - ifconfig - Network connection details
+  - free - Memory information
+  - df - List mounted file systems
+  - help - Print available commands
+  - uname - Details about MCU and MicroPython
+  - kill - Does not work, should stop a background thread listed in ps
+  - time - Measures execution time of another command
+
+- Lots of useful scripts are provided with the project, eg.:
+  - wifi - WiFi management
+  - telnet - A telnet client
+  - edit - On board file editor, wrapper around Micropython-Editor
+  - httpd - Wrapper around microWebSrv that starts a web server in
+            background, serving contents of /www directory
+  - telnetd - Wrapper around utelnetserver that starts a telnet
+            server Wi-Fi interface
+  - wget - Spartanic version of wget that only supports downloading
+           file from a url to current directory
+  - umount - Unmount a mounted file system; Don't try to unmount root
+           because you'll succeed
+  - burn - Load your CPU to test stability
+  - memtest - Flawed memory testing utility that kind of shows memory
+           bandwidth
+  - upip - Wrapper around upip module, use to install aditional
+           libraries
+  - pystone - Python benchmark
+  - uptime - Print time in seconds since boot
+  - wait - Waits for a specified number of seconds
+  - temperature - Reads ESP32's integrated temperature sensor and
+           outputs Degreees
+  - freq - Modify and read CPU frequency on ESP32/8266
+  - print - Draw text on ssd1306 OLED display
+  - ramdisk - Create a temporary file system stored in RAM that
+            dinamically allocates memory on demand
+  - scani2c - Scans for i2c devices attached on ports sda = 4 and scl = 5
+  - clear - Clears the screen
+
+## Direct link ESP-to-Linux
+@[https://github.com/thomasfla/Linux-ESPNOW]
+
+- An attempt at implementing a direct link between a linux station and
+  an ESP module using ESPNOW protocol for real time robot control
+
+Project description here: https://hackaday.io/project/161896
+
+## ESP 32 security bug
+https://www.infoq.com/news/2019/12/esp32-fatal-fury/
+- A security researcher has identified a local-access technique that
+  enables a complete bypass of all security within the popular ESP32
+  IoT chip, where malware can be implanted and never removed.
+- The ESP32 chipset is significant to the industry, as it offers a dual
+  core chip with WiFi and bluetooth to underly many devices. In January
+  2018, the manufacturer Espressif announced its milestone of having
+  shipped over 100 million devices. ESP32 is a key component of many
+  devices, including LiFX lightbulbs, and is also featured as a
+  compatible device with AWS FreeRTOS within AWS IoT as well as
+  Microsoft Azure IoT.
+[[}]]
+
+
+## Bricklets [[{sensors,hardware.display,hardware.input,01_PM.TODO]]
 @[https://www.tinkerforge.com/en/doc/Primer.html#primer-bricklets]
 (prebuilt IoT)
 Name                        Description
@@ -224,462 +889,7 @@ UV Light 2.0                Measures UV-A, UV-B and UV index
 Voltage/Current 2.0         Measures power, DC voltage and DC current up to 720W/36V/20A0
 [[}]]
 
-● zephyrproject.org [[{101,os.zephyr,os.linux,02_doc_has.comparative,hardware.mcpu.stm32,]]
-@[https://www.zephyrproject.org/]
-- Alternative to Linux for IoT devices.
-- Small, Scalable Open Source RTOS for IoT Embedded Devices
-  The Zephyr™ Project is a scalable real-time operating system (RTOS)
-  supporting multipe hardware architectures, optimized for resource
-  constrained devices, and built with security in mind.
-
-• Asymetic Muli Processing in Zephyr (STM32MP1):
-@[https://www.collabora.com/news-and-blog/blog/2021/03/03/asymmetric-multi-processing-with-linux-and-zephyr-on-stm32mp1/]
-[[}]]
-
-
-● droplit.io: [[{network.cloud,01_PM.TODO]]
-@[https://www.qualcomm.com/news/onq/2018/12/14/using-droplit-bring-cloud-edge]
-• Context:
-  If you’re an IoT device developer, you know the "I" in "IoT" means
-  your device will, at some point, need to communicate with the cloud.
-
-  But what if your device development expertise or schedule doesn't
-  extend to cloud development?
-
-    Enter droplit.io, a cloud-based, protocol-agnostic platform, that
-  provides a rich API for integrating networked devices through the
-  cloud, such as consumer wireless products, building automation
-  systems, and PLCs.
-[[}]]
-[[}]]
-
-
-OSes/Platforms [[{ $OSes_platforms ]]
-==============
-● OPC_Unified_Architecture: [[{use_case.industrial.m2m,01_PM.TODO]]
-@[https://en.wikipedia.org/wiki/OPC_Unified_Architecture]
-• OPC Unified Architecture (OPC UA) is a machine to machine communication
-  protocol for industrial automation developed by the OPC Foundation.
-  Distinguishing characteristics are:
-   Focus on communicating with industrial equipment and systems for data
-collection and control
-    Open - freely available and implementable under GPL 2.0 license [1]
-    Cross-platform - not tied to one operating system or programming language
-    Service-oriented architecture (SOA)
-    Inherent complexity - the specification consists of 1250 pages in 14 documents
-    Robust security
-    Integral information model, which is the foundation of the infrastructure
-necessary for information integration where vendors and organizations can
-model their complex data into an OPC UA namespace to take advantage of the
-rich service-oriented architecture of OPC UA. There are over 35
-collaborations with the OPC Foundation currently. Key industries include
-pharmaceutical, oil and gas, building automation, industrial robotics,
-security, manufacturing and process control.
-[[}]]
-
-[[{os.freertos,01_PM.TODO]]
-● FreeRTOS
-@[http://linuxgizmos.com/amazon-aims-an-aws-savvy-version-of-freertos-at-iot-gizmos/]
-[[}]]
-
-
-[[{os.android,os.linux.yocto,01_PM.low_code,hardware.mcpu.freescale,01_PM.TODO]]
-● Boot2Qt
-@[https://boundarydevices.com/boot2qt-getting-started-guide/]
-• Developing an embedded product requires 3 main steps:
-  • selection of the proper hardware platform
-    exclusively based on powerful i.MX cpus.
-  • OS selection/setup.
-  • User Interface (UI) development. (Qt!)
-    Thanks to a Qt for Device Creation image (formerly calle Boot2Qt)
-    working on all our platforms, one can download the IDE and start
-    developing within minutes!
-[[}]]
-
-[[{use_case.fleet_tracking,01_PM.TODO]]
-● Eclipse Hono
-@[https://www.ecomotion.org.il/]
-@[https://projects.eclipse.org/projects/iot.hono]
-• EcoMotion is a dynamic community with over 600 start-ups (constantly growing)
-  and 7,000 members in the Smart Transportation sector. Understanding startups
-  do not grow in a void, we bring together entrepreneurs, academics, government
-  officials, local ⅋ global automotive industry representatives, investors and
-  much more; providing a support platform for knowledge-sharing, networking and
-  collaboration.
-[[}]]
-
-● MQTT Protocol: up to x93 faster than HTTP!!  [[{protocol,02_doc_has.comparative]] @[#mqtt_summary]
-  MQTT: Message Queue Telemetry Transport <!-- @ma -->
-• Binary packet payload with compressed headers of ˂2Bytes.
-• Simple: just five API methods.
-• originally developed out of IBM's pervasive computing team
-  moved to open source community.
-• (much) simpler that AMQP, designed for resource-constrained devices
- *LOW-BANDWIDTH/HIGH-LATENCY*  (dial up lines, LoWa, satellite links,
-  marine communication...)
-• Suitable for unreliable mobile connections.
-  (Facebook and others are using it as part of their mobile applications).
-- Extracted from: @[https://medium.com/mqtt-buddy/mqtt-vs-http-which-one-is-the-best-for-iot-c868169b3105]
-  """According to measurements in 3G networks, throughput of MQTT is 93 times
-   faster than HTTP’s.  """
-• does not define the message format at all
-• Some MQTT-based brokers support THOUSANDS OF CONCURRENT DEVICE CONNECTIONS.
-• It offers THREE QUALITIES OF SERVICE:
-  1) fire-and-forget / unreliable: Best effort.
-  2) "at least once" : ensure it is sent a minimum of one time
-                       (maybe more)
-  3) "exactly once".
-  • It provides users with options of:
-    ✓*LAST WILL TESTAMENT*: In case of unexpected disconnection of a client
-                            all subscribed clients will get a message from a broker.
-    ✓*RETAINED MESSAGES*  : newly subscribed client will get an immediate
-                            status update.
-  *WARN: HTTP Protocol has none of these abilities.*
-
-• See also:
-  @[https://github.com/tldr-pages/tldr/blob/master/pages/common/mosquitto.md]
-  @[https://github.com/tldr-pages/tldr/blob/master/pages/common/mosquitto-*.md]
-
-● MQTT Alternatives
-• COAP: Constrained Application Protocol.
-      MQTT                        │        COAP
-  ==============================  │ ===========================
-  · publish-subscribe prototype.  │ · request-response prototype.
-    (no queues)                   │
-  · only async mode               │ · async+synch messaging.
-  · TCP-based                     │ · UDP-based
-  · Header size: 2 bytes.         │ · Header size: 4 bytes.
-  · not RESTful based.            │ · RESTful based.
-  · use: live communication       │ · use: ???
-  · persistence support.          │ · NOT persistence support.
-  · ─                             │ · message have labels
-  · focus on IoT apps             │ · focus on Utility area networks.
-  · Low Latency and NAT issues.   │ · Low Latency and NAT issues.
-
-• AMQP:
-• XMPP:
-• DD :
-• LwM2M:
-• RHIOT:
-@[https://rhiot.gitbooks.io/rhiotdocumentation/content/]
-• IoT Messaging (with Camel Connector)
-  Rhiot is a messaging platform for the Internet Of Things.
-  focused on an adoption of the Red Hat JBoss middleware
-  portfolio to provide solutions to the common IoT-related challenges.
-  An apache camel connector exists to connect to the bricklet.
-[[}]]
-
-[[{use_case.cognitive,01_PM.TODO]]
-● rust-embedded voice assistant
-@[https://blog.mozilla.org/blog/2018/02/21/snips-uses-rust-embedded-voice-assistant/]
-- The team at Paris-based Snips has created a voice assistant that can be
-  embedded in a single device or used in a home network to control lights,
-  thermostat, music, and more. You can build a home hub on a Raspberry Pi and
-  ask it for a weather report, to play your favorite song, or to brew up a
-  double espresso. Manufacturers like Keecker are adding Snips’ technology to
-  products like multimedia home robots. And Snips works closely with leaders
-  across the value chain, like NVIDIA, EBV, and Analog Devices, in order to
-  voice-enable an increasingly wider range of device types, from speakers to
-  home automation systems to cars.
-[[}]]
-
-[[{use_case.industrial,standards,real_time,os.linux,01_PM.TODO]]
-● OSADL
-@[https://www.osadl.org/]
-• Open Source Software for Automation and Other Industries.
-• OSADL explained with a "Socrates Discourse":
-  Project Manager:
-    "We need to get someone to develop a Linux driver for our new
-     machine controller. Here's a purchase order for the work."
-  Purchase Department:
-    "Okay. Let me check the purchase order to make sure it follows our
-     standard procedure: NDA to be executed, source going into company's
-     safe ... "
-  Project Manager:
-    "Nope, we're going with Open Source - source gets published to the
-     Internet."
-  Purchase Department:
-     "What? We're paying for the development but the source code goes
-      out to the Internet? If everybody can use the source code, why are we
-      the only ones paying for this? No way this can fly!"
-
-  The solution: OSADL:
-      OSADL allows those members interested in developing particular Open
-    Source software to come together in an OSADL project supported by
-    membership fees. With the agreement of a majority of members, OSADL
-    can delegate the development of Open Source software components.
-    Thus, what is (financially) impossible for the individual (company),
-    many (OSADL members) can do.
-
-  • OSADL QA Farm:
-- monitors and optimizes hardware/software of ~200 linux based computer systems.
-- ensures general reliability+stability, provides fine-tunning of individual systems.
-- helps companies slect the most appropiate embedded system for a particular app.
-- offers a wide variety of research opportunities for scientific studies.
-- rack space is include in the regular OSADL membership
-
-• OSADL real-time Linux services:
-  - are based on the so-called PREEMPt_Rt patches
-  - help companies get the most out of Linux-based RT systems
-  - include kenrel additions to detect the origin of unsatisfying RT
-     behaviour (latency fighting")
-  - closely cooperate with the Linux Foundation RTL Collaborative
-    project and provide funding for it.
-
-• OSADL OPC UA PubSub over TSN project
-  - is commited to foster the deve. of next gen RT communication via
-    Ethernet
-  - is closely related to the open62541.org project on an Open Sou.
-    implementation of PC UA PubSub.
-  - Includes activites to improv TSN support of Linux kernel
-  - uses the OSADL QA Farm to continuously demonstrate the performance
-    progress of the project.
-
-• OSADL's safety and security projects
-  - include th SIL2LinuxMP project aiming to provide documents to
-    facilitate safety certification.
-  - aim to collectknowledger and stragegies of anew way of OOSS safety
-    cert.
-  - support development of methods and services to protect embedded
-    systems against malware.
-  - Intent to develop test and stress tools to ensure systems withstand
-    cyber attacks.
-[[}]]
-
-[[{use_case.identity,01_PM.TODO]]
-● OCKAM IoT+Blockchain Identity
-@[https://www.infoq.com/news/2019/01/ockam-blockchain-iot-identity]
-  Ockam is a serverless platform that aims to make it easier for IoT
-  developers to add blockchain-based identity, trust, and interoperability
-  in their IoT devices. Ockam has recently open sources its SDK for Golang.
-
-  By embedding the Ockam SDK into their devices, developers can make them
-  part of the Ockam blockchain network, a decentralized, open platform that
-  enables secure cryptographic identity management based on a recent W3C
-  standard called Decentralized Identifiers (DID).
-[[}]]
-
-[[{network.cloud,01_PM.TODO]]
-● IoT Edge Computing
-- https://azure.microsoft.com/en-us/services/iot-edge/
-- https://www.infoq.com/news/2019/01/baidu-edge-platform-opensource
-[[}]]
-
-[[{use_case.domotic,hardware,01_PM.TODO]]
-● Autonome
-@[https://github.com/autonome]
-• Turn old smartphone into a home automation gizmo
-• Mozilla Technical Evangelist Dietrich Ayala proposed a simple and
-  affordable solution to home automation: A discarded smartphone can
-  handle some of the most useful home automation tasks without
-  requiring expensive hubs and sensors
-  "Many phones have proximity|ambient light sensors, orientation, and battery"
-
-     Ayala introduced his “Context” JavaScript program for
-   turning an old Firefox OS smartphone into a combination hub and
-   sensor array for remote home monitoring.
-
-    " Many hacker-oriented automation products avoid using the cloud, but
-    t the price of greater complexity. You get more privacy and open
-    ource personalization, “but at a high cost in experimentation in
-    ime and learning ,"
-
-• IoT’s killer app: presence or absence
- *A greater challenge affecting commercial and DIY IoT systems alike is the   *
- *lack of a compelling purpose. “You have to ask yourself, what problems am I *
- *addressing?” said Ayala. “Do I really need to have the light reflect my mood*
- *or do automated shopping? To me these aren’t solving day to day problems.   *
- *People have problems like not having enough money or time, or worrying about*
- *sick relatives. Maybe they need to know if someone is in their house or     *
- *whether basic services are working. What you need is physical awareness put *
- *in context — the presence/absence of things like noise, motion, or services.*
-
-  Ayala spent a lot of time studying the readouts from sensors, as well as from
-  the phone’s microphone, camera, and, radios, that would enable a remote user
-  to draw conclusions about what was happening at home. This contextual
-  information could then be codified into more useful notifications.
-
-  With ambient light, for example, if it suddenly goes dark in the daytime,
-  maybe someone is standing over a device, explained Ayala.*Feedback from the *
- *accelerometer can be analyzed to determine the difference between footsteps,*
- *an earthquake, or someone picking up the device. Scripts can use radio APIs *
- *to determine if a person moving around is carrying a phone with a potentially*
- *revealing Bluetooth signature.*
-
-@[https://www.youtube.com/watch?list=PLGeM09tlguZRbcUfg4rmRZ1TjpcQQFfyr&v=4RWSXlai6PE]
-[[}]]
-[[}]]
-
-Network Protocols
-=================
-● Zigbee.org  [[{network.mesh,protocol.zigbee,01_PM.TODO]]
-@[https://www.zigbee.org/]
-- IEEE 802.15.4-based specification for a suite of high-level
-communication protocols used to create personal area networks with
-small, low-power digital radios, such as for home automation, ...
-[[}]]
-
-● Bluetooth: [[{network.bluethooth,protocol.bluethooth,01_PM.TODO]]
--  Ubicación casi exacta con Bluetooth
- @[https://www.xataka.com/internet-of-things/bluetooth-5-1-oficial-ahora-dispositivos-podran-conocer-ubicacion-casi-exacta-senal-bluetooth]
-
-
-• Bateryless-Bluetooth:
-@[https://www.adslzone.net/2019/01/15/wiliot-bluetooth-sin-bateria/amp/]
-- Crean un chip Bluetooth que no necesita batería: ¿cómo lo han hecho?
-  Wiliot: creadora del chip Bluetooth que no necesita batería
-[[}]]
-
-• WiGig: [[{network.wireless.WiGIg,01_PM.TODO]]
-- 10Gbps line-of-view WiFi
-[[}]]
-
-
-[[{]]
-● Narrow-band: [[{network.101,network.wireless,01_PM.TODO]]
-@[https://en.wikipedia.org/wiki/Narrowband]
-• In radio, narrowband describes a channel in which the bandwidth of the
-  message does not significantly exceed the channel's coherence bandwidth.
-
-• In the study of wired channels, narrowband implies that the channel under
-  consideration is sufficiently narrow that its frequency response can be
-  considered flat. The message bandwidth will therefore be less than the
-  coherence bandwidth of the channel. That is, no channel has perfectly flat
-  fading, but the analysis of many aspects of wireless systems is greatly
-  simplified if flat fading can be assumed.
-
-• Narrowband can also be used with the audio spectrum to describe sounds which
-  occupy a narrow range of frequencies.
-
-• In telephony, narrowband is usually considered to cover frequencies 300–3400 Hz.
-[[}]]
-
-● Sigfox Global Low Power WAN: [[{network.wireless.lora,01_PM.TODO]]
-@[https://www.sigfox.com/en]
-@[https://es.wikipedia.org/wiki/Cellnex_Telecom]
-- Sigfox Global Low Power Wide Area Network drastically brings down cost
-  and energy consumption required for securely connecting IoT sensors
-  to the Cloud.
-- With its simple approach to connectivity, Sigfox provides extremely price-
-  competitive connectivity subscriptions and even more importantly, enables
-  extremely simple and cost-efficient silicon modules.
-
-- Provider for other companies. Example:
-  "...Securitas Direct prevé incementar gradualmente la tipología y
-  número de dispositivos conectados a la red IoT de Cellnex, basada en
-  tecnología Sigfox. Por su parte, Cellnex ampliará con Sigfox la
-  capacidad de su red IoT en España y extenderá su cobertura a
-  Portugal..."
-  SRC: @[https://es.wikipedia.org/wiki/Cellnex_Telecom]
-[[}]]
-
-● Z-Wave: [[{use_case.domotic,protocol.z-wave,network.mesh,01_PM.TODO]]
-@[https://en.wikipedia.org/wiki/Z-Wave]
-• wireless communications protocol used primarily for home automation.
-• It is a mesh network using low-energy radio waves to communicate
-  from appliance to appliance, allowing for wireless control of residential
-  appliances and other devices, such as lighting control, security systems,
-  thermostats, windows, locks, swimming pools and garage door openers.
-• Like other protocols and systems aimed at the home and office automation
-  market, a Z-Wave automation system can be controlled from a wireless keyfob,
-  a wall-mounted keypad or through smartphones, tablets or computers, with a Z-
-  Wave gateway or central control device serving as both the hub controller and
-  portal to the outside. It provides interoperability between home
-  control systems of different manufacturers that are a part of its alliance.
-  There are a growing number of interoperable Z-Wave products; over 1,700 in
-  2017, and over 2,400 by 2018.
-[[}]]
-
-● LPWAN: [[{network.lpwan,01_PM.TODO]]
-@[https://www.qwant.com/?q=LPWA++wikipedia]
-• A low-power wide-area network (LPWAN) or low-power wide-area
-  (LPWA) network or low-power network (LPN) is a type of wireless
-  telecommunication wide area network designed to allow long range
-  communications at a low bit rate among things (connected objects),
-  such as sensors operated on a battery. The low power, low bit
-  rate and intended use distinguish this type of network from a
-  wireless WAN that is designed to connect users or businesses, and
-  carry more data, using more power. The LPWAN data rate ranges from
-  0.3 kbit/s to 50 kbit/s per channel.
-
-• A LPWAN may be used to create a private wireless sensor network,
-  but may also be a service or infrastructure offered by a third party,
-  allowing the owners of sensors to deploy them in the field without
-  investing in gateway technology.
-
-• what is lpwa for the IoT (part-1)?
-@[https://www.sierrawireless.com/iot-blog/iot-blog/2016/07/what_is_lpwa_for_the_internet_of_things_part-1_the_thre_-cs_of_iot/]
-
-● Narrowband IoT:
-@[https://en.wikipedia.org/wiki/Narrowband_IoT]
-Narrowband IoT (NB-IoT) is a Low Power Wide Area Network (LPWAN) radio
-technology standard developed by 3GPP to enable a wide range of cellular
-devices and services.[1][2] The specification was frozen in 3GPP Release 13 (
-LTE Advanced Pro), in June 2016.[3] Other 3GPP IoT technologies include eMTC (
-enhanced Machine-Type Communication) and EC-GSM-IoT.[4]
-[[}]]
-
-● W3C Web Thing Model: [[{standards.w3c,01_PM.backlog]]
-@[http://model.webofthings.io/]
-• *WARN*: no updates since 2017-04-25
-
-• Mozilla IoT Web Thing API:
-@[https://iot.mozilla.org/wot/]
-• Updated to 2022-01-13?
-[[}]]
-[[}]]
-
-[[{]]
-● Multicast DNS: [[{protocol.multicast_dns,01_PM.TODO]]
-@[https://en.wikipedia.org/wiki/Multicast_DNS]
-• multicast DNS (mDNS) protocol resolves host names to IP addresses
-  within small networks lacking a local name server.
-• ZERO-CONFIGURATION SERVICE, using essentially the same
-  programming interfaces, packet formats and operating semantics as
-  the unicast Domain Name System (DNS).
-• Although Stuart Cheshire designed mDNS as an stand-alone protocol,
-  it can work in concert with standard DNS servers.
-
-• The mDNS protocol is published as RFC 6762, uses IP multicast User Datagram
-  Protocol (UDP) packets, and is implemented by the Apple Bonjour and open
-  source Avahi software packages. Android contains an mDNS implementation.
-  mDNS has also been implemented in Windows 10, but its use there is limited to
-  discovering networked printers.
-
-• mDNS can work in conjunction with DNS Service Discovery (DNS-SD), a companion
-  zero-configuration technique specified separately in RFC 6763.
-[[}]]
-
-● LoRa(WAN) [[{network.101,network.wireless.LoRa,01_PM.TODO]]
-@[https://en.wikipedia.org/wiki/LoRa]
-LoRa (Long Range) is a patented[1] digital wireless data communication
-technology developed by Cycleo of Grenoble, France, and acquired by Semtech
-in 2012.[2] LoRa is a long-range wireless communication protocol that competes
-against other low-power wide-area network (LPWAN) wireless such as narrowband
-IoT (NB IoT) or LTE Cat M1. Compared to those, LoRa achieves its extremely
-long range connectivity, possible 100km+, by trading off data rate. Because
-its data rates are below 50kbps and because LoRa is limited by duty cycle and
-other restrictions, it is suitable in practice for non-real time applications
-in which one can tolerate delays.[3]
-[[}]]
-
-● Radio-frequency identification [[{network.radio,01_PM.TODO]]
-@[https://en.m.wikipedia.org/wiki/Radio-frequency_identification]
-[[}]]
-
-● devguard.io [[{qa,01_PM.TODO]]
-@[https://devguard.io/]
-Created by Avid Picciani , author of ZZ, C-dialect for formally verified code.
-
-Don’t let traditional IoT clouds become a third-party privacy and security
-risk. Switch to cloudless iot-managment for full data sovereignty.
-[[}]]
-
-[[}]]
-
-Modules/Hardware [[{]]
-================
-● 4$ Raspberry Pi Pico [[{hardware,01_PM.price.to_5$,01_PM.TODO]]
+## 4$ Raspberry Pi Pico [[{hardware,01_PM.price.to_5$,01_PM.TODO]]
 https://www.infoq.com/news/2021/01/raspberry-pico-versatility-size/
 - 21mm x 51mm
 - custom-designed RP2040 chip.
@@ -716,11 +926,29 @@ https://www.infoq.com/news/2021/01/raspberry-pico-versatility-size/
     - general-purpose OS (Linux) is not well suited to low-latency control of individual I/O pins.
 [[}]]
 
-● beagleboard.org: [[{hardware.sbc,01_PM.TODO]]
+# $6 C-SKY RISC-V Board [[{hardware.sbc,01_PM.price.to_5$]]
+@[https://www.cnx-software.com/2018/11/12/c-sky-linux-development-board-gx6605s-media-soc/]
+* C-SKY Linux development board key features and specifications:
+  · SoC – Nationalchip GX6605S C-SKY ISA V1 CK610M 32-bit processor @
+    574 MHz with 64MB DDR2 RAM, built-in DVB-S2/S demodulator
+  · Storage – 4MB SPI flash for bootloader and media player program
+  · Video Output – HDMI output up to 1080p; framebuffer resolution
+    (for UI): 1280×720
+  · Video Playback – H.264 up to 1080p
+  · USB – 2x USB2.0 host ports
+  · Expansion – 5-pin header with 3x GPIOs, 3.3V, GND
+  · Debugging
+    - JTAG via XX32F103C8T6 USB-JTAG chip (micro USB port)
+    - UART console via CH340g USB-UART chip (micro USB port)
+  · Misc – 5 user buttons, reset button, 4x LEDs
+  · Power Supply – 5V/1A via micro USB port (JTAG or UART)
+[[}]]
+
+## beagleboard.org [[{hardware.sbc,01_PM.TODO]]
 @[http://beagleboard.org/]
 [[}]]
 
-● Moddable IoT JS Engine: [[{hardware,low_cost,moddable,dev_lang.javascript,02_doc_has.comparative,01_PM.TODO" bgblue>
+## Moddable IoT JS Engine [[{hardware,low_cost,moddable,dev_lang.javascript,02_doc_has.comparative,01_PM.TODO]]
 -  Moddable XS7 release targets ES201 with 99% ES2018 Compliance
 - Runs on 32KB RAM and sub-1$ devices
 - It combines XS JavaScript engine with graphics,
@@ -742,7 +970,7 @@ https://www.infoq.com/news/2021/01/raspberry-pico-versatility-size/
   Attribution 4.0 and commercial license.
 
 
-● moddable-zero
+### moddable-zero
 @[http://www.moddable.com/moddable-zero.php]
 - 20$ easy-way to add touch-scr to IoT
 """All the components in Moddable Zero have been selected to keep the cost low
@@ -779,18 +1007,11 @@ microcontrollers. Both Piu and Commodetto are designed to work efficiently
 with the XS JavaScript engine at the core of the Moddable SDK.
 [[}]]
 
-[[{data.analytics,01_PM.TODO]]
-● Apache IoTDB
-https://iotdb.apache.org/
-[[}]]
-
-
-[[{hardware.bus,protocol.usb,01_PM.TODO]]
-● FTDI
+## FTDI [[{hardware.bus,protocol.usb,01_PM.TODO]]
 @[https://www.ftdichip.com/]
 @[https://www.ftdichip.com/Products/ICs.htm]
 @[https://www.ftdichip.com/Products/Modules.htm]
-• The RPi USB Hub Module utilises an USB-to-UART/MPSSE IC, along with a GL850G
+* The RPi USB Hub Module utilises an USB-to-UART/MPSSE IC, along with a GL850G
   USB hub controller IC. It provides engineers with up to 4 downstream USB 2.0
   Hi-Speed (480Mbit/s) ports. Asynchronous serial data transfer rates from 300
   bits/s to 12 Mbits/s at 3.3 V TTL levels are supported, while synchronous
@@ -798,461 +1019,56 @@ https://iotdb.apache.org/
 [[}]]
 
 [[{hardware.101,01_PM.TODO]]
-● transformerless power supplies
+## transformerless power supplies
 @[https://hackaday.com/2017/04/04/the-shocking-truth-about-transformerless-power-supplies/]
 [[}]]
 [[{sensors,01_PM.TODO]]
-● environment sensors
+# environment sensors
 *Tessel*
 - Light/temperature/movement/... sensors
 @[https://tessel.io/]
 - Python, Javascript, Rust programable
 [[}]]
-[[}]]
 
-ROBOTICS UNORDERED  [[{ $]]
-==================
+# ROBOTICS [[{ $]]
 [[{use_case.robotics,use_case.industrial.automobile,01_PM.TODO]]
-• ABB Robotics:
+## ABB Robotics
 @[https://new.abb.com/products/robotics]
 ABB is a leading supplier of industrial robots and robot software, equipment
 and complete application solutions. We’re at home in 53 countries and have
 installed more than 400,000 robots, supported by the broadest service network
 and offering in the industry.
 
-• Kuka Robotics
+* Kuka Robotics
 @[https://www.kuka.com/]
 
-• FANUC
+* FANUC
 
-• COMAU
+* COMAU
 
-• automotive plants:
+* automotive plants:
   · VASS
   · DCP
   · PL7
 [[}]]
-[[$ }]]
-
-● NON CLASSIFIED: [[{os.linux.yocto,hardware.sbc,01_PM.TODO]]
-● Yocto
-@[https://www.devprojournal.com/technology-trends/internet-of-things/why-iot-system-developers-need-the-yocto-project-for-custom-linux-solutions/]
-
-● www.reliableembeddedsystems.com
-@[https://www.reliableembeddedsystems.com/]
-• Yocto Linux.
-• Free RTOS.
-• Zephyr.
-[[}]]
 
 
-[[{hardware.sbc,01_PM.price.to_5$]]
-● $6 C-SKY RISC-V Board
-@[https://www.cnx-software.com/2018/11/12/c-sky-linux-development-board-gx6605s-media-soc/]
-• C-SKY Linux development board key features and specifications:
-  · SoC – Nationalchip GX6605S C-SKY ISA V1 CK610M 32-bit processor @
-    574 MHz with 64MB DDR2 RAM, built-in DVB-S2/S demodulator
-  · Storage – 4MB SPI flash for bootloader and media player program
-  · Video Output – HDMI output up to 1080p; framebuffer resolution
-    (for UI): 1280×720
-  · Video Playback – H.264 up to 1080p
-  · USB – 2x USB2.0 host ports
-  · Expansion – 5-pin header with 3x GPIOs, 3.3V, GND
-  · Debugging
-    - JTAG via XX32F103C8T6 USB-JTAG chip (micro USB port)
-    - UART console via CH340g USB-UART chip (micro USB port)
-  · Misc – 5 user buttons, reset button, 4x LEDs
-  · Power Supply – 5V/1A via micro USB port (JTAG or UART)
-[[}]]
 
-[[{101,hardware.storage.sdcard]]
-● SD Express ˂=3_938MB/s)
-@[https://www.sdcard.org/press/thoughtleadership/200519_SD_Association_Delivers_Gigabyte_Speed_Leap_with_New_SD_Express_8_0.html]
 
-• SD Association Delivers Gigabyte Speed Leap with New SD Express 8.0
-
-• In July 2018, SD7.0 brought in the PCIe 3.1 and NVMe architectures
-  to SD memory card design, providing a new option alongside legacy
-  SD interfaces.
-
-• February 2019: introduction of microSD Express 7.1 specification.
-
-• SD8.0 allows for slow-motion, 360-degree,... video at the highest qualities.
-
-• new SD Express standard uses PCI Express® (PCIe®) version 4.0
-  spec to great effect, with the end result being data
-  transfer speeds of up to 4 gigabytes per second.
-  ┌───────────────────────────────────────────────────────┐
-  │    \ Host  ┌────────────── SD Express ───────────────┐│
-  │ Card\ Type  Gen3x1     Gen3x2     Gen4x1     Gen4x2   │
-  │ Type        Up to...   Up to...   Up to...   Up to ...│
-  │───────────────────────────────────────────────────────│
-  │ PCIe G3L1   985MB/s      985MB/s     985MB/s   985MB/s│
-  │───────────────────────────────────────────────────────│
-  │ PCIe G3L2   985MB/s    1_969MB/s     985MB/s 1_969MB/s│
-  │───────────────────────────────────────────────────────│
-  │ PCIe G3L2   985MB/s      985MB/s   1_969MB/s 1_969MB/s│
-  │───────────────────────────────────────────────────────│
-  │ PCIe G4L2   985MB/s    1_969MB/s   1_969MB/s 3_938MB/s│
-  └───────────────────────────────────────────────────────┘
-
-• full-sized cards continue the use of NVM Express™ (NVMe™) upper
-  layer protocol, giving them advanced memory access mechanisms.
-[[}]]
-
-[[{sensors,01_PM.TODO]]
-● Sensors Undordered
-• chromatic-sensors:
+# Sensors Undordered [[{sensors,01_PM.TODO]]
+## chromatic-sensors:
   https://www.micro-epsilon.com/sensors/confocal-chromatic-sensors/
-• controlling uvc power with l14u1 sensor
+## controlling uvc power with l14u1 sensor
   http://www.lightinmotion.com/en/technical-articles/63-controlling-uvc-power-with-the-l14u1-sensor?referrer=ieeeglobalspec
-• Sensor tracking firefighters:
+## Sensor tracking firefighters:
   https://insights.globalspec.com/article/11310/researchers-create-sensor-capable-of-tracking-firefighters-in-burning-buildings
-• High.Temp.Sensor:
+## High.Temp.Sensor:
 @[https://www.locon.net/high-temperature-harsh-environment-sensors.html?referrer=www.oficina24x7.com]
-• Differential Pressure Sensor:
+## Differential Pressure Sensor:
   https://pages.first-sensor.com/en/buyersguide-differential-pressure-sensor
 [[}]]
 
-[[{use_case.supply_chain.tracking,01_PM.TODO]]
-● Counterfeiting: Safe Label fingerprint
-@[https://insights.globalspec.com/article/11303/microparticle-fingerprint-prevents-counterfeit-products]
-• Researchers from the University of Copenhagen’s Nano-Science Center
-  have created a new way to stop counterfeiting. The team created a
-  pirate safe labeling system that creates a unique fingerprint for
-  individual items. The label with the fingerprint is applied before an
-  item leaves the factory. The system is based on physical unclonable
-  function (PUF) technology.
-[[}]]
-
-[[{hardware.gpio,hardware.raspberry,01_PM.TODO]]
-● rust_gpiozero
-https://opensource.com/article/19/3/physical-computing-rust-raspberry-pi
-- port of the awesome GPIO Zero library to Rust-lang.
-[[}]]
-
-[[{use_case.cognitive,hardware.raspberry,01_PM.TODO]]
-● Rpi Text-to-speech
-http://linuxgizmos.com/text-to-speech-raspberry-pi-add-on-starts-at-24/
-[[}]]
-
-[[{hardware.display,01_PM.TODO]]
-● DiY: e-Ink Magic Mirror
-https://liliputing.com/2019/05/you-can-build-a-diy-e-ink-magic-mirror-for-under-100.html
-[[}]]
-
-[[{standards,01_PM.TODO]]
-● Mozilla WebOfThings
-@[https://www.infoq.com/news/2019/05/mozilla-web-things/]
-[[}]]
-
-[[{101,hardware.sbc.plc,use_case.industrial,real_time.PLC,01_PM.TODO]]
-● PLC Programable Logic Controller
-@[https://en.wikipedia.org/wiki/Programmable_logic_controller]
-(Autómata programable en Español)
-• PLCs were first developed in the automobile manufacturing industry to
-  provide flexible, ruggedized and easily programmable controllers to
-  replace hard-wired relays, timers and sequencers. Since then, they
-  have been widely adopted as high-reliability automation controllers
-  suitable for harsh environments. A PLC is an example of a "hard"
-  real-time system since output results must be produced in response to
-  input conditions within a limited time, otherwise unintended
-  operation will result.
-• A programmable logic controller (PLC) or programmable controller is an
-  industrial digital computer which has been ruggedized and adapted for the
-  control of manufacturing processes, such as assembly lines, or robotic devices
-  , or any activity that requires high reliability control and ease of
-  programming and process fault diagnosis.
-• Examples include Siemens S7 ,Allen Bradley ,Omron ,...
-
-• First PLC were designed to replace logical relés systems.
-
-● https://plc4x.apache.org/, Universal Protocol Adapter for Industrial IoT
-
-"""While with OPC-UA every device has to be retrofitted with the
-ability to speak a new protocol and use a common client to speak with
-these devices, PLC4X tries to provide a unified API by implementing
-drivers for communicating with most industrial controllers in the
-protocols they natively understand."""
-
-Each of these drivers is being implemented from the specs or by
-reverse engineering protocols in order to be fully Apache 2.0
-licensed.
-
-The*major benefits*of PLC4X™ over OPC-UA, from our point of view are:
-  - No need to modify existing hardware
-  - Activating OPC-UA support on existing PLCs greatly increases the load on the PLCs
-  - No need to pay for licenses to activate OPC-UA support
-
-- At first we will be concentrating on providing adapters for the most widely used
-  protocol such as:
-
-  PROTOCOLS SUPPORTED:
-  • AB-ETH
-  • ADS/AMS
-  • BACnet/IP
-  • CANopen
-  • DeltaV
-  • DF1
-  • EtherNet/IP
-  • Firmata
-  • KNXnet/IP
-  • OPC UA (TCP)
-   Modbus (TCP)         https://en.wikipedia.org/wiki/Modbus
-  •  S7-STEP7/S7-TIA(TCP)
-  • Simulated
-  • Profinet https://en.wikipedia.org/wiki/PROFINET
-             Profinet (usually styled as PROFINET, as a portmanteau for Process Field Net)
-             is an industry technical standard for data communication over Industrial
-             Ethernet, designed for collecting data from, and controlling equipment in
-             industrial systems, with a particular strength in delivering data under tight
-             time constraints (on the order of 1ms or less).[1] The standard is maintained
-             and supported by Profibus & Profinet International, an umbrella organization
-             headquartered in Karlsruhe, Germany.
-  •  Beckhoff ADS (TCP)
-  •  Emerson DeltaV (UDP)
-  •  EtherNet/IP (TCP)
-  •  KNXNet/IP (UDP)
-  •  OPC-UA (TCP)
-
-• (planned) Support for C++, Go, Java, Python
-
-• TRANSPORTS:    INTEGRATIONS:          TOOLS:
-  • TCP          • Apache Calcite       • Capture Replay
-  • UDP          • Apache Camel         • Connection Pool
-  • Serial       • Apache Edgent        • Connection Cache
-  • SocketCAN    • Apache IoTDB         • Object PLC Mapping (OPM)
-  • Raw Socket   • Apache Kafka         • Scraper
-  • PCAP Replay  • Apache NiFi          • PLC4X without a PLC and Unit Testing
-                 • Apache StreamPipes
-                 • Eclipse Ditto
-                 • Eclipse Milo OPC UA Server
-[[}]]
-
-
-[[{101,hardware.mcpu.ESP32,01_PM.TODO]]
-● ESP32 Ultra-low power CPU
-http://esp32.net/
-Ultra low power co-processor: allows you to do ADC conversions, computation,
-and level thresholds while in deep sleep.
-Created by Espressif Systems, ESP32 is a low-cost, low-power system on a chip
-(SoC) series with Wi-Fi & dual-mode Bluetooth capabilities! The ESP32 family
-includes the chips ESP32-D0WDQ6 (and ESP32-D0WD), ESP32-D2WD, ESP32-S0WD, and
-the system in package (SiP) ESP32-PICO-D4. At its heart, there's a dual-core
-or single-core Tensilica Xtensa LX6 microprocessor with a clock rate of up to
-240 MHz. ESP32 is highly integrated with built-in antenna switches, RF balun,
-power amplifier, low-noise receive amplifier, filters, and power management
-modules. Engineered for mobile devices, wearable electronics, and IoT
-applications, ESP32 achieves ultra-low power consumption through power saving
-features including fine resolution clock gating, multiple power modes, and
-dynamic power scaling.
-
-
-● ESP miPyShell
-https://github.com/vsolina/mipyshell
-
-  This is a simple shell implementation that enables you to
-*use your ESP almost as a normal *nix computer*
-  If you have an ESP32 version with external PSRAM and SD card support,
-  you can do some serious sh...stuff
-  Should work with other MicroPython-supported controllers like
-  pyboard, but did not test so far
-
-
-- Standard commands integrated in sh.py:
-  - ls, pwd, cd, cp, mv, mkdir, rmdir - Filesystem commands
-  - cat - Print or write contents of a file
-  - reboot, restart, reset - Hard reset
-  - ps - List running threads
-  - ifconfig - Network connection details
-  - free - Memory information
-  - df - List mounted file systems
-  - help - Print available commands
-  - uname - Details about MCU and MicroPython
-  - kill - Does not work, should stop a background thread listed in ps
-  - time - Measures execution time of another command
-
-- Lots of useful scripts are provided with the project, eg.:
-  - wifi - WiFi management
-  - telnet - A telnet client
-  - edit - On board file editor, wrapper around Micropython-Editor
-  - httpd - Wrapper around microWebSrv that starts a web server in
-            background, serving contents of /www directory
-  - telnetd - Wrapper around utelnetserver that starts a telnet
-            server Wi-Fi interface
-  - wget - Spartanic version of wget that only supports downloading
-           file from a url to current directory
-  - umount - Unmount a mounted file system; Don't try to unmount root
-           because you'll succeed
-  - burn - Load your CPU to test stability
-  - memtest - Flawed memory testing utility that kind of shows memory
-           bandwidth
-  - upip - Wrapper around upip module, use to install aditional
-           libraries
-  - pystone - Python benchmark
-  - uptime - Print time in seconds since boot
-  - wait - Waits for a specified number of seconds
-  - temperature - Reads ESP32's integrated temperature sensor and
-           outputs Degreees
-  - freq - Modify and read CPU frequency on ESP32/8266
-  - print - Draw text on ssd1306 OLED display
-  - ramdisk - Create a temporary file system stored in RAM that
-            dinamically allocates memory on demand
-  - scani2c - Scans for i2c devices attached on ports sda = 4 and scl = 5
-  - clear - Clears the screen
-
-● Linux ESP NOW @[https://github.com/thomasfla/Linux-ESPNOW]
-
-- An attempt at implementing a direct link between a linux station and
-  an ESP module using ESPNOW protocol for real time robot control
-
-Project description here: https://hackaday.io/project/161896
-
-● ESP 32 security bug
-https://www.infoq.com/news/2019/12/esp32-fatal-fury/
-- A security researcher has identified a local-access technique that
-  enables a complete bypass of all security within the popular ESP32
-  IoT chip, where malware can be implanted and never removed.
-- The ESP32 chipset is significant to the industry, as it offers a dual
-  core chip with WiFi and bluetooth to underly many devices. In January
-  2018, the manufacturer Espressif announced its milestone of having
-  shipped over 100 million devices. ESP32 is a key component of many
-  devices, including LiFX lightbulbs, and is also featured as a
-  compatible device with AWS FreeRTOS within AWS IoT as well as
-  Microsoft Azure IoT.
-
-
-[[}]]
-
-● TensorFlow on RPi [[{use_case.cognitive,hardware.raspberry,01_PM.TODO]]
-https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi
-A tutorial showing how to set up TensorFlow's Object Detection API on the Raspberry Pi
-[[}]]
-
-● Facebook PyRobot [[{use_case.robotics,01_PM.TODO]]
-https://www.infoq.com/news/2019/06/facebook-pyrobot-ros-framework/
-[[}]]
-
-● Disklet boot R-PI "cluster" [[{hardware.raspberry,01_PM.TODO]]
-https://www.raspberrypi.org/blog/piserver/
-[[}]]
-
-● Get Cruise [[{use_case.smartcities,use_case.industrial.automobile,01_PM.TODO]]
-@[https://getcruise.com/]
-  Cruise vehicles are purpose-built for self-driving at a dedicated GM
-  manufacturing plant. Our cutting-edge hardware and software work
-  seamlessly together to transform the way we all experience
-  transportation.
-@[https://github.com/cruise-automation]
-[[}]]
-
-● DiY: ICs at home<!-- @ma --> [[{101]]
-@[https://hackaday.com/2012/07/09/make-your-own-integrated-circuits-at-home/]
-• The Nyan Cat you see above is only 600 micrometers from head to tail.
-  To put that into perspective, that’s about 10 times the diameter of
-  a human hair. Also, that Nyan is etched into 200 nanometer thick
-  copper foil and is the work of the HomeCMOS team, who is developing a
-  hobbyist-friendly process to make integrated circuits and MEMS
-  devices at home.
-• The project is far from complete; HomeCMOS has yet to produce a
-  working IC but a few experiments – getting wet etching down pat and
-  even building an almost working quantum qbit – are remarkable given
-  the small amount of equipment and tools involved.
-• The HomeCMOS team has yet to actually make an integrated circuit or
-  MEMS device, [Jeri Ellsworth] has shown this is possible by making
-  transistors and integrated circuits at home. While there won’t be
-  chips with millions of transistors coming out of the HomeCMOS lab
-  anytime soon, it’s more than possible to see a few small-scale
-  integration-level tech such as a few logic gates or a regulator.
-[[}]]
-
-[[{hardware.intel,01_PM.TODO]]
-● Intel IoT:
-https://www.intel.com/content/www/us/en/internet-of-things/products/programmable/overview.html
-[[}]]
-
-● Eclipse sensiNact [[{use_case.smartcities,01_PM.TODO]]
-https://projects.eclipse.org/projects/technology.sensinact
-• The Eclipse sensiNact project consists of a software platform
-  enabling the collection, processing and redistribution of any data
-  relevant to improving the quality of life of urban citizens.
-[[}]]
-
-● Eclipse Keyple [[{network.contactless,standards,01_PM.TODO]]
-https://projects.eclipse.org/technology-type/internet-things
-• Goal: allow developers to easily implement fast and secure
-  off-line contactless transactions (using NFC cards, mobile phones,
-  …) based on the Calypso standard.
-[[}]]
-
-● SQLiteQueryServer: Bulk query DDBB over Network [[{data.analytics.sql,01_PM.low_code,01_PM.TODO]]
-@[https://github.com/assafmo/SQLiteQueryServer]
-@[https://www.reddit.com/r/linuxadmin/comments/beyzzb/sqlitequeryserver_bulk_query_sqlite_database_over/]
-  *WARN*:
-    - optimized for SELECT
-    - INSERT/UPDATE/DELETE/CREATE/... *might be slow*
-
-  Ex:
-    $ SQLiteQueryServer \                             ← Launching the server
-      --db ./test_db/ip_dns.db \                      ← Source DB
-      --query "SELECT * FROM ip_dns WHERE dns = ?" \  ← Parameterized query
-      --port 8080
-
-    $ (                                               ← Querying the server
-       cat ˂˂ EOF
-    github.com                                        ← One query per line. Each (CSV) line represents
-    one.one.one.one                                     param1,param2,...
-    google-public-dns-a.google.com                      (No header)
-    EOF
-    ) | \
-    curl "http://localhost:8080/query" \
-        --data-binary @-                              ← HTTP POST expected.
-[[}]]
-
-● Gazebo and ROS 2 [[{use_case.robotics,01_PM.TODO]]
-https://www.infoq.com/articles/ros-2-gazebo-tutorial/
-Open Source Robotics: Getting Started with Gazebo and ROS 2
-    Dolly is virtual robot sheep that serves as a practical introduction to Gazebo and ROS 2.
-    The Robot Operating System's latest version, ROS 2, offers familiar tools and capabilities, while expanding to new use cases.
-    Gazebo is a powerful robot simulator used by industry and academia that calculates physics, generates sensor data and provides convenient interfaces.
-    Open source software is lowering the barrier to entry and speeding up progress in robotics.
-    Roboticists all around the world are leveraging Gazebo and ROS in applications ranging from humanoids and drones to warehouse robots and self-driving cars.
-[[}]]
-
-● Node-RED: IoT Visual Programing [[{use_case.industrial,protocol.mqtt,network,01_PM.TODO]]
-https://www.infoq.com/news/2019/10/nodered-1-0-released/
-
-• 2019-10: Node-RED version 1.0 bringing plenty of major new features:
-  - asynchronous message passing model
-  - new completion API
-  - message cloning by default.
-  - visual editor revamp.
-
-• Created at IBM to make building industrial IoT solutions easier, Node-RED
-  is an open-source visual programming environment enabling the creation of
-  complex systems by interconnecting nodes representing physical devices,
-  cloud systems, databases, API and so on. Nodes receive a message from any
-  of their input nodes, process it, and propagate it through to output nodes
-  . The overall resulting flow is what constitutes the computation carried
-  through by the system. Node-RED comes with a large collection of nodes to
-  handle a variety of common tasks, including sending and receiving HTTP/UDP
-  /TCP/MQTT messages, running commands, and processing files, as well as
-  nodes that simplifies the construction of complex logic, such as debug
-  nodes, message multiplexers and demultiplexers, message buffers, and so on.
-  More nodes are available from the Node-RED library.
-[[}]]
-
-● All IoT Devs. are doomed [[{security.101,01_PM.TODO]]
-https://www.zdnet.com/article/all-your-iot-devices-are-doomed/
-Until we look to emulate the open models of Wi-Fi and PCs, IoT will
-always be a source of never-ending e-waste.
-The problem is not as simple as IoTs and the companies supporting
-them going belly-up. It's more along the lines of the vendors
-themselves being willfully negligent in providing a path to community
-support for these devices and penalizing their early adopters.
-[[}]]
-
-● GPS Timing Antennas [[{sensors.gps,01_PM.TODO]]
+# GPS Timing Antennas [[{sensors.gps,01_PM.TODO]]
 """
 - GPS Timing Antennas and Portable UFH Antenna offer High Levels of
   Precision and Performance In many applications, across a wide range
@@ -1275,7 +1091,176 @@ support for these devices and penalizing their early adopters.
 """
 [[}]]
 
-● l-com.com [[{sensors,01_PM.TODO]]
+
+[[{use_case.supply_chain.tracking,01_PM.TODO]]
+## Counterfeiting: Safe Label fingerprint
+@[https://insights.globalspec.com/article/11303/microparticle-fingerprint-prevents-counterfeit-products]
+* Researchers from the University of Copenhagen’s Nano-Science Center
+  have created a new way to stop counterfeiting. The team created a
+  pirate safe labeling system that creates a unique fingerprint for
+  individual items. The label with the fingerprint is applied before an
+  item leaves the factory. The system is based on physical unclonable
+  function (PUF) technology.
+[[}]]
+
+## Rpi Text-to-speech [[{use_case.cognitive,hardware.raspberry,01_PM.TODO]]
+http://linuxgizmos.com/text-to-speech-raspberry-pi-add-on-starts-at-24/
+[[}]]
+
+## DiY: e-Ink Magic Mirror [[{hardware.display,01_PM.TODO]]
+https://liliputing.com/2019/05/you-can-build-a-diy-e-ink-magic-mirror-for-under-100.html
+[[}]]
+
+
+
+# NON CLASSIFIED: [[{os.linux.yocto,hardware.sbc,01_PM.TODO]]
+
+[[{101,hardware.storage.sdcard]]
+## SD Express <=3_938MB/s)
+@[https://www.sdcard.org/press/thoughtleadership/200519_SD_Association_Delivers_Gigabyte_Speed_Leap_with_New_SD_Express_8_0.html]
+
+* SD Association Delivers Gigabyte Speed Leap with New SD Express 8.0
+
+* In July 2018, SD7.0 brought in the PCIe 3.1 and NVMe architectures
+  to SD memory card design, providing a new option alongside legacy
+  SD interfaces.
+
+* February 2019: introduction of microSD Express 7.1 specification.
+
+* SD8.0 allows for slow-motion, 360-degree,... video at the highest qualities.
+
+* new SD Express standard uses PCI Express® (PCIe®) version 4.0
+  spec to great effect, with the end result being data
+  transfer speeds of up to 4 gigabytes per second.
+  ┌───────────────────────────────────────────────────────┐
+  │    \ Host  ┌────────────── SD Express ───────────────┐│
+  │ Card\ Type  Gen3x1     Gen3x2     Gen4x1     Gen4x2   │
+  │ Type        Up to...   Up to...   Up to...   Up to ...│
+  │───────────────────────────────────────────────────────│
+  │ PCIe G3L1   985MB/s      985MB/s     985MB/s   985MB/s│
+  │───────────────────────────────────────────────────────│
+  │ PCIe G3L2   985MB/s    1_969MB/s     985MB/s 1_969MB/s│
+  │───────────────────────────────────────────────────────│
+  │ PCIe G3L2   985MB/s      985MB/s   1_969MB/s 1_969MB/s│
+  │───────────────────────────────────────────────────────│
+  │ PCIe G4L2   985MB/s    1_969MB/s   1_969MB/s 3_938MB/s│
+  └───────────────────────────────────────────────────────┘
+
+* full-sized cards continue the use of NVM Express™ (NVMe™) upper
+  layer protocol, giving them advanced memory access mechanisms.
+[[}]]
+
+
+# TensorFlow on RPi [[{use_case.cognitive,hardware.raspberry,01_PM.TODO]]
+https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi
+A tutorial showing how to set up TensorFlow's Object Detection API on the Raspberry Pi
+[[}]]
+
+# Facebook PyRobot [[{use_case.robotics,01_PM.TODO]]
+https://www.infoq.com/news/2019/06/facebook-pyrobot-ros-framework/
+[[}]]
+
+# Disklet boot R-PI "cluster" [[{hardware.raspberry,01_PM.TODO]]
+https://www.raspberrypi.org/blog/piserver/
+[[}]]
+
+# Get Cruise [[{use_case.smartcities,use_case.industrial.automobile,01_PM.TODO]]
+@[https://getcruise.com/]
+  Cruise vehicles are purpose-built for self-driving at a dedicated GM
+  manufacturing plant. Our cutting-edge hardware and software work
+  seamlessly together to transform the way we all experience
+  transportation.
+@[https://github.com/cruise-automation]
+[[}]]
+
+[[{hardware.intel,01_PM.TODO]]
+# Intel IoT:
+https://www.intel.com/content/www/us/en/internet-of-things/products/programmable/overview.html
+[[}]]
+
+# Eclipse sensiNact [[{use_case.smartcities,01_PM.TODO]]
+https://projects.eclipse.org/projects/technology.sensinact
+* The Eclipse sensiNact project consists of a software platform
+  enabling the collection, processing and redistribution of any data
+  relevant to improving the quality of life of urban citizens.
+[[}]]
+
+# Eclipse Keyple [[{network.contactless,standards,01_PM.TODO]]
+https://projects.eclipse.org/technology-type/internet-things
+* Goal: allow developers to easily implement fast and secure
+  off-line contactless transactions (using NFC cards, mobile phones,
+  …) based on the Calypso standard.
+[[}]]
+
+# SQLiteQueryServer: Bulk query DDBB over Network [[{data.analytics.sql,01_PM.low_code,01_PM.TODO]]
+@[https://github.com/assafmo/SQLiteQueryServer]
+@[https://www.reddit.com/r/linuxadmin/comments/beyzzb/sqlitequeryserver_bulk_query_sqlite_database_over/]
+  *WARN*:
+    - optimized for SELECT
+    - INSERT/UPDATE/DELETE/CREATE/... *might be slow*
+
+  Ex:
+    $ SQLiteQueryServer \                             ← Launching the server
+      --db ./test_db/ip_dns.db \                      ← Source DB
+      --query "SELECT * FROM ip_dns WHERE dns = ?" \  ← Parameterized query
+      --port 8080
+
+    $ (                                               ← Querying the server
+       cat << EOF
+    github.com                                        ← One query per line. Each (CSV) line represents
+    one.one.one.one                                     param1,param2,...
+    google-public-dns-a.google.com                      (No header)
+    EOF
+    ) | \
+    curl "http://localhost:8080/query" \
+        --data-binary @-                              ← HTTP POST expected.
+[[}]]
+
+# Gazebo and ROS 2 [[{use_case.robotics,01_PM.TODO]]
+https://www.infoq.com/articles/ros-2-gazebo-tutorial/
+Open Source Robotics: Getting Started with Gazebo and ROS 2
+    Dolly is virtual robot sheep that serves as a practical introduction to Gazebo and ROS 2.
+    The Robot Operating System's latest version, ROS 2, offers familiar tools and capabilities, while expanding to new use cases.
+    Gazebo is a powerful robot simulator used by industry and academia that calculates physics, generates sensor data and provides convenient interfaces.
+    Open source software is lowering the barrier to entry and speeding up progress in robotics.
+    Roboticists all around the world are leveraging Gazebo and ROS in applications ranging from humanoids and drones to warehouse robots and self-driving cars.
+[[}]]
+
+# Node-RED: IoT Visual Programing [[{use_case.industrial,protocol.mqtt,network,01_PM.TODO]]
+https://www.infoq.com/news/2019/10/nodered-1-0-released/
+
+* 2019-10: Node-RED version 1.0 bringing plenty of major new features:
+  - asynchronous message passing model
+  - new completion API
+  - message cloning by default.
+  - visual editor revamp.
+
+* Created at IBM to make building industrial IoT solutions easier, Node-RED
+  is an open-source visual programming environment enabling the creation of
+  complex systems by interconnecting nodes representing physical devices,
+  cloud systems, databases, API and so on. Nodes receive a message from any
+  of their input nodes, process it, and propagate it through to output nodes
+  . The overall resulting flow is what constitutes the computation carried
+  through by the system. Node-RED comes with a large collection of nodes to
+  handle a variety of common tasks, including sending and receiving HTTP/UDP
+  /TCP/MQTT messages, running commands, and processing files, as well as
+  nodes that simplifies the construction of complex logic, such as debug
+  nodes, message multiplexers and demultiplexers, message buffers, and so on.
+  More nodes are available from the Node-RED library.
+[[}]]
+
+# All IoT Devs. are doomed [[{security.101,01_PM.TODO]]
+https://www.zdnet.com/article/all-your-iot-devices-are-doomed/
+Until we look to emulate the open models of Wi-Fi and PCs, IoT will
+always be a source of never-ending e-waste.
+The problem is not as simple as IoTs and the companies supporting
+them going belly-up. It's more along the lines of the vendors
+themselves being willfully negligent in providing a path to community
+support for these devices and penalizing their early adopters.
+[[}]]
+
+
+# l-com.com [[{sensors,01_PM.TODO]]
 http://www.l-com.com
 - IOT: http://www.l-com.com/iot?cmp=LM1
   - Pressure Sensor (37)
@@ -1284,7 +1269,7 @@ http://www.l-com.com
   - Level Transmitter (14)
 [[}]]
 
-● StratifyOS [[{hardware.mcpu,OS,01_PM.TODO" bgorange>
+# StratifyOS [[{hardware.mcpu,OS,01_PM.TODO" bgorange>
 https://github.com/StratifyLabs/StratifyOS
 
 - fully featured microcontroller operating system designed
@@ -1298,7 +1283,7 @@ https://github.com/StratifyLabs/StratifyOS
 
 [[}]]
 
-● STM32 embedded Soft [[{hardware.mcpu.stm32,01_PM.TODO]]
+# STM32 embedded Soft [[{hardware.mcpu.stm32,01_PM.TODO]]
 https://www.st.com/en/embedded-software/stm32-embedded-software.html
 - Low-level drivers, hardware abstraction layers, and middleware
   including RTOS, USB, TCP/IP, and graphic stacks, are indispensable
@@ -1320,9 +1305,12 @@ KiCad + STM32F4 + USB + Buck converter video reference/test PCB.
 - Learn how to write firmware for the STM32 microcontroller (https://youtu.be/C7-8nUU6e3E)!
 
 You can order this board (incl. SMT assembly) at https://www.jlcpcb.com. Gerber and assembly files are in the relevant repo folders.
+
+- Related: https://github.com/bennymeg/JLC-Plugin-for-KiCad
+ Fabrication Toolkit - An JLC PCB Plugin for KiCad
 [[}]]
 
-● Home IP Standard [[{use_case.domotic,standards,01_PM.TODO]]
+# Home IP Standard [[{use_case.domotic,standards,01_PM.TODO]]
 @[https://www.connectedhomeip.com/]
 Domotic Home IP standard (Amazon, Apple, Google, Zigbee Alliance)
 Amazon, Apple, Google, and the Zigbee Alliance joined together to
@@ -1357,9 +1345,9 @@ and Working Group members encourage device manufacturers to continue
 innovating using technologies available today.A
 [[}]]
 
-● Seeduino [[{hardware.arduino,01_PM.TODO]]
+# Seeduino [[{hardware.arduino,01_PM.TODO]]
 https://opensource.com/article/19/12/seeeduino-nano-review
-• Among the best of the open hardware and software vendors is Seeed,
+* Among the best of the open hardware and software vendors is Seeed,
   the self-proclaimed "IoT Hardware Enabler." I recently started seeing
   the Seeed logo on projects, so I contacted the company to learn about
   the interesting things they're doing. In response, they generously
@@ -1369,7 +1357,7 @@ https://opensource.com/article/19/12/seeeduino-nano-review
   sensor to get me started.
 [[}]]
 
-● i2c bus [[{101,hardware.bus.i2c,01_PM.TODO]]
+# i2c bus [[{101,hardware.bus.i2c,01_PM.TODO]]
 i2c interconnect-to-circuit bus:
 https://github.com/jamesbowman/i2cdriver
 I2CDriver is a tool for controlling any I2C device from your PC's USB
@@ -1378,7 +1366,7 @@ standard USB serial device, so there are no drivers to install. On
 the main site i2cdriver.com, there are drivers for
 [[}]]
 
-● Infrared on RPi [[{hardware.input.IR_camera,01_PM.TODO]]
+# Infrared on RPi [[{hardware.input.IR_camera,01_PM.TODO]]
 - https://www.adafruit.com/product/4469
   Adafruit MLX90640 24x32 IR Thermal Camera Breakout - 110 Degree FoV
   PRODUCT ID: 4469
@@ -1389,11 +1377,11 @@ Flir MOdule for Raspberri-Py/Arduino/...:
 - https://github.com/natronics/Flir-Camera/blob/gh-pages/index.ipynb
 [[}]]
 
-● Tiny walking robot [[{use_case.robotics,01_PM.TODO]]
+# Tiny walking robot [[{use_case.robotics,01_PM.TODO]]
 http://news.mit.edu/2019/micro-robots-walk-0702
 [[}]]
 
-● Libelium + Cloud [[{network.mesh,01_PM.TODO]]
+# Libelium + Cloud [[{network.mesh,01_PM.TODO]]
 http://www.libelium.com/libelium-includes-a-new-feature-on-the-bridge-to-check-connectivity-between-the-devices-and-the-cloud-platform/
 - Libelium includes a new feature on the Bridge to check connectivity
   between the devices and the cloud platform
@@ -1404,7 +1392,7 @@ http://www.libelium.com/libelium-includes-a-new-feature-on-the-bridge-to-check-c
   cloud, which shortens the time it takes to detect connection problems.
 [[}]]
 
-● Antennas for Launch Vehicles [[{network.wireless,01_PM.TODO]]
+# Antennas for Launch Vehicles [[{network.wireless,01_PM.TODO]]
 - Portland State Aerospace
   PSAS is a student aerospace engineering project at Portland
   State University. We’re building ultra-low-cost, open source rockets
@@ -1422,7 +1410,7 @@ http://www.libelium.com/libelium-includes-a-new-feature-on-the-bridge-to-check-c
   data messages in the PSAS rocket framework.
 [[}]]
 
-● ESP8266 [[{hardware.wireless.esp8266,hardware.arduino,01_PM.TODO]]
+# ESP8266 [[{hardware.wireless.esp8266,hardware.arduino,01_PM.TODO]]
 ESP8266: arduino WIFI module.
 - https://www.hwlibre.com/esp8266/
 - https://github.com/natronics/ESP8266-Sensor
@@ -1430,15 +1418,15 @@ ESP8266: arduino WIFI module.
 - https://www.hwlibre.com/programacion-en-arduino/
 [[}]]
 
-● Decoding GPS [[{sensors.gps,01_PM.TODO]]
+# Decoding GPS [[{sensors.gps,01_PM.TODO]]
 https://github.com/natronics/gps
 [[}]]
 
-● 3$ Linux Card [[{price.to_5$,01_PM.TODO]]
+# 3$ Linux Card [[{price.to_5$,01_PM.TODO]]
 https://www.xataka.com/componentes/esta-tarjeta-visita-ordenador-3-dolares-asi-milagro-linux-miniaturizacion
 [[}]]
 
-● G4lie0 projects [[{101,network.wireless.loRa,hardware.mcpu.esp32,network.wirless.satellite,01_PM.TODO" bgorange>
+# G4lie0 projects [[{101,network.wireless.loRa,hardware.mcpu.esp32,network.wirless.satellite,01_PM.TODO" bgorange>
 https://github.com/G4lile0?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=
 https://github.com/G4lile0/Comunicaciones_LoRa !!!!
 
@@ -1454,26 +1442,26 @@ C&P: https://bricolabs.cc/wiki/guias/lora_ttn
   *(agosto 2017).*
 [[}]]
 
-● WiFi/WiMAx/RFID/Ultra WideB... Anthenas [[{network.wireless,hardware.antennas,01_PM.TODO]]
+# WiFi/WiMAx/RFID/Ultra WideB... Anthenas [[{network.wireless,hardware.antennas,01_PM.TODO]]
 http://www.smartant.com/
 [[}]]
 
-● Laser azul (diodo DVD) [[{hardware.input.laser,01_PM.TODO]]
+# Laser azul (diodo DVD) [[{hardware.input.laser,01_PM.TODO]]
 http://www.youtube.com/watch?v=vIwaMNab5pw&feature=related
 [[}]]
 
-● Power-line_communication [[{network.PLC,01_PM.TODO]]
+# Power-line_communication [[{network.PLC,01_PM.TODO]]
 https://en.wikipedia.org/wiki/Power-line_communication
 [[}]]
 
-● WiFI over TV antenna [[{hardware.antennas,network.wireless.LoRa,01_PM.TODO" bgorange>
+# WiFI over TV antenna [[{hardware.antennas,network.wireless.LoRa,01_PM.TODO" bgorange>
 http://www.slashgear.com/rice-university-graduate-student-extends-wifi-for-a-mile-using-empty-tv-stations-28149043/
 [[}]]
 
-● 5G/LTE (Unordered) [[{network.5g,01_PM.TODO]]
-• 5G and the IoT: The UK's first smart factory just switched on
+# 5G/LTE (Unordered) [[{network.5g,01_PM.TODO]]
+* 5G and the IoT: The UK's first smart factory just switched on
 @[https://www.zdnet.com/article/5g-and-the-iot-the-uks-first-smart-factory-just-switched-on/]
-• Intel and Ericsson develop 5G platform
+* Intel and Ericsson develop 5G platform
 @[https://www.zdnet.com/article/intel-and-ericsson-develop-5g-platform/]
 
  B####################################*
@@ -1482,10 +1470,10 @@ http://www.slashgear.com/rice-university-graduate-student-extends-wifi-for-a-mil
 @[https://bellard.org/lte/]
 @[https://www.amarisoft.com/technology/ue-simulator/#software]
 
-• Mirantis: Build ATTs Edge 5G network
+* Mirantis: Build ATTs Edge 5G network
 @[https://www.datacenterknowledge.com/edge-computing/mirantis-help-build-atts-edge-computing-network-5g-open-source]
 
-• 5G SDN: Advanced 5G and Edge Service Provisioning using SDN
+* 5G SDN: Advanced 5G and Edge Service Provisioning using SDN
   About this webinar
     One of the many capabilities operators will be rolling out along
   with their 5G network enhancements is the delivery of Edge-based
@@ -1497,12 +1485,12 @@ http://www.slashgear.com/rice-university-graduate-student-extends-wifi-for-a-mil
 
   Presented by
   Allen Leibovitch, Sr. Marketing Manager of Supermicro, and Jeff Sharpe,
-  Director, 5G/IoT Solutions⅋Architecture
+  Director, 5G/IoT Solutions&Architecture
   Related topics:
   5G SDN SD WAN Edge Computing IoT Edge Servers Network Management
    Connectivity Enterprise Applications
 
-• 5G: Not Just For Carriers:
+* 5G: Not Just For Carriers:
 @[https://mobile.enterprisenetworkingplanet.com/datacenter/datacenter-blog/why-5g-isnt-just-for-carriers.html]
   Now putting that all together could be a project for an organization
   to do on its own, or they can engage from a growing ecosystem of
@@ -1512,29 +1500,29 @@ http://www.slashgear.com/rice-university-graduate-student-extends-wifi-for-a-mil
   - and it's only $300.
 [[}]]
 
-● Best SBC 2019 [[{hardware.SBC,01_PM.price.to_10$,01_PM.low_code,01_PM.TODO]]
+# Best SBC 2019 [[{hardware.SBC,01_PM.price.to_10$,01_PM.low_code,01_PM.TODO]]
 https://www.seeedstudio.com/blog/2019/11/20/best-single-board-computers-of-2019/
 [[}]]
 
-● SMD Motor: resolución: 1/2600000 por vuelta [[{use_case.robotics,hardware.motor.SMD,01_PM.TODO]]
+# SMD Motor: resolución: 1/2600000 por vuelta [[{use_case.robotics,hardware.motor.SMD,01_PM.TODO]]
 http://pcbmotor.com/
 [[}]]
 
-● ploting temp, humi, soil moisture to a webpage! [[{use_case.agriculture,01_PM.TODO]]
+# ploting temp, humi, soil moisture to a webpage! [[{use_case.agriculture,01_PM.TODO]]
 (Python/Flask/javascript)
 https://www.reddit.com/r/raspberry_pi/comments/gm2qxh/i_made_a_data_acquisition_script_that_plots/
 [[}]]
 
-● Control RGBW LED Strip with PWM [[{hardware.output.RGB,01_PM.TODO]]
+# Control RGBW LED Strip with PWM [[{hardware.output.RGB,01_PM.TODO]]
 https://www.easyprogramming.net/raspberrypi/rgbw_led_strip.php
 [[}]]
 
-● Project OWL: Disaster Relief [[{use_case.disaster_relief,01_PM.TODO]]
+# Project OWL: Disaster Relief [[{use_case.disaster_relief,01_PM.TODO]]
 IoT: Linux Foundation open sources disaster-relief IoT firmware: Project OWL
 https://www.zdnet.com/article/linux-foundation-open-sources-disaster-relief-iot-firmware-project-owl/
 [[}]]
 
-● Secutiry Management Services: [[{security,01_PM.TODO]]
+# Secutiry Management Services: [[{security,01_PM.TODO]]
 - Leading IT vendors have begun to offer IoT management systems to
   address security  gaps. For example, it is not uncommon for a single
   organization to have tens of thousands of IoT devices, in contrast to
@@ -1547,7 +1535,7 @@ https://www.zdnet.com/article/linux-foundation-open-sources-disaster-relief-iot-
   security conferences.
 [[}]]
 
-● Massive IoT [[{network.mesh,01_PM.TODO]]
+# Massive IoT [[{network.mesh,01_PM.TODO]]
 - Designing IoT architectures: Learning from Massive Spacecraft
   Telemetry Data Analytics
   by Olivier Parisot, Philippe Pinheiro and Patrik Hitzelberger
@@ -1613,7 +1601,7 @@ https://www.zdnet.com/article/linux-foundation-open-sources-disaster-relief-iot-
     in the increasingly heterogenous collection of devices part of IoT.
 [[}]]
 
-● Titan Pressure Sensor [[{sensors.preasure,sensors.accelerometer,01_PM.TODO]]
+# Titan Pressure Sensor [[{sensors.preasure,sensors.accelerometer,01_PM.TODO]]
 @[https://www.titanfiresystem.com/en/productos/]
 - Accelerometers.
 
@@ -1622,15 +1610,15 @@ https://www.zdnet.com/article/linux-foundation-open-sources-disaster-relief-iot-
 - NFC connections to interact remotely and safely.
 [[}]]
 
-● HomeCMOS [[{01_PM.TODO]]
-• HomeCMOS project is dedicated to developing hobbyist-friendly
+# HomeCMOS [[{01_PM.TODO]]
+* HomeCMOS project is dedicated to developing hobbyist-friendly
   processes for the microfabrication of CMOS and MEMS devices,
   providing documentation for these under the BSD open source licence.
   The project may be some way from being able to produce a usable IC,
   but the team has had success with a number of processes that make use
   of easily available materials, and have demonstrated etching a 600um
   long image into 200nm thick copper film."
-• ... The HomeCMOS team has yet to actually make an integrated circuit or
+* ... The HomeCMOS team has yet to actually make an integrated circuit or
   MEMS device, [Jeri Ellsworth] has shown this is possible by making
   transistors and integrated circuits at home. While there won’t be
   chips with millions of transistors coming out of the HomeCMOS lab
@@ -1638,7 +1626,7 @@ https://www.zdnet.com/article/linux-foundation-open-sources-disaster-relief-iot-
   integration-level tech such as a few logic gates or a regulator.
 [[}]]
 
-● protobuf nano [[{protocol.protobuf,01_PM.TODO]]
+# protobuf nano [[{protocol.protobuf,01_PM.TODO]]
 Nanopb - Protocol Buffers for Embedded Systems
 
 Nanopb is a small code-size Protocol Buffers implementation in ansi
@@ -1653,13 +1641,13 @@ fit for other embedded systems with tight (<10 kB ROM, <1 kB RAM)
 memory constraints.
 [[}]]
 
-● sparkfun [[{hardware.raspberry,01_PM.TODO]]
+# sparkfun [[{hardware.raspberry,01_PM.TODO]]
 https://www.sparkfun.com/
 Approved RPi Reseller.A
  Web has tutorials for GPSs, FRID, FPGAs,...
 [[}]]
 
-● Light Weight GL UIs [[{hardware.ouput.ui,low_memory,hardware.mcpu.stm,hardware.mcpu.PIC,hardware.mcpu.NXP,hardware.raspberry,hardware.mcpu.ESP32,01_PM.TODO]]
+# Light Weight GL UIs [[{hardware.ouput.ui,low_memory,hardware.mcpu.stm,hardware.mcpu.PIC,hardware.mcpu.NXP,hardware.raspberry,hardware.mcpu.ESP32,01_PM.TODO]]
 https://github.com/GridPlus/lvgl
  LittlevGL provides everything you need to create a Graphical User
 Interface (GUI) on embedded systems with easy-to-use graphical
@@ -1687,9 +1675,9 @@ Supported devices
 Basically, every modern controller - which is able to drive a display
 suitable to run LittlevGL. The minimal requirements:
 - 16, 32 or 64-bit microcontroller or processor
-- ˃ 16 MHz clock speed
-- ˃ 8 kB RAM for static data and ˃ 2 KB RAM for dynamic data (graphical objects)
-- ˃ 64 kB flash program memory
+- > 16 MHz clock speed
+- > 8 kB RAM for static data and > 2 KB RAM for dynamic data (graphical objects)
+- > 64 kB flash program memory
 - Optionally ~1/10 screen sized memory for buffered drawing (on 240 × 320, 16-bit colors it's 15 kB)
 
 some supported platforms include:
@@ -1703,23 +1691,23 @@ some supported platforms include:
 - Quectell M66
 [[}]]
 
-● Designing PCBs in Kicad and PcbNew: [[{hardware.pcb.KiCad,dev_lang.python,01_PM.TODO]]
+# Designing PCBs in Kicad and PcbNew: [[{hardware.pcb.KiCad,dev_lang.python,01_PM.TODO]]
 @[https://store.curiousinventor.com/guides/kicad/pcb_layout]
 
-● KiKit PCB Automation
+# KiKit PCB Automation
 @[https://github.com/yaqwsx/KiKit]
-• Python library and CLI tool to automate several tasks in a
+* Python library and CLI tool to automate several tasks in a
   standard KiCAD workflow like:
   · panelization of the boards (see examples)
   · exporting manufacturing data
   · building board presentation pages.
 [[}]]
 
-● precise NTP time for ESP32 [[{hardware.mcpu.esp32,01_PM.TODO]]
+# precise NTP time for ESP32 [[{hardware.mcpu.esp32,01_PM.TODO]]
 https://github.com/SensorsIot/DCF77-Transmitter-for-ESP32
 [[}]]
 
-● NM1801100 LoRa Bluethooth 5 [[{network.wireless.loRa,network.bluetooth,hardware.network,01_PM.TODO]]
+# NM1801100 LoRa Bluethooth 5 [[{network.wireless.loRa,protocol.bluetooth,hardware.network,01_PM.TODO]]
 https://www.infoq.com/news/2020/12/NM180100-ultra-low-energy-iot/
 
 - low power consumption in all operating states
@@ -1745,10 +1733,10 @@ https://www.infoq.com/news/2020/12/NM180100-ultra-low-energy-iot/
 - The combination of both technologies facilitates both edge and endpoint computing.
 [[}]]
 
-● Fiware.org [[{use_case.smartcities,use_case.agriculture,standards,01_PM.TODO]]
+# Fiware.org [[{use_case.smartcities,use_case.agriculture,standards,01_PM.TODO]]
 @[https://www.fiware.org/developers/catalogue/]
 @[https://www.linkedin.com/mwlite/company/fiware]
-• FIWARE is a curated framework of open source platform components
+* FIWARE is a curated framework of open source platform components
   which can be assembled together and with other third-party platform
   components to accelerate the development of Smart Solutions. The main
   and only mandatory component of any “Powered by FIWARE” platform
@@ -1757,16 +1745,16 @@ https://www.infoq.com/news/2020/12/NM180100-ultra-low-energy-iot/
   context information, enabling to perform updates and bring access to
   context.
 
-• 458+ Members, 26 iHubs, 250+ Cities
+* 458+ Members, 26 iHubs, 250+ Cities
 
-• A curated framework of Open Source Platform components to
+* A curated framework of Open Source Platform components to
   accelerate the development of Smart Solutions
 
-• Sectors: Agrifood, cities, energy, industry.
+* Sectors: Agrifood, cities, energy, industry.
 
-• NGSI-LD: https://en.wikipedia.org/wiki/NGSI-LD
+* NGSI-LD: https://en.wikipedia.org/wiki/NGSI-LD
 
-• Orion Context Broker
+* Orion Context Broker
   https://www.slideshare.net/fermingalan/orion-context-broker-20191021
   C++ implementation of the NGSIv2 REST API binding
   developed as a part of the FIWARE platform allowing you to manage the entire lifecycle of
@@ -1775,40 +1763,40 @@ https://www.infoq.com/news/2020/12/NM180100-ultra-low-energy-iot/
   through updates and queries ... subscribe to context information
   so when some condition occurs (e.g. the context elements have changed)
   a notification is sent.
-• https://github.com/telefonicaid/fiware-orion
-• https://github.com/Fiware/context.Orion-LD
+* https://github.com/telefonicaid/fiware-orion
+* https://github.com/Fiware/context.Orion-LD
 
 [[}]]
 
-● shenanigans 2: desktop on a Kindle [[{hardware.mcpu.NXP,01_PM.TODO]]
+# shenanigans 2: desktop on a Kindle [[{hardware.mcpu.NXP,01_PM.TODO]]
 https://nns.ee/blog/2019/04/14/chroot-shenanigans-2.html
 [[}]]
 
-● Atmel AVR [[{price.to_1$,hardware.mcpu.avr,hardware.arduino,01_PM.TODO]]
-• family of microcontrollers developed since 1996 by Atmel,
+# Atmel AVR [[{price.to_1$,hardware.mcpu.avr,hardware.arduino,01_PM.TODO]]
+* family of microcontrollers developed since 1996 by Atmel,
   acquired by Microchip Technology in 2016.
-• Modified Harvard architecture 8-bit RISC single-chip microcontrollers.
-• One of the first to use on-chip flash memory for program storage.
+* Modified Harvard architecture 8-bit RISC single-chip microcontrollers.
+* One of the first to use on-chip flash memory for program storage.
   (vs one-time programmable ROM/EPROM/EEPROM)
-• Especially common in hobbyist and educational embedded
+* Especially common in hobbyist and educational embedded
   applications ( Arduino boards).
   https://books.google.es/books?id=TE54lJ7XHp4C&printsec=frontcover&dq=AVR&redir_esc=y&hl=es#v=onepage&q=AVR&f=false
 [[}]]
 
-● TypeScriptToLua [[{01_PM.TODO]]
+# TypeScriptToLua [[{01_PM.TODO]]
 https://typescripttolua.github.io/
 [[}]]
 
-● counterfeit DS18B20 [[{sensors.temperature,,01_PM.TODO]]
+# counterfeit DS18B20 [[{sensors.temperature,,01_PM.TODO]]
 " How to tell original from fake DS18B20 temperature sensors "
 @[https://github.com/cpetrich/counterfeit_DS18B20]
 [[}]]
 
-• HT stands for Holtek [[{use_case.alarms,hardware.pcb,hardware.mcpu.Holtek,01_PM.price.to_0.5$,network.wireless.lora,01_PM.TODO]]
+* HT stands for Holtek [[{use_case.alarms,hardware.pcb,hardware.mcpu.Holtek,01_PM.price.to_0.5$,network.wireless.lora,01_PM.TODO]]
 https://www.holtek.com/productdetail?p_p_auth=q0FpqQ4D
 - HT48C06: 8-bit mCPU, 64 bytes of RAM, 1024 words of ROM, 13 GPIO, 4/8mhz.
 
-• https://github.com/openwch/ch32v003  [[{hardware.mcpu,oltek,01_PM.price.to_0.1$,01_PM.TODO]]
+* https://github.com/openwch/ch32v003  [[{hardware.mcpu,oltek,01_PM.price.to_0.1$,01_PM.TODO]]
   CH32V003: ultra-cheap RISC-V MCU:
   - sells for under $0.10 !!!!
 
@@ -1831,67 +1819,67 @@ https://www.holtek.com/productdetail?p_p_auth=q0FpqQ4D
   - Package: TSSOP20, QFN20, SOP16, SOP8
 [[}]]
 
-• pregnant chip powerful as first IBM PCs: 2 photosensors + 2 LEDs + LCD + battery + mCPU.
+* pregnant chip powerful as first IBM PCs: 2 photosensors + 2 LEDs + LCD + battery + mCPU.
 @[https://twitter.com/Foone/status/1301707401024827392]
  "... When the wick gets wet, it starts conducting electricity, and this device turns on..."
 
-• 2017-11-12: https://en.ctimes.com.tw/DispProduct.asp?O=HK1BFBFE2U8SAA00PI
+* 2017-11-12: https://en.ctimes.com.tw/DispProduct.asp?O=HK1BFBFE2U8SAA00PI
   Holtek Announces Intelligent Fire Alarm MCU SIP Module Integrated with Semtech’s LoRa
 [[}]]
 
-● ETSI IoT [[{standards,01_PM.TODO]]
-• Machine to Machine Solutions (M2M)
+# ETSI IoT [[{standards,01_PM.TODO]]
+* Machine to Machine Solutions (M2M)
 @[https://www.etsi.org/technologies/internet-of-things]
 [[}]]
 
-● DYI: automated irrigation system [[{use_case.agriculture,01_PM.TODO]]
+# DYI: automated irrigation system [[{use_case.agriculture,01_PM.TODO]]
 https://medium.com/@patrickhallek1998/automated-smart-home-irrigation-system-9061c391f8e2
 [[}]]
 
-● NodeMCU [[{hardware.mcu.NodeMCU,01_PM.TODO]]
+# NodeMCU [[{hardware.mcu.NodeMCU,01_PM.TODO]]
 https://en.m.wikipedia.org/wiki/NodeMCU
 
-• NodeMCU is a low-cost open source IoT platform.[4][5] It initially
+* NodeMCU is a low-cost open source IoT platform.[4][5] It initially
   included firmware which runs on the ESP8266 Wi-Fi SoC from Espressif
   Systems, and hardware which was based on the ESP-12 module.[6][7]
   Later, support for the ESP32 32-bit MCU was added.
 [[}]]
 
-● Smallest AP+Repeater [[{network.wifi,,01_PM.TODO]]
+# Smallest AP+Repeater [[{network.wifi,,01_PM.TODO]]
 Digitron on Tindie
 https://www.tindie.com/products/tech/smallest-access-point-repeater/
 Convert an existing wired Ethernet socket to a wireless access point.
 [[}]]
 
-● Mininet [[{network,01_PM.TODO]]
+# Mininet [[{network,01_PM.TODO]]
 @[http://mininet.org/]
-• Instant Virtual Network on your Laptop
-• Mininet creates a realistic virtual network, running real kernel,
+* Instant Virtual Network on your Laptop
+* Mininet creates a realistic virtual network, running real kernel,
   switch and application code in seconds, with a single command.
-• easily interact withyour network using the MininetCLI(and
+* easily interact withyour network using the MininetCLI(and
   API),customize and share with others.
-• deploy it on real hardware.
-• use-cases: development, teaching, research.
+* deploy it on real hardware.
+* use-cases: development, teaching, research.
 
-• https://containernet.github.io/
+* https://containernet.github.io/
   Containernet is a fork of the famous Mininet network emulator and
   allows to use Docker containers as hosts in emulated network
   topologies.
   e.g: NFV multi-PoP infrastructure emulator created by SONATA-NFV
   project, now part of the OpenSource MANO (OSM).
 
-● MaxiNet
-• Distributed Network Emulation
+# MaxiNet
+* Distributed Network Emulation
 @[http://maxinet.github.io/]
 [[}]]
 
-● Industrial Laser Machines [[{use_case.industrial,hardware.laser,01_PM.TODO]]
+# Industrial Laser Machines [[{use_case.industrial,hardware.laser,01_PM.TODO]]
 https://www.tlm-laser.com/ Laser technology
 [[}]]
 
-● RPi Alternatives [[{hardware.sbc,01_PM.TODO]]
+# RPi Alternatives [[{hardware.sbc,01_PM.TODO]]
 @[https://itsfoss.com/raspberry-pi-zero-alternatives/]
-• Banana Pi BPI M2 Zero ~18$
+* Banana Pi BPI M2 Zero ~18$
   - Allwinner H2+ Quad-core Cortex-A7 H265/HEVC 1080P with Mali400MP2 for the GPU
   - 512M DDR3(shared with GPU)
   - 40 Pins Header,compatible with Raspberry Pi 3
@@ -1899,20 +1887,20 @@ https://www.tlm-laser.com/ Laser technology
   - A CSI input connector Camera
   - Power and Reset Button
   - Mini HDMI Output
-• Banana Pi BPI-M2 Magic (BPi-M2M) ~20$
-• Banana Pi BPI-P2 Maker ~ 13$ / 19$PoE
-• Orange Pi Zero LTS ~ 9.49$/256MB, 11.49$ (512M)
-• Orange Pi i96 - 8.8$
-• Orange Pi PC - 15$/1GB RAM.
-• Orange Pi One , Orange Pi Lite
-• NanoPi Neo LTS, 9.99$ 4cmx4cm!!
-• Zero Pi, 9.99$, supports OpenWRT.
-• NanoPi NEO 2, 19.99$,
+* Banana Pi BPI-M2 Magic (BPi-M2M) ~20$
+* Banana Pi BPI-P2 Maker ~ 13$ / 19$PoE
+* Orange Pi Zero LTS ~ 9.49$/256MB, 11.49$ (512M)
+* Orange Pi i96 - 8.8$
+* Orange Pi PC - 15$/1GB RAM.
+* Orange Pi One , Orange Pi Lite
+* NanoPi Neo LTS, 9.99$ 4cmx4cm!!
+* Zero Pi, 9.99$, supports OpenWRT.
+* NanoPi NEO 2, 19.99$,
 •*La Frite, $20,  Support  H.264, H.265, VP9 up to 1080p 60fps.*
   IR Receiver, 40 GPIO
-• Onion Omega2+, 13$: IoT centric running Linux Embedded Dev. Env. (LEDE)
+* Onion Omega2+, 13$: IoT centric running Linux Embedded Dev. Env. (LEDE)
   derived from OpenWRT.
-• VoCore2: 17.99$, *1"x1"*
+* VoCore2: 17.99$, *1"x1"*
   - MediaTek MT7628, 580 MHz, MIPS 24K
   - 128MB RAM, DDR2 166MHz
   - Ethernet – 1 port/5 ports, up to 100Mbps
@@ -1921,7 +1909,7 @@ https://www.tlm-laser.com/ Laser technology
   - One on board U.FL slot (Antenna Connector)
 [[}]]
 
-● awesome uPython [[{dev_lang.python,01_PM.TODO]]
+# awesome uPython [[{dev_lang.python,01_PM.TODO]]
 https://github.com/mcauser/awesome-micropython
 A curated list of awesome MicroPython libraries, frameworks, software and resources.
 
@@ -1944,7 +1932,7 @@ Contents
  · Storage         MISCELLANEOUS
 [[}]]
 
-● https://github.com/paradise-fi/RoFI [[{use_case.robotics,01_PM.TODO]]
+# https://github.com/paradise-fi/RoFI [[{use_case.robotics,01_PM.TODO]]
 Project website: https://rofi.fi.muni.cz/
 
 RoFI is a platform of modular robots developed at Faculty of
@@ -1959,13 +1947,13 @@ For an in-depth description of the RoFI platform see the project
 website.
 [[}]]
 
-● Thingsboard [[{101,01_PM.low_code,qa.control_panel,use_case.agriculture,use_case.smart_energy,use_case.fleet_tracking,01_PM.TODO]]
+# Thingsboard [[{101,01_PM.low_code,qa.control_panel,use_case.agriculture,use_case.smart_energy,use_case.fleet_tracking,01_PM.TODO]]
 @[https://github.com/thingsboard/thingsboard]
 ThingsBoard is an open-source IoT platform for data collection,
 processing, visualization, and device management.
 [[}]]
 
-● low cost lidars [[{use_case.automotive,hardware.input.lidar,01_PM.TODO]]
+# low cost lidars [[{use_case.automotive,hardware.input.lidar,01_PM.TODO]]
   https://www.cepton.com/
   "Low-cost" lidars
    - Range of up to 200 m at 10%
@@ -1973,16 +1961,16 @@ processing, visualization, and device management.
    - Field of view of up to 120° (H) x 20° (V)
 [[}]]
 
-● Ditto: DIgital twins [[{protocol.digital_twins,01_PM.TODO]]
-• Ditto acts as IoT middleware, providing an abstraction layer for
+# Ditto: DIgital twins [[{protocol.digital_twins,01_PM.TODO]]
+* Ditto acts as IoT middleware, providing an abstraction layer for
   IoT solutions interacting with physical devices via the digital twin
   pattern.
 [[}]]
 
-● Contiki [[{os.contiki,01_PM.TODO]]
+# Contiki [[{os.contiki,01_PM.TODO]]
 https://github.com/contiki-ng/contiki-ng
 
-• Contiki-NG is an open-source, cross-platform operating system for
+* Contiki-NG is an open-source, cross-platform operating system for
   Next-Generation IoT devices. It focuses on dependable (secure and
   reliable) low-power communication and standard protocols, such as
   IPv6/6LoWPAN, 6TiSCH, RPL, and CoAP. Contiki-NG comes with extensive
@@ -1990,15 +1978,15 @@ https://github.com/contiki-ng/contiki-ng
   development flow for smooth integration of community contributions.
 [[}]]
 
-● LoRaWan Course [[{101,network.wireless.lora,01_PM.TODO]]
+# LoRaWan Course [[{101,network.wireless.lora,01_PM.TODO]]
 https://www.thethingsnetwork.org/docs/lorawan/
 https://www.thethingsnetwork.org/achievements/a/the-things-certified-fundamentals/
 [[}]]
 
-● 6LoWPAN vs LPWAN [[{101,network.wireless.lora,_doc_has.comparative,01_PM.TODO]]
+# 6LoWPAN vs LPWAN [[{101,network.wireless.lora,_doc_has.comparative,01_PM.TODO]]
 @[https://www.researchgate.net/publication/316236998_Comparison_of_6LoWPAN_and_LPWAN_for_the_Internet_of_Things/link/5a227e570f7e9b71dd03af85/download]
 
-• In general, TWO MAIN CATEGORIES OF NETWORKS ARE USED IN THE IOT:
+* In general, TWO MAIN CATEGORIES OF NETWORKS ARE USED IN THE IOT:
 
   • short-range/low-power:
     IPv6 over low-power wireless personal area networks (6LoWPAN) are
@@ -2035,7 +2023,7 @@ https://www.thethingsnetwork.org/achievements/a/the-things-certified-fundamental
                                         mono|bi-irectional com., freq.
                                         hopping (avoid signal interception)
                                       • SigFox is NOT an open protocol.
-                                      • 1-5$ LoRawAN, 5$ SigFxo              • ˂5$ per client-module
+                                      • 1-5$ LoRawAN, 5$ SigFxo              • <5$ per client-module
     • Gover.Body: IEEE                • Gov.Body: LoRa Alliance/Sigfox       • Governing Body: 3GPP
     • Coverage: ???                   • 149 dB LoRaWAN, 164 SigFox           • 160 dB
     • Location Support: ???           • Location Support:                    • Needs GPS
@@ -2049,9 +2037,9 @@ https://www.thethingsnetwork.org/achievements/a/the-things-certified-fundamental
 
   *1: https://www.semtech.com/lora
 
-● LoRaWAN security:
+# LoRaWAN security:
 @[https://www.researchgate.net/publication/321362926_Using_blockchain_to_build_trusted_LoRaWAN_sharing_server]
-• LoRaWAN protocol is equipped with AES symmetric crypto protection,
+* LoRaWAN protocol is equipped with AES symmetric crypto protection,
   with well-known  keys to IoT node and network gateway
   mutual authentication, integrity protection and confidentiality.
   providing both signing and encryption for parts of network packages.
@@ -2076,16 +2064,16 @@ https://www.thethingsnetwork.org/achievements/a/the-things-certified-fundamental
       new 128-bit keys: the AppSKey and the NwkSKey.
    After joining, all future messages will be encrypted and signed.
 
-• PROBLEM: How do we trust gateway in public WANs?
+* PROBLEM: How do we trust gateway in public WANs?
 [[}]]
 
-● Connect Drogue IoT with Quarkus over LoRaWAN [[{network.wireless.lora,network.cloud,dev_lang.java,hardware.mcpu.STM32,01_PM.TODO]]
+# Connect Drogue IoT with Quarkus over LoRaWAN [[{network.wireless.lora,network.cloud,dev_lang.java,hardware.mcpu.STM32,01_PM.TODO]]
 @[https://developers.redhat.com/articles/2021/06/10/connect-quarkus-applications-drogue-iot-and-lorawan]
-• Drogue Device: firmware framework written in Rust with an
+* Drogue Device: firmware framework written in Rust with an
   actor-based programming model.
-• Drogue Cloud:  thin layer of services creating an IoT-friendly API
+* Drogue Cloud:  thin layer of services creating an IoT-friendly API
   for existing technologies like Knative/Kafka, cloud friend (CloudEvents),
-• Drogue Project aims at providing an overall solution for IoT+Cloud (vs
+* Drogue Project aims at providing an overall solution for IoT+Cloud (vs
   separate components)
 
   IoT Dev ··············· →  HTTP Endpoint ┐
@@ -2103,24 +2091,24 @@ https://www.thethingsnetwork.org/achievements/a/the-things-certified-fundamental
                                               │  Events)    │
                                               └─────────────┘
 
-• Drogue Device (Rust) code snippet exchanging data:
+* Drogue Device (Rust) code snippet exchanging data:
 
   let led = match self.config.user_led
       .state().unwrap_or_default() {
-        true =˃ "on",
-        false =˃ "off",
+        true => "on",
+        false => "off",
   };
-  let mut tx0 = String::˂heapless::consts::U32˃::new();
-  write!(⅋mut tx0, "ping:{},led:{}", self.counter, led).ok();
+  let mut tx0 = String::<heapless::consts::U32>::new();
+  write!(&mut tx0, "ping:{},led:{}", self.counter, led).ok();
   let tx0 = tx0.into_bytes();
   let mut rx0 = [0; 64];
   let result = cfg.lora
-      .request(LoraCommand::SendRecv(⅋tx0, ⅋mut rx0))
+      .request(LoraCommand::SendRecv(&tx0, &mut rx0))
       .unwrap()
       .await;          ← async Rust running on embedded *STM32 Cortex-M0* device.
                          (thanks to embassy framework+drivers in Drogue Device)
 
-• Quarkus server:
+* Quarkus server:
   IoT device reports sends its current state and
   server code "reconcile loop" derives the desired
   state from that triggering a command to be sent back
@@ -2149,11 +2137,11 @@ https://www.thethingsnetwork.org/achievements/a/the-things-certified-fundamental
       return command;
   }
 
-• Quarkus App consumes "CloudEvents"
+* Quarkus App consumes "CloudEvents"
   (standardized representation of events for different messaging
    stacks -Kafka, HTTP, and MQTT-
 
-• Drogue Cloud:
+* Drogue Cloud:
   How do we connect Quarkus with the actual device?
   we could reimplement existing (TTN and others) API, registering
   devices, processing events. Alternatively, we use Drogue Cloud
@@ -2194,10 +2182,10 @@ https://www.thethingsnetwork.org/achievements/a/the-things-certified-fundamental
   $*}'                                                   *
 [[}]]
 
-● Arduino [[{hardware.arduino,01_PM.TODO]]
+# Arduino [[{hardware.arduino,01_PM.TODO]]
 https://github.com/tldr-pages/tldr/blob/master/pages/common/arduino.md
 
-• Arduino Studio IDE
+* Arduino Studio IDE
   https://github.com/arduino/Arduino/blob/master/build/shared/manpage.adoc.
 
   $ arduino --verify {{path/to/file.ino}}  ← Build a sketch
@@ -2218,37 +2206,37 @@ https://github.com/tldr-pages/tldr/blob/master/pages/common/arduino.md
   $ arduino --save-prefs                   ← Save any (changed) preferences to preferences.txt
 [[}]]
 
-● Fibocom [[{network.wireless.5G,01_PM.TODO]]
-• Fibocom: leading global supplier of wireless communication
+# Fibocom [[{network.wireless.5G,01_PM.TODO]]
+* Fibocom: leading global supplier of wireless communication
   modules and solutions in IoT.
-• first wireless communication module producer listed on the
+* first wireless communication module producer listed on the
   A-share market in China (stock code: 300638).
-• end-to-end IoT wireless communication solutions for telcos,
+* end-to-end IoT wireless communication solutions for telcos,
   IoT equipment manufacturers, and IoT system integrators.
-• wireless communication modules including 5G/ 4G, LTE Cat 1,
+* wireless communication modules including 5G/ 4G, LTE Cat 1,
   3G, 2G, NB-IoT, LTE Cat M LPWA IoT cellular modules, Android
   smart modules and automotive communication modules for
   vehicle applications.
 [[}]]
 
-● The things network (TTN) [[{network.wireless.lora.TTN,01_PM.TODO]]
+# The things network (TTN) [[{network.wireless.lora.TTN,01_PM.TODO]]
 @[https://www.thethingsnetwork.org/]
-• 42.2M messages per day (2022-01-14)
-• 151 countries
-• 998 Certified Developers
-• 162K members
-• 20.2K Gateways
-• 1.5M YouTube views
-• 650+ GitHub Starts.
+* 42.2M messages per day (2022-01-14)
+* 151 countries
+* 998 Certified Developers
+* 162K members
+* 20.2K Gateways
+* 1.5M YouTube views
+* 650+ GitHub Starts.
 [[}]]
 
-● Sensors, Transducers and Detectors [[{sensors,01_PM.TODO]]
+# Sensors, Transducers and Detectors [[{sensors,01_PM.TODO]]
 IoT:  | Engineering360
 https://www.globalspec.com/productfinder/sensors_transducers_detectors
 [[}]]
 
-● L-Com Antennas [[{use_case.fleet_tracking,hardware.antennas,network.wireless,01_PM.TODO]]
-• L-com Introduces New Antennas to Address Wi-Fi 6/6e, MIMO and CBRS Applications
+# L-Com Antennas [[{use_case.fleet_tracking,hardware.antennas,network.wireless,01_PM.TODO]]
+* L-com Introduces New Antennas to Address Wi-Fi 6/6e, MIMO and CBRS Applications
   "...  We have just launched a new series of directional flat panel
    and omnidirectional antennas to address a wide range of wireless
    connectivity applications.
@@ -2260,17 +2248,17 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
   "
 [[}]]
 
-● micropython-monitor [[{dev_lang.python,hardware.mcpu,01_PM.TODO]]
+# micropython-monitor [[{dev_lang.python,hardware.mcpu,01_PM.TODO]]
 @[https://github.com/peterhinch/micropython-monitor]
 
 " A monitor for realtime MicroPython code "
 
-• library initially designed to characterise uasyncio programs
+* library initially designed to characterise uasyncio programs
 @[https://docs.micropython.org/en/latest/library/uasyncio.html]
  *It may also be used to study any code whose behaviour may change *
  *dynamically such as threaded code or applications using interrupts.*
 
-• The device under test (DUT) is linked uni-directionally to a Rpy Pico.
+* The device under test (DUT) is linked uni-directionally to a Rpy Pico.
   (UART or SPI). Rpy Pico displays the behaviour of the DUT by pin
   changes and optional print statements. A logic analyser or scope
   provides a view of the realtime behaviour of the code.
@@ -2284,7 +2272,7 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
   Debug statements are inserted at key points in the DUT code.
   causing state changes on Pico pins.
 
-• A common cause of problems in asynchronous code is the case where a
+* A common cause of problems in asynchronous code is the case where a
   task blocks for a period, hogging the CPU, stalling the scheduler and
   preventing other tasks from running. Determining the task responsible
   can be difficult, especially as excessive latency may only occur when
@@ -2292,7 +2280,7 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
   Ex.: a task hogs the CPU for 500ms, causing the scheduler to be
   unable to schedule other tasks.
 
-• Test and demo scripts:
+* Test and demo scripts:
   · quick_test.py code being monitored at the point when a task hogs
     the CPU.
   · full_test.py Tests task timeout and cancellation, also the handling
@@ -2308,23 +2296,23 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
     maximum.
 [[}]]
 
-● circuit python [[{101,hardware.mcpu,01_PM.low_code,dev_lang.python,01_PM.TODO]]
+# circuit python [[{101,hardware.mcpu,01_PM.low_code,dev_lang.python,01_PM.TODO]]
 @[https://circuitpython.org/]
 " The easiest way to program microcontrollers "
-• CircuitPython is a programming language designed to simplify
+* CircuitPython is a programming language designed to simplify
   experimenting and learning to code on low-cost microcontroller boards.
-• With CircuitPython, there are no upfront desktop downloads needed.
+* With CircuitPython, there are no upfront desktop downloads needed.
   Once you get your board set up, open any text editor, and start
   editing code. It's that simple.
 [[}]]
 
-● How to build low cost IoT sensor networks: [[{101,sensors.sound,sensors.motion,01_PM.TODO]]
+# How to build low cost IoT sensor networks: [[{101,sensors.sound,sensors.motion,01_PM.TODO]]
 @[https://www.networkworld.com/article/3233309/how-to-build-low-cost-iot-sensor-networks.html]
-• @[./SensorFusionForPublicSpaceUtilizationMonitoringInASmartCity.pdf] is simply the best
+* @[./SensorFusionForPublicSpaceUtilizationMonitoringInASmartCity.pdf] is simply the best
   read for IoT product designers, developers and implementers.
   Original Source: @[https://arxiv.org/pdf/1710.01581]
-• Sound sensors over video sensors were chosen ... Cameras are computationally expensive,
-• Renewable Wide Area Sensor Network (RWSN) eliminates hardwired power and
+* Sound sensors over video sensors were chosen ... Cameras are computationally expensive,
+* Renewable Wide Area Sensor Network (RWSN) eliminates hardwired power and
   battery replacement.
   It uses low-power XBee transmitter modules (IEEE 802.15.4 ) to interconnect the sensors
   to the Xbee receiver. Raspberry Pi used as backhaul.
@@ -2335,25 +2323,25 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
   network to provide calibration data to remove the effects of
   environmental conditions, such as rain interfering with sound
   readings.
-• Inexpensive Pyroelectric Infrared (PIR) sensors, also known as
+* Inexpensive Pyroelectric Infrared (PIR) sensors, also known as
   passive infrared sensors, were used to detect motion. And inexpensive
   analog sound sensors, essentially microphones, were used to record
   sound.
 [[}]]
 
-● Non-classified/TODO: [[{01_PM.TODO]]
-• https://github.com/azlux/log2ram
+# Non-classified/TODO: [[{01_PM.TODO]]
+* https://github.com/azlux/log2ram
   Like ramlog for systemd (on debian 8 jessie for example).
   Usefull for RaspberryPi for not writing on the SD card all the time.
   You need it because your SD card doesn't want to suffer anymore!
 
-• http://www.ibertronica.es/
+* http://www.ibertronica.es/
 
-• https://www.infoq.com/news/2022/07/node-red-3-released/
+* https://www.infoq.com/news/2022/07/node-red-3-released/
 
-• TODO: Clasify properly LoRA, LoWPAN, LoRaWan
+* TODO: Clasify properly LoRA, LoWPAN, LoRaWan
 
-• Combining OSTree and SW Containers for reliable IoT Device updates
+* Combining OSTree and SW Containers for reliable IoT Device updates
   https://www.cnx-software.com/2021/06/07/combining-ostree-and-sw-containers-for-reliable-iot-device-updates/
 
   CNXSoft: This is a guest post by Drew Moseley, Technical Solutions
@@ -2362,12 +2350,12 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
   system build and deployment tool, as well as Docker software
   containers.
 
-• https://1nce.com/es/ : Tarifa plana IoT M2M e IoT
+* https://1nce.com/es/ : Tarifa plana IoT M2M e IoT
 
-• Ubuntu Core 22 Brings Real-Time Compute Support for IoT Industrial Applications
+* Ubuntu Core 22 Brings Real-Time Compute Support for IoT Industrial Applications
   https://www.infoq.com/news/2022/06/ubuntu-core-22-real-time/?itm_source=txt_world_domination
 
-• C&P from https://www.linkedin.com/:
+* C&P from https://www.linkedin.com/:
   I'm happy to complete the RTL to GDSII flow of my first tape-out
   using completely open-source IC design tools as my graduation project
   under supervision of Prof. Ali Ziya Alkar. It was a really important
@@ -2380,10 +2368,10 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
   Muhammet Bahadır Türkoğlu and Berk Kışınbay from Yongatek
   Microelectronics for guidance through design.
 
-• Investigadores liberan herramienta capaz cortar la luz a un barrio.  Security, IoT:
+* Investigadores liberan herramienta capaz cortar la luz a un barrio.  Security, IoT:
   https://www.businessinsider.es/investigadores-espanoles-liberan-herramienta-capaz-dejar-luz-barrios-enteros-1026301 
 
-• A Quick Look at Advanced IoT Sensors for the Enterprise Going Digital
+* A Quick Look at Advanced IoT Sensors for the Enterprise Going Digital
   https://www.infoq.com/articles/iot-sensors-enterprise/
     Advanced sensors include stereo vision sensors, electricity
   sensors, inclination sensors, object detection, and others
@@ -2391,21 +2379,21 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
   which have very low power requirements and can be deployed at larger
   scale
 
-• http://chipnetics.com/ (vlang sponsor)
+* http://chipnetics.com/ (vlang sponsor)
 
-• postmarketOS 21.12 improves Firefox UI and support IoT, kiosk:
+* postmarketOS 21.12 improves Firefox UI and support IoT, kiosk:
   https://www.itsfoss.net/postmarketos-21-12-improves-firefox-ui-and-support/amp/
 
-• https://github.com/koenvervloesem/bluetooth-low-energy-applications
+* https://github.com/koenvervloesem/bluetooth-low-energy-applications
   Code examples, errata and additional tips and references to
   interesting projects for the book "Develop your own Bluetooth Low
   Energy Applications for Raspberry Pi, ESP32 and nRF52 with Python,
   Arduino and Zephyr"
 
-• https://github.com/sam-peach/SSD1306-OLED-Emulator
+* https://github.com/sam-peach/SSD1306-OLED-Emulator
 [[}]]
 
-● Ockam.io [[{]]
+# Ockam.io [[{]]
   https://www.infoq.com/news/2019/01/ockam-blockchain-iot-identity
   Ockam is a serverless platform that aims to make it easier for IoT
   developers to add blockchain-based identity, trust, and interoperability
@@ -2422,20 +2410,20 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
    DIDs are URLs that relate a DID subject to means for trustable interactions with that subject.
 [[}]]
 
-● If you're into cybersecurity, you have probably heard of JWT
+# If you're into cybersecurity, you have probably heard of JWT
   (JSON Web Token) and OAuth tokens, but have you heard of a signed CWT
   (Cbor web token)? They are great for light-weight crypto applications
   and IoT ... https://lnkd.in/ezdCCHPp
 
-● https://github.com/oxidecomputer/hubris
+# https://github.com/oxidecomputer/hubris
    Hubris is a microcontroller operating environment designed for
   deeply-embedded systems with reliability requirements. Its design was
   initially proposed in RFD41, but has evolved considerably since then.
 
-● https://github.com/SelfTide/ESP_Drone
+# https://github.com/SelfTide/ESP_Drone
   Drone using ESP for flight controller and video
 
-● https://github.com/aicodix/modem
+# https://github.com/aicodix/modem
   Simple OFDM modem for transceiving datagrams
   Reading
   - Robust frequency and timing synchronization for OFDM
@@ -2443,7 +2431,7 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
   - On Timing Offset Estimation for OFDM Systems
     by H. Minn, M. Zeng, and V. K. Bhargava - 2000
 
-● https://github.com/blackmagic-debug/blackmagic  [[{qa.ux]]
+# https://github.com/blackmagic-debug/blackmagic  [[{qa.ux]]
   The Black Magic Probe is a modern, in-application debugging tool for
   embedded microprocessors. It allows you see what is going on 'inside'
   an application running on an embedded microprocessor while it
@@ -2458,6 +2446,47 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
   connecting to a serial port.
 [[}]]
 
-● ESP32 vs STM32 [[{02_doc_has.comparative,hardware.esp32,hardware.stm32]]
+# ESP32 vs STM32 [[{02_doc_has.comparative,hardware.esp32,hardware.stm32]]
   https://www.utmel.com/components/esp32-vs-stm32-which-one-is-better?id=1383
 [[}]]
+
+# Aluminum-coated fiber-optic sensors promise to monitor industrial facility conditions [[{sensors.structure,use_case.industrial,year.2023]]
+@[https://insights.globalspec.com/article/19871/aluminum-coated-fiber-optic-sensors-promise-to-monitor-industrial-facility-conditions]
+  A team of researchers from Russia’s Skolkovo Institute of Science
+  and Technology (Skoltech) has developed a system of aluminized
+  fiber-optic sensors for the purpose of monitoring the structural
+  health and condition of industrial facilities.k
+  Placed within a distillation tower, the sensors could reportedly
+  monitor the structural health of the tower, thereby avoiding
+  extensive repairs and allowing for early interventions. Currently,
+  when issues arise within a distillation tower, the metal of the tower
+  has to be cut open and a person is deployed with a mop inside to
+  investigate and clean the tower in hopes that it will fix the issue.
+[[}]]
+
+# https://github.com/deepcoder/bluetooth-temperature-sensors  [[{SENSORS.TEMPERATURE,PROTOCOL.MQTT,protocol.BLUETOOTH]]
+  Read Bluetooth Advertising Packets from BLE temperature sensors and
+  publish data to MQTT
+
+# nextpnr [[{hardware.FPGA]]
+  vendor neutral, timing driven, FOSS FPGA place and route tool.
+
+Currently nextpnr supports:
+
+    Lattice iCE40 devices supported by Project IceStorm
+    Lattice ECP5 devices supported by Project Trellis
+    Lattice Nexus devices supported by Project Oxide
+    Gowin LittleBee devices supported by Project Apicula
+    (experimental) Cyclone V devices supported by Mistral
+    (experimental) Lattice MachXO2 devices supported by Project Trellis
+    (experimental) a "generic" back-end for user-defined architectures
+    (initial  WiP) Xilinx
+[[}]]
+
+[[{network.cloud,01_PM.TODO]]
+# IoT Edge Computing
+- https://azure.microsoft.com/en-us/services/iot-edge/
+- https://www.infoq.com/news/2019/01/baidu-edge-platform-opensource
+[[}]]
+
+
