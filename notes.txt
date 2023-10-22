@@ -1,13 +1,6 @@
-##  Apropos:
-- Visit next Web site for a great experience:
-  https://earizon.github.io/txt_world_domination/viewer.html?payload=../IoT/notes.txt
-
-- If you want to contribute to great gistory of this
-  document you can take the next flight to:
+## Apropos:
+  Content is versioned in git.  commits, issues and pull-requests welcome!
 @[https://www.github.com/earizon/IoT]
-  Your commits and pull-request will be immortalized
-  in the Pantheon of the Unicode Gods.
-────────────────────────────────────────────────────────────────────────────────
 
 ## External Resources [[{]]
 - IoT Tags at stackExchange:
@@ -27,10 +20,66 @@ https://electronics.stackexchange.com/
 
 [[}]]
 
-# OSeS  @mb
+# OSeS & Dev.Stasks @mb [[{]]
 
+## Apache MyNewT [[{]]
+  https://mynewt.apache.org/
+* "Built for wireless"
+  Bluetooth Low Energy 5, Bluetooth Mesh, Wi-Fi, LoRaWAN, ...
+* Easy to use: [[{PM.low_code]]
+  Compose, fine-tune, and build your image within hours or even minutes.
+[[}]]
+* Ready your IoT network of billions for remote monitoring,
+  troubleshooting, management, and upgrade.
+* Maximum throughput of 2Mbps
+* 32+ concurrent connections, multiple connections in
+  simulatenous central and peripheral roles
+* LoRa PHY radio / transceiver (SX1276)
+  LoRaWAN protocol for Class A and Class C endpoints
+  API for application use with a sample app
+* Bluetooth Mesh
+  * Foundation Models (server role)
+  * Provisioning bearers: PB-ADV and PB-GATT
+  * Advertising and GATT bearers for message transport
+  * Optional Relay and Proxy features
+* Native support for TCP/IP, UDP
+* Supports protocols for constrained networks e.g.
+  CoAP and 6LoWPAN
 
-## OPC_Unified_Architecture: [[{use_case.industrial.m2m,01_PM.TODO]]
+* Security from the start
+  * Secure bootloader
+  * Device identity for secure provisioning
+  * Authenticated, authorized, and encrypted data transfers
+  * ...
+
+* Image management module, failure-aware, and reliable remote
+  firmware updates
+* Richly instrumented statistics modules for OS components and
+  network interfaces
+* Easy to use sensor framework
+* Auto-discovery and management using OIC1.1, the IoT platform
+  standard from OCF (Open Connectivity Foundation)
+
+* Cross-platform: Pick one MCU now. Migrate to another later.
+  Cortex M0-M4 micro controllers, MIPS, RISC-V
+
+* Supported Boards:
+  6LoWPAN Clicker ,FRDM-K82F,FRDM-K64F,nRF5340 PDK,NUCLEO-F401RE
+  ,B-L475E-IOT01A ,Ublox BMD-345-Eval ,NUCLEO-F072RB ,Nordic Thingy:52
+  ,STM32-E407 ,NUCLEO-F303K8 ,HiFive1 ,NUCLEO-F411RE ,P-NUCLEO-WB55
+  ,Creator Ci40 IoT Kit ,PIC32-EMZ64 ,NUCLEO-F746ZG ,NUCLEO-F439ZI
+  ,B-L072Z-LRWAN1 ,Wi-FIRE ,NUCLEO-F030R8 ,STM32F4DISCOVERY ,STM32-P103
+  ,32L152CDISCOVERY ,NUCLEO-F303RE ,32F429IDISCOVERY ,NUCLEO-F103RB
+  ,Apollo EVB ,nRF52840 Dongle ,BMD-300: Bluetooth 5 ,Adafruit Feather
+  ,nRF5340 PDK ,P-NUCLEO-WB55-USBDongle ,NUCLEO-F767ZI ,nRF51 DK
+  ,NUCLEO-F413ZH ,nRF51 DK (16KB) ,Adafruit Feather STM32F405
+  ,NUCLEO-L476RG ,RuuviTag ,nRF52840 DK ,NINA-B1 series ,micro:bit
+  ,32F746GDISCOVERY ,PIC32-HMZ144 ,Apollo EVB ,nRF5340 Audio DK
+  ,STM32F3DISCOVERY ,Black VET6 ,STM32F411E-DISC0 ,Nano 2 ,Blend 2
+  ,nRF52 DK ,nucleo-l073rz ,nRF9160 DK,...
+[[}]]
+
+## OPC_Unified_Architecture [[{use_case.industrial.m2m,01_PM.TODO]]
 @[https://en.wikipedia.org/wiki/OPC_Unified_Architecture]
 * OPC Unified Architecture (OPC UA) is a machine to machine communication
   protocol for industrial automation developed by the OPC Foundation.
@@ -673,6 +722,142 @@ Don’t let traditional IoT clouds become a third-party privacy and security
 risk. Switch to cloudless iot-managment for full data sovereignty.
 [[}]]
 
+##  >1$ Moddable JS (ESP32) on 32KB RAM [[{01_PM.price.to_1$,hardware,low_cost,OS.moddable,dev_lang.javascript,02_doc_has.comparative,01_PM.TODO]]
+-  Moddable XS7 release targets ES201 with 99% ES2018 Compliance
+- Runs on 32KB RAM and sub-1$ devices
+- It combines XS JavaScript engine with graphics,
+  networking, and various tools including debugger
+  and simulator.
+- SDK also includes the Piu user interface framework
+  designed to run on microcontrollers.
+
+- It compares favorably to other microcontroller focused engines with
+  regards to support for newer JavaScript language features at a size
+  suitable for microcontrollers.
+- System requirements and specification support for various engines include:
+  - Duktape 160KB flash RAM and 64KB system RAM, complete ES5.1 support, subset of ES2015 and newer features
+  - Espruino 128KB flash RAM and 8KB system RAM, partial ES2015 support
+  - JerryScript, 64KB flash RAM and 200KB ROM, complete ES5.1 support
+  - mJS, 50KB flash RAM, 1KB system RAM, subset of ES2015 support
+
+- Licenses: GPL 3.0, LGPL 3.0, Apache 2.0, and Creative Commons
+  Attribution 4.0 and commercial license.
+
+
+### moddable-zero
+@[http://www.moddable.com/moddable-zero.php]
+- 20$ easy-way to add touch-scr to IoT
+"""All the components in Moddable Zero have been selected to keep the cost low
+. The two main components are the NodeMCU board and the touch screen. The
+NodeMCU module carries the ESP8266, Wi-Fi antenna, Flash ROM, FTDI chip, and
+USB connector. The touch screen is an unbranded QVGA (240 x 320) display with
+16-bit pixels driven by an ILI9341 display controller and an XPT2046
+resistive touch controller. We’d like to use a capacitive touch display, but
+the prices are still considerably higher. That said, our touch driver
+delivers reliable touch input with the XPT2046."""
+
+The Moddable SDK has four key features that make it realistic to build modern
+user experiences on Moddable Zero.
+
+    Tools. Getting images that look good onto an inexpensive microcontroller
+is challenging. The Moddable SDK contains tools that convert PNG, JPEG, BMP,
+and animated GIFs into formats that can be rendered efficiently and stored
+compact on the microcontroller. There are also tools to compress anti-aliased
+fonts for use on the device.
+
+    Graphics library. The Commodetto graphics library is used for all image
+loading and rendering in the Moddable SDK. It contains the Poco rendering
+engine which provides high speed rendering, with alpha channel support,
+blending, and clipping.
+
+    UI framework. The Piu user interface framework is a true object oriented
+user interface library that tightly integrates with Poco to provide cascading
+styles, timeline animations, text layout, localization, touch handling, and
+more.
+
+    JavaScript. Most developers find implementing a user interface in
+JavaScript to be faster and easier than using C or C++ as is common today on
+microcontrollers. Both Piu and Commodetto are designed to work efficiently
+with the XS JavaScript engine at the core of the Moddable SDK.
+[[}]]
+
+## ~1$ HT48C06 8-bit MCU [[{use_case.alarms,hardware.pcb,hardware.mcpu.Holtek,01_PM.price.to_0.5$,network.wireless.lora,01_PM.TODO]]
+* HT stands for Holtek
+https://www.holtek.com/productdetail?p_p_auth=q0FpqQ4D
+- HT48C06: 8-bit mCPU, 64 bytes of RAM, 1024 words of ROM, 13 GPIO, 4/8mhz.
+[[}]]
+
+## <$0.10 RISC-V MCU [[{hardware.mcpu,oltek,01_PM.price.to_0.1$,01_PM.TODO]]
+@[https://github.com/openwch/ch32v003]
+  CH32V003: ultra-cheap RISC-V MCU:
+FEATURES:
+- QingKe 32-bit RISC-V2A processor, supporting 2 levels of interrupt nesting
+- Maximum 48MHz system main frequency
+- 2KB SRAM, 16KB Flash
+- Power supply voltage: 3.3/5V
+- Multiple low-power modes: SLEEP, STANDBY
+- Power on/off reset, programmable voltage detector
+- 1 group of 1-channel general-purpose DMA controller
+- 1 group of op-amp comparator
+- 1 group of 10-bit ADC
+- 1×16-bit advanced-control timer, 1×16-bit general-purpose timer
+- 2 WDOG, 1×32-bit SysTick
+- 1 USART interface, 1 group of I2C interface, 1 group of SPI interface
+- 18 I/O ports, mapping an external interrupt
+- 64-bit chip unique ID
+- 1-wire serial debug interface (SDI)
+- Package: TSSOP20, QFN20, SOP16, SOP8
+
+See also:
+* @[http://www.lcdwiki.com/CH32F203C8T6_Board]
+[[}]]
+
+## Microsoft DeviceScript  [[{]]
+https://github.com/microsoft/devicescript
+https://microsoft.github.io/devicescript/
+
+With Visual Studio Code Extension.
+
+DeviceScript brings a professional TypeScript developer experience to
+low-resource microcontroller-based devices. DeviceScript is compiled
+to a custom VM bytecode, which can run in very constrained
+environments.
+1. Transpiles to bytecode.
+2. Bytecode interpreter for low power/flash/memory.
+3. Functional programming API!!!
+
+### Example code for ESP32 board and a relay on pin A0:
+  ```
+  import { pins } from "@dsboard/adafruit_qt_py_c3"
+  import { Temperature } from "@devicescript/core"
+  import { ewma, tap, auditTime, levelDetector } from "@devicescript/observables"
+  import { startRelay } from "@devicescript/servers"
+
+  const thermometer = new Temperature()
+  const t_ref = 68 // degree F
+  const relay = startRelay({ pin: pins.A0 })
+
+  thermometer.reading
+      .pipe(
+          tap(t_raw => console.data({ t_raw })),
+          ewma(0.9),
+          tap(t_ewma => console.data({ t_ewma })),
+          auditTime(5000),
+          tap(t_audit => console.data({ t_audit })),
+          levelDetector(t_ref - 1, t_ref + 1),
+          tap(level => console.data({ level }))
+      )
+      .subscribe(async level => {
+          if (level < 0) await relay.enabled.write(true)
+          else if (level > 0) await relay.enabled.write(false)
+          console.data({ relay: await relay.enabled.read() })
+      })
+  ```
+[[}]]
+
+
+[[}]]
+
 # Hardware: Integrated uBoards @mc  [[{ $hardware.uBoards ]]
 
 ## DiY: ICs at home [[{101]]
@@ -738,66 +923,6 @@ dynamic power scaling.
 ## ESP32 vs STM32 [[{02_doc_has.comparative,hardware.esp32,hardware.stm32]]
   https://www.utmel.com/components/esp32-vs-stm32-which-one-is-better?id=1383
 [[}]]
-
-##  >1$ Moddable JS (ESP32) on 32KB RAM [[{01_PM.price.to_1$,hardware,low_cost,OS.moddable,dev_lang.javascript,02_doc_has.comparative,01_PM.TODO]]
--  Moddable XS7 release targets ES201 with 99% ES2018 Compliance
-- Runs on 32KB RAM and sub-1$ devices
-- It combines XS JavaScript engine with graphics,
-  networking, and various tools including debugger
-  and simulator.
-- SDK also includes the Piu user interface framework
-  designed to run on microcontrollers.
-
-- It compares favorably to other microcontroller focused engines with
-  regards to support for newer JavaScript language features at a size
-  suitable for microcontrollers.
-- System requirements and specification support for various engines include:
-  - Duktape 160KB flash RAM and 64KB system RAM, complete ES5.1 support, subset of ES2015 and newer features
-  - Espruino 128KB flash RAM and 8KB system RAM, partial ES2015 support
-  - JerryScript, 64KB flash RAM and 200KB ROM, complete ES5.1 support
-  - mJS, 50KB flash RAM, 1KB system RAM, subset of ES2015 support
-
-- Licenses: GPL 3.0, LGPL 3.0, Apache 2.0, and Creative Commons
-  Attribution 4.0 and commercial license.
-
-
-### moddable-zero
-@[http://www.moddable.com/moddable-zero.php]
-- 20$ easy-way to add touch-scr to IoT
-"""All the components in Moddable Zero have been selected to keep the cost low
-. The two main components are the NodeMCU board and the touch screen. The
-NodeMCU module carries the ESP8266, Wi-Fi antenna, Flash ROM, FTDI chip, and
-USB connector. The touch screen is an unbranded QVGA (240 x 320) display with
-16-bit pixels driven by an ILI9341 display controller and an XPT2046
-resistive touch controller. We’d like to use a capacitive touch display, but
-the prices are still considerably higher. That said, our touch driver
-delivers reliable touch input with the XPT2046."""
-
-The Moddable SDK has four key features that make it realistic to build modern
-user experiences on Moddable Zero.
-
-    Tools. Getting images that look good onto an inexpensive microcontroller
-is challenging. The Moddable SDK contains tools that convert PNG, JPEG, BMP,
-and animated GIFs into formats that can be rendered efficiently and stored
-compact on the microcontroller. There are also tools to compress anti-aliased
-fonts for use on the device.
-
-    Graphics library. The Commodetto graphics library is used for all image
-loading and rendering in the Moddable SDK. It contains the Poco rendering
-engine which provides high speed rendering, with alpha channel support,
-blending, and clipping.
-
-    UI framework. The Piu user interface framework is a true object oriented
-user interface library that tightly integrates with Poco to provide cascading
-styles, timeline animations, text layout, localization, touch handling, and
-more.
-
-    JavaScript. Most developers find implementing a user interface in
-JavaScript to be faster and easier than using C or C++ as is common today on
-microcontrollers. Both Piu and Commodetto are designed to work efficiently
-with the XS JavaScript engine at the core of the Moddable SDK.
-[[}]]
-
 
 
 
@@ -1156,9 +1281,30 @@ http://linuxgizmos.com/text-to-speech-raspberry-pi-add-on-starts-at-24/
 https://liliputing.com/2019/05/you-can-build-a-diy-e-ink-magic-mirror-for-under-100.html
 [[}]]
 
+# Hardware: Others
 
+## Xometry CAD Manufacturing on demand [[{]]
+https://xometry.eu/en/
+* With over 2,000 manufacturers in Europe, our network has the capacity
+  you need for prototyping and production.
+* CNC Machining, 3D printing, Sheet Metal, Injection MOuilding, Die Casting.
+* Upload CAD Files -> Parts in as Fast as 3 Days
+* Strong QA
+* ISO 9001 Certified
 
-# TODO/NON CLASSIFIED: [[{os.linux.yocto,hardware.sbc,01_PM.TODO]]
+* Precision manufacturing applications for every industry
+  * Aerospace & Defense
+  * Automotive
+  * Consumer Products
+  * Education
+  * Electronics
+  * Energy
+  * Industrial
+  * Medical & Dental
+  * Robotics & Machine-Building
+[[}]]
+
+# TODO/NON CLASSIFIED [[{01_PM.TODO]]
 
 [[{101,hardware.storage.sdcard]]
 ## SD Express <=3_938MB/s
@@ -1773,34 +1919,10 @@ https://typescripttolua.github.io/
 @[https://github.com/cpetrich/counterfeit_DS18B20]
 [[}]]
 
-* HT stands for Holtek [[{use_case.alarms,hardware.pcb,hardware.mcpu.Holtek,01_PM.price.to_0.5$,network.wireless.lora,01_PM.TODO]]
-https://www.holtek.com/productdetail?p_p_auth=q0FpqQ4D
-- HT48C06: 8-bit mCPU, 64 bytes of RAM, 1024 words of ROM, 13 GPIO, 4/8mhz.
 
-* https://github.com/openwch/ch32v003  [[{hardware.mcpu,oltek,01_PM.price.to_0.1$,01_PM.TODO]]
-  CH32V003: ultra-cheap RISC-V MCU:
-  - sells for under $0.10 !!!!
 
-  FEATURES:
-  - QingKe 32-bit RISC-V2A processor, supporting 2 levels of interrupt nesting
-  - Maximum 48MHz system main frequency
-  - 2KB SRAM, 16KB Flash
-  - Power supply voltage: 3.3/5V
-  - Multiple low-power modes: SLEEP, STANDBY
-  - Power on/off reset, programmable voltage detector
-  - 1 group of 1-channel general-purpose DMA controller
-  - 1 group of op-amp comparator
-  - 1 group of 10-bit ADC
-  - 1×16-bit advanced-control timer, 1×16-bit general-purpose timer
-  - 2 WDOG, 1×32-bit SysTick
-  - 1 USART interface, 1 group of I2C interface, 1 group of SPI interface
-  - 18 I/O ports, mapping an external interrupt
-  - 64-bit chip unique ID
-  - 1-wire serial debug interface (SDI)
-  - Package: TSSOP20, QFN20, SOP16, SOP8
-[[}]]
-
-* pregnant chip powerful as first IBM PCs: 2 photosensors + 2 LEDs + LCD + battery + mCPU.
+## pregnant chip: As powerful as first IBM PCs [[{]]
+ 2 photosensors + 2 LEDs + LCD + battery + mCPU.
 @[https://twitter.com/Foone/status/1301707401024827392]
  "... When the wick gets wet, it starts conducting electricity, and this device turns on..."
 
@@ -1883,6 +2005,7 @@ https://www.tlm-laser.com/ Laser technology
   derived from OpenWRT.
 * VoCore2: 17.99$, *1"x1"*
   - MediaTek MT7628, 580 MHz, MIPS 24K
+    See also: https://github.com/newluhux/qemu-mt7628
   - 128MB RAM, DDR2 166MHz
   - Ethernet – 1 port/5 ports, up to 100Mbps
   - Wireless – 802.11n, 2T2R, speed up to 300Mbps
@@ -1947,7 +2070,62 @@ https://github.com/contiki-ng/contiki-ng
 ## LoRaWan Course [[{101,network.wireless.lora,01_PM.TODO]]
 https://www.thethingsnetwork.org/docs/lorawan/
 https://www.thethingsnetwork.org/achievements/a/the-things-certified-fundamentals/
+
+## Chiprstack LoRaWAN Network Server  [[{]]
+https://github.com/chirpstack/chirpstack
+* OOSS LoRaWAN Network Server which can be used
+  to to setup LoRaWAN networks.
+* Includes web-interface for the management of gateways,
+  devices and tenants as well to setup data
+  integrations with the major cloud providers,
+  databases and services commonly used for handling
+  device data.
+* gRPC & REST API.
+* Class-A end-device support: allow for bi-directional communications
+  whereby each end-device‘s uplink transmission is followed by two
+  short downlink receive windows. The transmission slot scheduled by
+  the end-device is based on its own communication needs with a small
+  variation based on a random time basis (ALOHA-type of protocol).
+
+* Class-B end-device support: allow for more receive slots. In
+  addition to the Class A random receive windows, Class B devices open
+  extra receive windows at scheduled times. In order for the End-device
+  to open it receive window at the scheduled time it receives a time
+  synchronized Beacon from the gateway.
+
+* Class-C end-device support: have nearly continuously open receive
+  windows, only closed when transmitting. Class C end-device will use
+  more power to operate than Class A or Class B but they offer the
+  lowest latency for server to end-device communication.
+
+* Adaptive data-rate: When the end-device has ADR enabled, the
+  ChirpStack LoRaWAN network-server will ensure that the device will
+  operate using the most efficient data-rate and tx-power. this will
+  not only save energy at the device-side, but will also optimize the
+  usage of the radio spectrum, lowering the risk of collisions.
+
+* Live frame-logging: The ChirpStack LoRaWAN application-server
+  provides live frame-logging per gateway and device. It will display
+  all the RX / TX meta-data, together with the raw LoRaWAN PHYPayload
+  in a readable format. It is like Wireshark for LoRaWAN!
+
+* Channel (re)configuration: Whether you want to use a sub-set of the
+  LoRaWAN defined channels (e.g. for the US band) or want to configure
+  additional channels (e.g. for the EU band), the ChirpStack LoRaWAN
+  network-server will make sure the device stays always in sync with
+  the network configured channels (using the CFList field and / or
+  mac-commands).
+
+* Multi-tenant: The ChirpStack LoRaWAN application-server supports
+  the creation of multiple organizations to which (administrator) users
+  can be assigned. By integrating the user-accounts into the MQTT
+  broker authentication, organizations will only see their own data.
+
+* LoRaWAN 1.0 and 1.1 compatible including all LoRaWAN Regional Parameter
+  Specification revisions and bands.
+
 [[}]]
+[[network.wireless.lora}]]
 
 ## 6LoWPAN vs LPWAN [[{101,network.wireless.lora,doc_has.comparative,01_PM.TODO]]
 @[https://www.researchgate.net/publication/316236998_Comparison_of_6LoWPAN_and_LPWAN_for_the_Internet_of_Things/link/5a227e570f7e9b71dd03af85/download]
@@ -2346,23 +2524,6 @@ https://www.globalspec.com/productfinder/sensors_transducers_detectors
 * https://github.com/sam-peach/SSD1306-OLED-Emulator
 [[}]]
 
-## Ockam.io [[{]]
-  https://www.infoq.com/news/2019/01/ockam-blockchain-iot-identity
-  Ockam is a serverless platform that aims to make it easier for IoT
-  developers to add blockchain-based identity, trust, and interoperability
-  in their IoT devices. Ockam has recently open sources its SDK for Golang.
-
-   By embedding the Ockam SDK (https://github.com/ockam-network/ockam)
-  into their devices, developers can make them part of the Ockam blockchain network
-  https://ockam.network/, a decentralized, open platform that enables secure cryptographic
-  identity management based on a recent W3C standard called https://w3c-ccg.github.io/did-spec/
-  Decentralized Identifiers (DID).
-  Decentralized Identifiers (DIDs) are a new type of identifier for verifiable,
-   "self-sovereign" digital identity. DIDs are fully under the control of the DID subject,
-  independent from any centralized registry, identity provider, or certificate authority.
-   DIDs are URLs that relate a DID subject to means for trustable interactions with that subject.
-[[}]]
-
 ## If you're into cybersecurity, you have probably heard of JWT
   (JSON Web Token) and OAuth tokens, but have you heard of a signed CWT
   (Cbor web token)? They are great for light-weight crypto applications
@@ -2439,3 +2600,4 @@ Currently nextpnr supports:
 [[}]]
 
 
+https://github.com/ZigEmbeddedGroup/microzig
