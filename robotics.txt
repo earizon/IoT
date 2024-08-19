@@ -1,0 +1,108 @@
+# ROBOTICS
+## ABB Robotics [[{use_case.robotics,use_case.industrial.automobile,]]
+<https://new.abb.com/products/robotics>
+ABB is a leading supplier of industrial robots and robot software, equipment
+and complete application solutions. We’re at home in 53 countries and have
+installed more than 400,000 robots, supported by the broadest service network
+and offering in the industry.
+
+* Kuka Robotics
+<https://www.kuka.com/>
+
+* FANUC
+
+* COMAU
+
+* automotive plants:
+  · VASS
+  · DCP
+  · PL7
+[[}]]
+
+## Facebook PyRobot [[{use_case.robotics,]]
+https://www.infoq.com/news/2019/06/facebook-pyrobot-ros-framework/
+[[}]]
+
+## Gazebo and ROS 2 [[{use_case.robotics,]]
+https://www.infoq.com/articles/ros-2-gazebo-tutorial/
+Open Source Robotics: Getting Started with Gazebo and ROS 2
+    Dolly is virtual robot sheep that serves as a practical introduction to Gazebo and ROS 2.
+    The Robot Operating System's latest version, ROS 2, offers familiar tools and capabilities, while expanding to new use cases.
+    Gazebo is a powerful robot simulator used by industry and academia that calculates physics, generates sensor data and provides convenient interfaces.
+    Open source software is lowering the barrier to entry and speeding up progress in robotics.
+    Roboticists all around the world are leveraging Gazebo and ROS in applications ranging from humanoids and drones to warehouse robots and self-driving cars.
+[[}]]
+
+## Tiny walking robot [[{use_case.robotics,]]
+http://news.mit.edu/2019/micro-robots-walk-0702
+[[}]]
+
+## SMD Motor: resolución: 1/2600000 por vuelta [[{use_case.robotics,hardware.motor.SMD,]]
+http://pcbmotor.com/
+[[}]]
+
+## https://github.com/paradise-fi/RoFI [[{use_case.robotics,]]
+Project website: https://rofi.fi.muni.cz/
+
+RoFI is a platform of modular robots developed at Faculty of
+Informatics at Masaryk University. The platform is designed for
+building larger robots (RoFIbots) from a small number of module types.
+
+The modules of the platform can connect together using RoFI dock.
+Mechanically connected modules can communicate over TCP/IP and share
+power.
+
+For an in-depth description of the RoFI platform see the project
+website.
+[[}]]
+
+
+[[{use_case.domotics,use_case.automotive,use_case.industrial]]
+## Automotive Stepping Motor Driver IC: Toshiba TB9120AFTG 
+* <https://toshiba.semicon-storage.com/eu/semiconductor/product/automotive-devices/automotive-stepping-motor-driver-ics/articles/automotive-stepping-motor-driver-icic-tb9120aftg.html>
+* Toshiba Electronic Devices & Storage Corporation
+* constant-current 2-phase bipolar stepping motor driver IC capable 
+  of generating microstepped sine waves only from an input clock 
+  signal, eliminating the need for a high-performance MCU and software.
+* The AEC-Q100-compliant TB9120AFTG driver IC incorporates low 
+  on-resistance DMOS FETs, and can deliver a 1.5A (maximum) current. 
+  Thanks to the large number of micro-steps supported, motor noise can 
+  be significantly reduced, with applications benefitting from smoother 
+  operation and more precise control.
+* built-in mixed decay mode helps to stabilize the current waveforms 
+  and numerous protection mechanisms are incorporated including 
+  over-current and over-temperature detection, plus thermal shutdown. 
+* There is also a stall detection function.
+* supplied in a compact VQFN package (with 6.0 mm x 6.0mm dimensions) 
+  featuring wettable flanks to allow the use of automated optical
+  inspection (AOI) for ensuring the quality of solder joints.
+* Supports an operational temperature range covering -40°C to 125°C.
+* Key applications include HUD mirror control,  HVAC -(H)eating, (V)entilation, (A)ir(C)onditioning- applications, and engine Idle Speed Control.
+[[}]]
+ 
+##  Fedora Robotics [[{os.fedora.robotics,]]
+* <https://labs.fedoraproject.org/robotics/>
+* Fedora Robotics spin provides a wide variety of free and open 
+  robotics software packages. These range from hardware accessory 
+  libraries for the Hokuyo laser scanners or Katana robotic arm to 
+  software frameworks like Fawkes or Player and simulation environments 
+  such as Stage and RoboCup Soccer Simulation Server 2D/3D. 
+* It also provides a ready to use development environment for robotics 
+  including useful libraries such as OpenCV computer vision library, 
+  Festival text to speech system and MRPT.
+* The Robotics spin is targeted at people just discovering their 
+  interest in robotics as well as experienced roboticists.
+* For the former we provide a readily usable simulation environment with an 
+  introductory hands-on demonstration, and for the latter we provide a 
+  full development environment, to be used immediately.
+[[}]]
+
+## Get Cruise [[{use_case.smartcities,use_case.industrial.automobile,]]
+* <https://getcruise.com/>
+* <https://github.com/cruise-automation>
+* Cruise vehicles are purpose-built for self-driving at a dedicated GM
+  manufacturing plant. Our cutting-edge hardware and software work
+  seamlessly together to transform the way we all experience
+  transportation.
+[[}]]
+

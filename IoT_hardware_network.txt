@@ -1,0 +1,146 @@
+# Hardware for Communication and Networks
+
+## BeagleConnect™ Freedom [[{hardware.network.beagleconnect,OS.Zephyr,OS.micropython,PM.low_cost]]
+* <https://www.beagleboard.org/boards/beagleconnect-freedom> 
+* 2x mikroBUS connections. 
+* over 1,000 different add-on options. 
+* On-board sensors include temperature, humidity and light level.
+* battery charger to assist with battery-backed-up designs.
+* Based on the Texas Instruments SimpleLink™ CC1352P7 wireless
+  microcontroller running Zephyr and Micropython, utilizing the
+  2.4GHz and sub-1GHz IEEE 802.15.4 wireless networks are made easy.
+* BeagleConnect™ is a revolutionary technology virtually eliminating  
+  low-level software development for IoT and IIoT applications, such as 
+  building automation, factory automation, and home automation. [[{PM.low_cost}]]
+* Choosing BeagleConnect™ simplifies development by eliminating the 
+  need for layer of software development.  
+* While numerous IoT and IIoT solutions available today provide 
+  massive software libraries for microcontrollers supporting a limited 
+  body of sensors, actuators and indicators as well as libraries for 
+  communicating over various networks, BeagleConnect™ simply eliminates 
+  the need for these libraries by shifting the burden into the most 
+  massive and collaborative software project of all time, the Linux 
+  kernel. [[{doc_has.keypoint}]]
+
+* features:
+  *  Texas Instruments Sitara™ CC1352P7 wireless microcontroller,
+  *  Works with BeagleConnect™ enabled sub-GHz wireless gateways,
+  *  Can be used with over 1,000 mikroBUS-based Click boards from MikroE,
+  *  Provides Bluetooth Low Energy (BLE)-enabled Linux computers at 
+     2.4GHz and long-range, low-power sub-GHz IEEE 802.15.4 wireless 
+     connections at up to 1km with data rates of 1kbps. [[{network.wireless.lora}]]
+* Includes enclosure and antenna, and On-board sensors, a USB-to-UART bridge,
+  battery charger, buzzer and user-programmable LEDs and button.
+[[hardware.network.beagleconnect}]]
+
+## Aluminum-coated fiber-optic sensors promise to monitor industrial facility conditions [[{sensors.structure,use_case.industrial,year.2023]]
+<https://insights.globalspec.com/article/19871/aluminum-coated-fiber-optic-sensors-promise-to-monitor-industrial-facility-conditions>
+  A team of researchers from Russia’s Skolkovo Institute of Science
+  and Technology (Skoltech) has developed a system of aluminized
+  fiber-optic sensors for the purpose of monitoring the structural
+  health and condition of industrial facilities.k
+  Placed within a distillation tower, the sensors could reportedly
+  monitor the structural health of the tower, thereby avoiding
+  extensive repairs and allowing for early interventions. Currently,
+  when issues arise within a distillation tower, the metal of the tower
+  has to be cut open and a person is deployed with a mop inside to
+  investigate and clean the tower in hopes that it will fix the issue.
+[[}]]
+
+## "OpenSource 10Gb Ethernet Switch 
+* <https://github.com/ZipCPU/eth10g?tab=readme-ov-file>
+* <http://zipcpu.com/blog/2023/11/25/eth10g.html>
+
+## CaribouLite Software Defined Radio [[{network.SDR.CaribouLite,price.to_300€]]
+* <https://github.com/cariboulabs/cariboulite>
+* affordable, educational, open-source SDR evaluation platform 
+  and a HAT for the Raspberry-Pi family of boards (40-pin 
+  versions only). 
+* Built for makers, hackers, and researchers and designed to
+  complement the current SDR (Software Defined Radio) 
+  eco-systems offering with a scalable, standalone dual-channel 
+  software-defined radio.
+[[network.SDR.CaribouLite}]]
+
+## Project OWL: Disaster Relief IoT firmware [[{network.wireless.lora.OWL,use_case.disaster_relief,]]>
+* <https://www.zdnet.com/article/linux-foundation-open-sources-disaster-relief-iot-firmware-project-owl/>
+* OWL stands for Organization, Whereabouts, and Logistics using
+  DuckLinks (IoT)  to create a combined Wi-Fi + LoRa (about 10Km) cellular
+  network.
+* Ham radio has long also served this purpose. But Amateur Radio 
+  Emergency Service (ARES) personnel require training and they may not 
+  be immediately available to help in some areas. DuckLinks are meant 
+  to be easy to deploy and use.
+* It also provides with analytics to facilitate organization, 
+  whereabouts, and logistics.
+[[network.wireless.lora.OWL}]]
+
+
+## AICODIX modem [[{hardware.modem,network.OFDM]]
+* <https://github.com/aicodix/modem>
+* Simple OFDM modem for transceiving datagrams Reading
+* Robust frequency and timing synchronization for OFDM
+  by Timothy M. Schmidl and Donald C. Cox - 1997
+* On Timing Offset Estimation for OFDM Systems
+  by H. Minn, M. Zeng, and V. K. Bhargava - 2000
+[[}]]
+
+## Decoding GPS [[{network.gps,]]
+* <https://github.com/natronics/gps>
+[[}]]
+
+## Power-line_communication [[{network.PLC,]]
+* <https://en.wikipedia.org/wiki/Power-line_communication>
+[[}]]
+
+## NM1801100 LoRa Bluethooth 5 [[{network.wireless.loRa,protocol.bluetooth,hardware.network,]]
+* <https://www.infoq.com/news/2020/12/NM180100-ultra-low-energy-iot/>
+- low power consumption in all operating states
+  (computing/transmitting/receiving/deep sleep)
+- versatile communication capabilities
+- According to Northern Mechatronics, it consumes 10 times
+  less power than comparable products, with an advertised
+  consumption of 6uA/MHz for the processor, and between
+  2 and 2.7uA in the sleep state. [[{doc_has.comparative}]]
+- 1 MB of on-module flash memory
+- 384 kB of static random-access memory.
+- two radio stacks on simultaneously:
+  - short-range Bluetooth 5 Low Energy (BLE)
+  - low-power wide-area network (LoRaWAN)
+  with memory still left on the device for
+  computing purposes and over-the-air firmware updates.
+- The Apollo3 Blue (ARM® Cortex® M4 with FPU up to 96MHz)
+- The Bluetooth customary range goes from
+  - below 10m (Bluetooth class 3)
+  - up to 100m (Bluetooth class 1).
+- In contrast, *LoRa claims a physical range beyond 10 km*.
+- The combination of both technologies facilitates both edge and endpoint computing.
+[[}]]
+
+
+## Smallest AP+Repeater: Convert wired Eth to wireless AP [[{network.wireless.wifi,]]
+* <https://www.tindie.com/products/tech/smallest-access-point-repeater/>
+* Digitron on Tindie
+[[}]]
+
+## Mininet [[{network,]]
+* <http://mininet.org/>
+* Instant Virtual Network on your Laptop
+* Mininet creates a realistic virtual network, running real kernel,
+  switch and application code in seconds, with a single command.
+* easily interact withyour network using the MininetCLI(and
+  API),customize and share with others.
+* deploy it on real hardware.
+* use-cases: development, teaching, research.
+
+* https://containernet.github.io/
+  Containernet is a fork of the famous Mininet network emulator and
+  allows to use Docker containers as hosts in emulated network
+  topologies.
+  e.g: NFV multi-PoP infrastructure emulator created by SONATA-NFV
+  project, now part of the OpenSource MANO (OSM).
+
+## MaxiNet
+* Distributed Network Emulation
+<http://maxinet.github.io/>
+[[}]]

@@ -1,0 +1,35 @@
+# Storage
+[[{storage.101,hardware.storage.sdcard]]
+## SD Express <=3_938MB/s
+<https://www.sdcard.org/press/thoughtleadership/200519_SD_Association_Delivers_Gigabyte_Speed_Leap_with_New_SD_Express_8_0.html>
+
+* SD Association Delivers Gigabyte Speed Leap with New SD Express 8.0
+
+* In July 2018, SD7.0 brought in the PCIe 3.1 and NVMe architectures
+  to SD memory card design, providing a new option alongside legacy
+  SD interfaces.
+
+* February 2019: introduction of microSD Express 7.1 specification.
+
+* SD8.0 allows for slow-motion, 360-degree,... video at the highest qualities.
+
+* new SD Express standard uses PCI Express® (PCIe®) version 4.0
+  spec to great effect, with the end result being data
+  transfer speeds of up to 4 gigabytes per second.
+  ```
+  [[{storage.101}]]
+  |    \ Host  ┌────────────── SD Express ───────────────┐
+  | Card\ Type  Gen3x1     Gen3x2     Gen4x1     Gen4x2   
+  | Type        Up to...   Up to...   Up to...   Up to ...
+  |───────────────────────────────────────────────────────
+  | PCIe G3L1   985MB/s      985MB/s     985MB/s   985MB/s
+  |───────────────────────────────────────────────────────
+  | PCIe G3L2   985MB/s    1_969MB/s     985MB/s 1_969MB/s
+  |───────────────────────────────────────────────────────
+  | PCIe G3L2   985MB/s      985MB/s   1_969MB/s 1_969MB/s
+  |───────────────────────────────────────────────────────
+  | PCIe G4L2   985MB/s    1_969MB/s   1_969MB/s 3_938MB/s
+
+* full-sized cards continue the use of NVM Express™ (NVMe™) upper
+  layer protocol, giving them advanced memory access mechanisms.
+[[storage.101}]]

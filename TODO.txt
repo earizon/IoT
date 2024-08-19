@@ -1,0 +1,264 @@
+# TODO/NON CLASSIFIED [[{]]
+
+
+
+
+## Ubuntu Core 22: RT Support for IoT [[{use_case.industrial]]
+* <https://www.infoq.com/news/2022/06/ubuntu-core-22-real-time/?itm_source=txt_world_domination>
+[[}]]
+
+## Combining OSTree+SW Containers for reliable IoT Device updates
+  <https://www.cnx-software.com/2021/06/07/combining-ostree-and-sw-containers-for-reliable-iot-device-updates/>
+  Moseley, Technical Solutions Architect at Toradex, explaining how to
+  updates Linux firmware with OSTree (aka libostree) and Docker.
+
+* https://1nce.com/es/ : Tarifa plana IoT M2M e IoT
+
+* C&P from https://www.linkedin.com/:
+  I'm happy to complete the RTL to GDSII flow of my first tape-out
+  using completely open-source IC design tools as my graduation project
+  under supervision of Prof. Ali Ziya Alkar. It was a really important
+  experience for my career at an undergraduate level. I have used the
+  Google sponsored SkyWater Technology Foundry PDKs to implement an AES
+  Accelerator with Efabless Corporation's Caravel SoC. Hopefully I will
+  obtain a solid chip form of the design by submitting this project to
+  Efabless Corporation next MPW Program.I would like to express my
+  sincere thanks to Vijayan Krishnan for his kind help, also to
+  Muhammet Bahadır Türkoğlu and Berk Kışınbay from Yongatek
+  Microelectronics for guidance through design.
+
+* Investigadores liberan herramienta capaz cortar la luz a un barrio.  Security, IoT:
+  https://www.businessinsider.es/investigadores-espanoles-liberan-herramienta-capaz-dejar-luz-barrios-enteros-1026301 
+
+* http://chipnetics.com/ (vlang sponsor)
+
+* postmarketOS 21.12 improves Firefox UI and support IoT, kiosk:
+  https://www.itsfoss.net/postmarketos-21-12-improves-firefox-ui-and-support/amp/
+
+* https://github.com/koenvervloesem/bluetooth-low-energy-applications
+  Code examples, errata and additional tips and references to
+  interesting projects for the book "Develop your own Bluetooth Low
+  Energy Applications for Raspberry Pi, ESP32 and nRF52 with Python,
+  Arduino and Zephyr"
+
+* https://github.com/sam-peach/SSD1306-OLED-Emulator
+
+
+## If you're into cybersecurity, you have probably heard of JWT
+  (JSON Web Token) and OAuth tokens, but have you heard of a signed CWT
+  (Cbor web token)? They are great for light-weight crypto applications
+  and IoT ... https://lnkd.in/ezdCCHPp
+
+## https://github.com/oxidecomputer/hubris
+   Hubris is a microcontroller operating environment designed for
+  deeply-embedded systems with reliability requirements. Its design was
+  initially proposed in RFD41, but has evolved considerably since then.
+
+[[{sensors.temperature,protocol.mqtt,protocol.bluetooth}]]
+## Bluethooth Temperature Sensor 
+* <https://github.com/deepcoder/bluetooth-temperature-sensors>
+  Read Bluetooth Advertising Packets from BLE temperature sensors and
+  publish data to MQTT
+
+
+## PCB Checklist [[{qa,hardware.pcb]]
+* <https://github.com/azonenberg/pcb-checklist/tree/master>
+* Layout and Schematic Checklists.
+[[}]]
+
+
+[[{hardware.IPcamera,price.to_300€]]
+## reolink IP Camera 360° All-Around Coverage in 4K  
+* Includes Solar Plack.
+* <https://reolink.com/es/product/argus-pt-ultra-kit/>
+* 360° All-Around Coverage in 4K, WiFi and Solar Plack.
+* <https://github.com/thirtythreeforty/neolink>
+[[}]]
+
+
+
+## ultralowcost 4x Mechanical Numpad  [[{hardware.input.keyboard,HARDWARE.ARDUINO]]
+* <https://github.com/tobychui/4xMacropad>
+* Build InstructionSend the PCB to print (See ./pcb)
+* Purchase all the required materials (See BOM list below)
+* 3D print the base plate (See ./models)
+* Install the required Arduino library for CH552G and drivers
+[[}]]
+
+## Best SBC 2019 [[{hardware.SBC,PM.price.to_10€,PM.low_code,]]
+* <https://www.seeedstudio.com/blog/2019/11/20/best-single-board-computers-of-2019/>
+[[}]]
+
+[[{hardware.intel,doc_has.catalog]]
+## Intel IoT:
+* <https://www.intel.com/content/www/us/en/internet-of-things/products/programmable/overview.html>
+[[}]]
+
+
+
+## FTDI USB ICs [[{hardware.bus,protocol.usb,]]
+* <https://www.ftdichip.com/>
+* <https://www.ftdichip.com/Products/ICs.htm>
+* <https://www.ftdichip.com/Products/Modules.htm>
+* The RPi USB Hub Module utilises an USB-to-UART/MPSSE IC, along with a GL850G
+  USB hub controller IC. It provides engineers with up to 4 downstream USB 2.0
+  Hi-Speed (480Mbit/s) ports. Asynchronous serial data transfer rates from 300
+  bits/s to 12 Mbits/s at 3.3 V TTL levels are supported, while synchronous
+  serial data rates of up to 30 Mbits/s can be dealt with on JTAG, SPI and I2C interfaces.
+[[}]]
+
+
+## Seeduino [[{hardware.arduino,hardware.mcpu.ATmega328P.price_to_10€]]
+* <https://opensource.com/article/19/12/seeeduino-nano-review>
+* Among the best of the open hardware and software vendors is Seeed,
+  the self-proclaimed "IoT Hardware Enabler."  ...  I recently started
+  seeing the Seeed logo on projects, 
+* Seeeduino Nano, compact board, fully compatible with Arduino Nano 
+  but at half the price and a quarter the size, along with a sample
+  sensor to get me started.
+* Clock speeds: 16Mhz - 48Mhz
+[[}]]
+
+## Infrared on RPi [[{hardware.raspberry,hardware.input.IR_camera,]]
+* <https://www.adafruit.com/product/4469>
+  * Adafruit MLX90640 24x32 IR Thermal Camera Breakout - 110 Degree FoV
+  * PRODUCT ID: 4469
+  * $59.95
+* Flir MOdule for Raspberri-Py/Arduino/...:
+- <https://www.sparkfun.com/products/15948>
+- <https://github.com/natronics/Flir-Camera/blob/gh-pages/index.ipynb>
+[[}]]
+
+## Laser azul (diodo DVD) [[{hardware.input.laser,]]
+* <http://www.youtube.com/watch?v=vIwaMNab5pw&feature=related>
+[[}]]
+
+
+## Designing PCBs in Kicad and PcbNew [[{hardware.pcb.KiCad,dev_lang.python,]]
+<https://store.curiousinventor.com/guides/kicad/pcb_layout>
+
+## KiKit PCB Automation
+<https://github.com/yaqwsx/KiKit>
+* Python library and CLI tool to automate several tasks in a
+  standard KiCAD workflow like:
+  · panelization of the boards (see examples)
+  · exporting manufacturing data
+  · building board presentation pages.
+[[}]]
+
+## DYI: automated irrigation system [[{use_case.agriculture,]]
+* <https://medium.com/@patrickhallek1998/automated-smart-home-irrigation-system-9061c391f8e2>
+[[}]]
+
+## Ditto: Digital twins [[{protocol.digital_twins,]]
+* Ditto acts as IoT middleware, providing an abstraction layer for
+  IoT solutions interacting with physical devices via the digital twin
+  pattern.
+[[}]]
+
+
+* http://www.ibertronica.es/
+* https://www.infoq.com/news/2022/07/node-red-3-released/
+
+
+## Sensons , laser, Agriculture, ...
+
+From: Industrial IoT <reply@email.globalspec.com>
+Date: Thu, Jun 6, 2024 at 6:03 PM
+Subject: Enrique, 5 strategies for systems integration in smart manufacturing
+To: <enrique.arizonbenito@gmail.com>
+
+
+5 strategies for systems integration in smart manufacturing
+ 
+5 strategies for systems integration in smart manufacturing
+
+As industries increasingly move toward digitization and automation, understanding and implementing these strategies will be pivotal for businesses looking to maintain competitiveness in the evolving manufacturing landscape. Read more →
+
+Micro-Epsilon Group
+
+Smarter, faster, easier: Laser sensors with integrated industrial Ethernet interface
+
+The optoNCDT 1900 laser sensor provides a powerful solution for highly accurate distance and position measurements. Its integrated industrial Ethernet interfaces enable rapid processes and efficient networking across multiple devices and machines.
+ 
+
+View more
+
+Dataforth Corporation
+
+IoT ready MAQ20 modular data acquisition and control system
+
+The MAQ20 is a UL listed, high performance, highly flexible, low cost IoT DAQ and control system. Its capabilities and modular approach is ideal for a wide range of applications.
+ 
+
+Learn more
+
+Cognex Corporation
+
+Overcoming automation challenges with machine vision and AI
+
+Automation NTH, a Nashville-based integrator, partners with Cognex to tackle complex challenges in demanding industries like automotive and life sciences. By leveraging advanced vision systems and deep learning technology, they enhance defect detection, efficiency and adaptability in automation processes.
+
+WATCH THE VIDEO
+
+Automating agriculture
+
+Automation is making significant inroads in the agricultural field, taking over tasks from soil management, planting, harvesting and virtually everything in between. Follow along with GlobalSpec for a rundown of some of the automation solutions happening down on the farm. Read more →
+
+AI edge computing solutions at Automate 2024
+
+To say that AI took center stage at Automate 2024 is just a tad reductive. Advancements in machine learning were always going to be the star of the 2024 show. Even more so as AI becomes increasingly available at the network edge. Read more →
+
+Nexperia B.V.
+
+How to interpret SiC MOSFET datasheet parameters: Apply them in a typical power electronics circuit design
+
+This white paper will help you:
+• Interpret essential datasheet parameters for the NSF040120L4A0 device
+• Use these essential datasheet parameters to estimate device performance in a widely used bidirectional DC-DC-converter topology
+ 
+
+View more
+
+Energy harvester powers remote devices in the IoT
+
+Engineered by University of Utah researchers, this pyroelectrochemical cell harvests ambient thermal energy and converts it into stored electrochemical energy. Read more →
+
+DataFEED OPC Suite from Softing Industrial provides access to SINUMERIC 840D CNC machines
+
+The software solution offers comprehensive support for SINUMERIK 840D computerized numerical control (CNC) machines as well as the integration of web services. Read more →
+
+ 
+
+Connect with us:
+
+Feedback on this issue? Tell us what you think
+Join our team of Expert Contributors
+
+ 
+
+GlobalSpec publishes more than 60 free industry newsletters - browse our portfolio.
+
+Want to reach industry executives with your message? Download our media kit or contact us directly at sales@globalspec.com.
+
+About this email: You are receiving this message as part of your complimentary newsletter subscription to Industrial IoT. If you no longer wish to receive this newsletter, you can modify your preferences or unsubscribe.
+
+
+## embeddedrelated.com
+https://www.embeddedrelated.com/blogs-2/nf/all/all.php#tabs1-recent 
+
+
+## Research by Nozomi Networks: drones series Remote Identification (RID) and ground station receivers: 
+"Not the Drones You're Looking For" 
+
+https://lnkd.in/dPspyUaR "DroneScout ds230 vulnerabilities" https://lnkd.in/d4hEV7M5 DJI's drones vulnerability analysis: Part 1: https://lnkd.in/d-7Nptn8 Part 2: https://lnkd.in/dQCkbHwD
+
+## Fire Alarm MCU with LoRaWAN  [[{wireless.LoRaWAN.Semtech]]
+* <https://en.ctimes.com.tw/DispProduct.asp?O=HK1BFBFE2U8SAA00PI>
+  2017-11-12 Holtek Announces Intelligent Fire Alarm MCU SIP Module 
+   ...  they are collaborating with Semtech Corporation integrated
+   with Semtech’s LoRa devices and wireless RF technology 
+   (LoRa Technology) and leveraging LoRaWAN, the open protocol.
+[[wireless.LoRaWAN.Semtech}]]
+
+

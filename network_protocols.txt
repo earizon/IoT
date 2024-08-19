@@ -1,0 +1,488 @@
+# Network Protocols
+
+## droplit.io (Integration) [[{network.cloud,]]
+* <https://www.qualcomm.com/news/onq/2018/12/14/using-droplit-bring-cloud-edge>
+* Context:
+  If you’re an IoT device developer, you know the "I" in "IoT" means
+  your device will, at some point, need to communicate with the cloud.
+
+  But what if your device development expertise or schedule doesn't
+  extend to cloud development?
+
+    Enter droplit.io, a cloud-based, protocol-agnostic platform, that
+  provides a rich API for integrating networked devices through the
+  cloud, such as consumer wireless products, building automation
+  systems, and PLCs.
+[[}]]
+
+## MQTT Protocol: up to x93 faster than HTTP!! [[{protocol,doc_has.comparative]]
+* MQTT: Message Queue Telemetry Transport
+* Binary packet payload with compressed headers of <2Bytes.
+* Simple: just five API methods.
+* originally developed out of IBM's pervasive computing team
+  moved to open source community.
+* (much) simpler that AMQP, designed for resource-constrained devices
+ *LOW-BANDWIDTH/HIGH-LATENCY*  (dial up lines, LoWa, satellite links,
+  marine communication...)
+* Suitable for unreliable mobile connections.
+  (Facebook and others are using it as part of their mobile applications).
+- Extracted from: <https://medium.com/mqtt-buddy/mqtt-vs-http-which-one-is-the-best-for-iot-c868169b3105>
+  """According to measurements in 3G networks, throughput of MQTT is 93 times
+   faster than HTTP’s.  """
+* does not define the message format at all
+* Some MQTT-based brokers support THOUSANDS OF CONCURRENT DEVICE CONNECTIONS.
+* It offers THREE QUALITIES OF SERVICE:
+  1) fire-and-forget / unreliable: Best effort.
+  2) "at least once" : ensure it is sent a minimum of one time
+                       (maybe more)
+  3) "exactly once".
+  • It provides users with options of:
+    ✓*LAST WILL TESTAMENT*: In case of unexpected disconnection of a client
+                            all subscribed clients will get a message from a broker.
+    ✓*RETAINED MESSAGES*  : newly subscribed client will get an immediate
+                            status update.
+  *WARN: HTTP Protocol has none of these abilities.*
+
+* See also:
+  <https://github.com/tldr-pages/tldr/blob/master/pages/common/mosquitto.md>
+  <https://github.com/tldr-pages/tldr/blob/master/pages/common/mosquitto-*.md>
+
+## MQTT Alternatives
+
+* COAP: Constrained Application Protocol.
+  ```
+      MQTT                        │        COAP
+  ==============================  │ ===========================
+  · publish-subscribe prototype.  │ · request-response prototype.
+    (no queues)                   │
+  · only async mode               │ · async+synch messaging.
+  · TCP-based                     │ · UDP-based
+  · Header size: 2 bytes.         │ · Header size: 4 bytes.
+  · not RESTful based.            │ · RESTful based.
+  · use: live communication       │ · use: ???
+  · persistence support.          │ · NOT persistence support.
+  · -                             │ · message have labels
+  · focus on IoT apps             │ · focus on Utility area networks.
+  · Low Latency and NAT issues.   │ · Low Latency and NAT issues.
+  ```
+
+* AMQP:
+* XMPP:
+* DD :
+* LwM2M:
+* RHIOT:
+<https://rhiot.gitbooks.io/rhiotdocumentation/content/>
+* IoT Messaging (with Camel Connector)
+  Rhiot is a messaging platform for the Internet Of Things.
+  focused on an adoption of the Red Hat JBoss middleware
+  portfolio to provide solutions to the common IoT-related challenges.
+  An apache camel connector exists to connect to the bricklet.
+[[}]]
+
+
+## Zigbee.org  Protocol [[{network.mesh,protocol.zigbee]]
+* <https://www.zigbee.org/>
+* IEEE 802.15.4-based specification for a suite of high-level
+  communication protocols used to create personal area networks with
+  small, low-power digital radios, such as for home automation, ...
+* Zigbee PRO 2023 new security mechanisms and enhancements 
+  <https://www.helpnetsecurity.com/2023/04/12/zigbee-pro-2023-security-mechanisms/>
+   The key new security features include Dynamic Link Key, Device 
+  Interview, and Trust Center Swap Out. Dynamic Link Key is a 
+  significant improvement based on Public/Private key pairing and 
+  advanced security curves, further protecting the network from 
+  attacks. Device Interview technology allows users to query and filter 
+  out the devices before allowing them onto a network based on 
+  ecosystem requirements. The Trust Center Swap-Out feature allows 
+  changing out the ‘Trust Center’ which can be a gateway, hub, smart 
+  speaker, and even commercial electric meters for a network without 
+  requiring all devices to be recommissioned
+[[}]]
+
+
+## Bluetooth [[{protocol.bluethooth,]]
+-  Ubicación casi exacta con Bluetooth
+ <https://www.xataka.com/internet-of-things/bluetooth-5-1-oficial-ahora-dispositivos-podran-conocer-ubicacion-casi-exacta-senal-bluetooth>
+
+
+### Bateryless-Bluetooth
+<https://www.adslzone.net/2019/01/15/wiliot-bluetooth-sin-bateria/amp/>
+- Crean un chip Bluetooth que no necesita batería: ¿cómo lo han hecho?
+  Wiliot: creadora del chip Bluetooth que no necesita batería
+[[}]]
+
+## WiGig [[{network.wireless.WiGIg]]
+- 10Gbps line-of-view WiFi
+[[}]]
+
+[[{]]
+## Narrow-band [[{network.101,network.wireless,]]
+<https://en.wikipedia.org/wiki/Narrowband>
+* In radio, narrowband describes a channel in which the bandwidth of the
+  message does not significantly exceed the channel's coherence bandwidth.
+
+* In the study of wired channels, narrowband implies that the channel under
+  consideration is sufficiently narrow that its frequency response can be
+  considered flat. The message bandwidth will therefore be less than the
+  coherence bandwidth of the channel. That is, no channel has perfectly flat
+  fading, but the analysis of many aspects of wireless systems is greatly
+  simplified if flat fading can be assumed.
+
+* Narrowband can also be used with the audio spectrum to describe sounds which
+  occupy a narrow range of frequencies.
+
+* In telephony, narrowband is usually considered to cover frequencies 300–3400 Hz.
+[[}]]
+
+## Sigfox Global Low Power WAN [[{network.wireless.lora,]]
+<https://www.sigfox.com/en>
+<https://es.wikipedia.org/wiki/Cellnex_Telecom>
+- Sigfox Global Low Power Wide Area Network drastically brings down cost
+  and energy consumption required for securely connecting IoT sensors
+  to the Cloud.
+- With its simple approach to connectivity, Sigfox provides extremely price-
+  competitive connectivity subscriptions and even more importantly, enables
+  extremely simple and cost-efficient silicon modules.
+
+- Provider for other companies. Example:
+  "...Securitas Direct prevé incementar gradualmente la tipología y
+  número de dispositivos conectados a la red IoT de Cellnex, basada en
+  tecnología Sigfox. Por su parte, Cellnex ampliará con Sigfox la
+  capacidad de su red IoT en España y extenderá su cobertura a
+  Portugal..."
+  SRC: <https://es.wikipedia.org/wiki/Cellnex_Telecom>
+[[}]]
+
+## Z-Wave [[{use_case.domotic,protocol.z-wave,network.mesh,]]
+<https://en.wikipedia.org/wiki/Z-Wave>
+* wireless communications protocol used primarily for home automation.
+* It is a mesh network using low-energy radio waves to communicate
+  from appliance to appliance, allowing for wireless control of residential
+  appliances and other devices, such as lighting control, security systems,
+  thermostats, windows, locks, swimming pools and garage door openers.
+* Like other protocols and systems aimed at the home and office automation
+  market, a Z-Wave automation system can be controlled from a wireless keyfob,
+  a wall-mounted keypad or through smartphones, tablets or computers, with a Z-
+  Wave gateway or central control device serving as both the hub controller and
+  portal to the outside. It provides interoperability between home
+  control systems of different manufacturers that are a part of its alliance.
+  There are a growing number of interoperable Z-Wave products; over 1,700 in
+  2017, and over 2,400 by 2018.
+[[}]]
+
+## LPWAN [[{network.lpwan,]]
+<https://www.qwant.com/?q=LPWA++wikipedia>
+* A low-power wide-area network (LPWAN) or low-power wide-area
+  (LPWA) network or low-power network (LPN) is a type of wireless
+  telecommunication wide area network designed to allow long range
+  communications at a low bit rate among things (connected objects),
+  such as sensors operated on a battery. The low power, low bit
+  rate and intended use distinguish this type of network from a
+  wireless WAN that is designed to connect users or businesses, and
+  carry more data, using more power. The LPWAN data rate ranges from
+  0.3 kbit/s to 50 kbit/s per channel.
+
+* A LPWAN may be used to create a private wireless sensor network,
+  but may also be a service or infrastructure offered by a third party,
+  allowing the owners of sensors to deploy them in the field without
+  investing in gateway technology.
+
+* what is lpwa for the IoT (part-1)?
+<https://www.sierrawireless.com/iot-blog/iot-blog/2016/07/what_is_lpwa_for_the_internet_of_things_part-1_the_thre_-cs_of_iot/>
+
+## Narrowband IoT
+<https://en.wikipedia.org/wiki/Narrowband_IoT>
+Narrowband IoT (NB-IoT) is a Low Power Wide Area Network (LPWAN) radio
+technology standard developed by 3GPP to enable a wide range of cellular
+devices and services.[1][2] The specification was frozen in 3GPP Release 13 (
+LTE Advanced Pro), in June 2016.[3] Other 3GPP IoT technologies include eMTC (
+enhanced Machine-Type Communication) and EC-GSM-IoT.[4]
+[[}]]
+
+## Apache plc4x  [[{]]
+https://plc4x.apache.org/, Universal Protocol Adapter for Industrial IoT
+
+"""While with OPC-UA every device has to be retrofitted with the
+ability to speak a new protocol and use a common client to speak with
+these devices, PLC4X tries to provide a unified API by implementing
+drivers for communicating with most industrial controllers in the
+protocols they natively understand."""
+
+Each of these drivers is being implemented from the specs or by
+reverse engineering protocols in order to be fully Apache 2.0
+licensed.
+
+The*major benefits*of PLC4X™ over OPC-UA, from our point of view are:
+  - No need to modify existing hardware
+  - Activating OPC-UA support on existing PLCs greatly increases the load on the PLCs
+  - No need to pay for licenses to activate OPC-UA support
+
+- At first we will be concentrating on providing adapters for the most widely used
+  protocol such as:
+
+  PROTOCOLS SUPPORTED:
+  • AB-ETH
+  • ADS/AMS
+  • BACnet/IP
+  • CANopen
+  • DeltaV
+  • DF1
+  • EtherNet/IP
+  • Firmata
+  • KNXnet/IP
+  • OPC UA (TCP)
+   Modbus (TCP)         https://en.wikipedia.org/wiki/Modbus
+  •  S7-STEP7/S7-TIA(TCP)
+  • Simulated
+  • Profinet https://en.wikipedia.org/wiki/PROFINET
+             Profinet (usually styled as PROFINET, as a portmanteau for Process Field Net)
+             is an industry technical standard for data communication over Industrial
+             Ethernet, designed for collecting data from, and controlling equipment in
+             industrial systems, with a particular strength in delivering data under tight
+             time constraints (on the order of 1ms or less).[1] The standard is maintained
+             and supported by Profibus & Profinet International, an umbrella organization
+             headquartered in Karlsruhe, Germany.
+  •  Beckhoff ADS (TCP)
+  •  Emerson DeltaV (UDP)
+  •  EtherNet/IP (TCP)
+  •  KNXNet/IP (UDP)
+  •  OPC-UA (TCP)
+
+* (planned) Support for C++, Go, Java, Python
+
+* TRANSPORTS:    INTEGRATIONS:          TOOLS:
+  • TCP          • Apache Calcite       • Capture Replay
+  • UDP          • Apache Camel         • Connection Pool
+  • Serial       • Apache Edgent        • Connection Cache
+  • SocketCAN    • Apache IoTDB         • Object PLC Mapping (OPM)
+  • Raw Socket   • Apache Kafka         • Scraper
+  • PCAP Replay  • Apache NiFi          • PLC4X without a PLC and Unit Testing
+                 • Apache StreamPipes
+                 • Eclipse Ditto
+                 • Eclipse Milo OPC UA Server
+[[}]]
+
+[[}]]
+
+
+## Multicast DNS: [[{protocol.multicast_dns,]]
+<https://en.wikipedia.org/wiki/Multicast_DNS>
+* multicast DNS (mDNS) protocol resolves host names to IP addresses
+  within small networks lacking a local name server.
+* ZERO-CONFIGURATION SERVICE, using essentially the same
+  programming interfaces, packet formats and operating semantics as
+  the unicast Domain Name System (DNS).
+* Although Stuart Cheshire designed mDNS as an stand-alone protocol,
+  it can work in concert with standard DNS servers.
+
+* The mDNS protocol is published as RFC 6762, uses IP multicast User Datagram
+  Protocol (UDP) packets, and is implemented by the Apple Bonjour and open
+  source Avahi software packages. Android contains an mDNS implementation.
+  mDNS has also been implemented in Windows 10, but its use there is limited to
+  discovering networked printers.
+
+* mDNS can work in conjunction with DNS Service Discovery (DNS-SD), a companion
+  zero-configuration technique specified separately in RFC 6763.
+[[}]]
+
+## LoRa(WAN) [[{network.101,network.wireless.LoRa,]]
+<https://en.wikipedia.org/wiki/LoRa>
+LoRa (Long Range) is a patented[1] digital wireless data communication
+technology developed by Cycleo of Grenoble, France, and acquired by Semtech
+in 2012.[2] LoRa is a long-range wireless communication protocol that competes
+against other low-power wide-area network (LPWAN) wireless such as narrowband
+IoT (NB IoT) or LTE Cat M1. Compared to those, LoRa achieves its extremely
+long range connectivity, possible 100km+, by trading off data rate. Because
+its data rates are below 50kbps and because LoRa is limited by duty cycle and
+other restrictions, it is suitable in practice for non-real time applications
+in which one can tolerate delays.[3]
+[[}]]
+
+## Radio-frequency identification [[{network.radio,]]
+<https://en.m.wikipedia.org/wiki/Radio-frequency_identification>
+[[}]]
+
+## Global Platform [[{security,standards.global_platform,network.5g]]
+* <https://globalplatform.org/>
+* interoperable deployment and management of multiple embedded
+  applications on Secure Elements (SEs).
+* TEE System Architecture
+  hardware and software architectures behind the Trusted Execution
+  Environment (TEE) and introducing TEE management and functional
+  availability in a device.
+* FAQs about the GlobalPlatform Security Evaluation Standard for IoT
+  Platforms (SESIP), a variant of the Common Criteria methodology
+  specialized for the evaluation of Connected Platforms in the context
+  of IoT.
+* Specs for low-level API for the minimum UICC functionality needed in
+  low-cost constrained IoT devices including functions for network
+  attachment and functions for cellular subscription profile download
+  and management.
+* Evaluation of a Secure Element (SE) product based on the
+  GlobalPlatform (GP) Card Specification
+[[}]]
+
+## Eclipse Keyple [[{network.contactless.eclipse_keyple,standards,PM.TODO.now]]
+* <https://projects.eclipse.org/technology-type/internet-things>
+* Goal: allow developers to easily implement fast and secure
+  off-line contactless transactions (using NFC cards, mobile phones,
+  …) based on the Calypso standard.
+[[network.contactless.eclipse_keyple}]]
+
+[[{security.lorawan,network.wireless.lorawan]]
+## LoRaWAN security
+<https://www.researchgate.net/publication/321362926_Using_blockchain_to_build_trusted_LoRaWAN_sharing_server>
+* LoRaWAN protocol is equipped with AES symmetric crypto protection,
+  with well-known  keys to IoT node and network gateway
+  mutual authentication, integrity protection and confidentiality.
+  providing both signing and encryption for parts of network packages.
+  KEY DISTRIBUTION depends on how IoT node joins the network:
+  * node allowed entry through ABP:
+    IoT node comes preinstalled with 'DevAddr' and both communication unique
+    session keys:
+    - network session key (NwkSKey): network layer security.
+    - app     session key (AppSKey): application layer end-to-end security.
+    Gateway must have the information and keys they need.
+  * OTAA:
+    - each IoT node comes preinstalled  with a unique 128-bit AppKey,
+      used to sign the (un-encrypted) "join-request" message that
+      includes the end node's unique:
+      ```
+      [ AppEUI, DevEUI , DevNonce ] + 4bytes signature using AppKey
+        |       |         └ random (2bytes) DevNonce
+        |       └---------- Should be globally unique identifier for the device
+        └------------------ Should be unique to owner-of-device(or IoT solution)
+      ```
+      On reception the gateway should check the values and then
+      recheck signature using the share AppKey responding with a "join-accept"
+      The gateway generates also a new AppNonce and calculates the end node's two
+      new 128-bit keys: the AppSKey and the NwkSKey.<br/>
+   After joining, all future messages will be encrypted and signed.
+
+* PROBLEM: How do we trust gateway in public WANs?
+[[security.lorawan}]]
+
+## LoRaWan Course [[{101,network.wireless.lora,]]
+* <https://www.thethingsnetwork.org/docs/lorawan/>
+* <https://www.thethingsnetwork.org/achievements/a/the-things-certified-fundamentals/>
+
+## Chiprstack LoRaWAN Network Server  [[{]]
+* <https://github.com/chirpstack/chirpstack>
+* OOSS LoRaWAN Network Server which can be used
+  to to setup LoRaWAN networks.
+* Includes web-interface for the management of gateways,
+  devices and tenants as well to setup data
+  integrations with the major cloud providers,
+  databases and services commonly used for handling
+  device data.
+* gRPC & REST API.
+* Class-A end-device support: allow for bi-directional communications
+  whereby each end-device‘s uplink transmission is followed by two
+  short downlink receive windows. The transmission slot scheduled by
+  the end-device is based on its own communication needs with a small
+  variation based on a random time basis (ALOHA-type of protocol).
+
+* Class-B end-device support: allow for more receive slots. In
+  addition to the Class A random receive windows, Class B devices open
+  extra receive windows at scheduled times. In order for the End-device
+  to open it receive window at the scheduled time it receives a time
+  synchronized Beacon from the gateway.
+
+* Class-C end-device support: have nearly continuously open receive
+  windows, only closed when transmitting. Class C end-device will use
+  more power to operate than Class A or Class B but they offer the
+  lowest latency for server to end-device communication.
+
+* Adaptive data-rate: When the end-device has ADR enabled, the
+  ChirpStack LoRaWAN network-server will ensure that the device will
+  operate using the most efficient data-rate and tx-power. this will
+  not only save energy at the device-side, but will also optimize the
+  usage of the radio spectrum, lowering the risk of collisions.
+
+* Live frame-logging: The ChirpStack LoRaWAN application-server
+  provides live frame-logging per gateway and device. It will display
+  all the RX / TX meta-data, together with the raw LoRaWAN PHYPayload
+  in a readable format. It is like Wireshark for LoRaWAN!
+
+* Channel (re)configuration: Whether you want to use a sub-set of the
+  LoRaWAN defined channels (e.g. for the US band) or want to configure
+  additional channels (e.g. for the EU band), the ChirpStack LoRaWAN
+  network-server will make sure the device stays always in sync with
+  the network configured channels (using the CFList field and / or
+  mac-commands).
+
+* Multi-tenant: The ChirpStack LoRaWAN application-server supports
+  the creation of multiple organizations to which (administrator) users
+  can be assigned. By integrating the user-accounts into the MQTT
+  broker authentication, organizations will only see their own data.
+
+* LoRaWAN 1.0 and 1.1 compatible including all LoRaWAN Regional Parameter
+  Specification revisions and bands.
+
+[[}]]
+
+## 6LoWPAN vs LPWAN [[{101,network.wireless.lora,doc_has.comparative,]]
+* <https://www.researchgate.net/publication/316236998_Comparison_of_6LoWPAN_and_LPWAN_for_the_Internet_of_Things/link/5a227e570f7e9b71dd03af85/download>
+
+* In general, TWO MAIN CATEGORIES OF NETWORKS ARE USED IN THE IOT:
+  * short-range/low-power:
+    IPv6 over low-power wireless personal area networks (6LoWPAN) are
+    considered to be a crucial network and will account for the majority
+     of IoT devices.
+  * long-range/low-power :(LPWAN).
+    LoRaWAN and SigFox are two major networking landscapes and players.
+    In general they are more demanding in terms of node and link constraints.
+    (e.g. very low payload size, very low data rate and very limited
+    resources).
+  * TODO: Whow 6LoWPAN compare to WIFI/ZigBee
+    ```
+    6LoWPAN networks                  LoRaWAN/SigFox                         LTE Cat M1
+    =================                 ==============                         =============
+    • IoT nodes communicate           • IoT nodes communicate with           • Cellular (Licensed Band)
+      directly with other nodes         (MQTT?,...) gateways with
+                                        Start topology. No routing.
+    • 10 - 100 meters                 • 5 - 50 km                            • 2.5-5.0 km
+    • Unique IPv6 address/ident.      • "Addressless"
+    • Issues when porotocol do        • Support for Mobility.
+      not support
+    • Physical layer determined       • Physical layer is called "LoRa"      • Bandwidth: 1.08MHz
+      by IEEE 802.15.4 (de/ac-ti-       chirp spectrum modulation technique
+      vation of radio transceiver,      for long-range, low data rate,
+      energy detection, link QA         low-power wireless communications
+      indcation, channel selection,     LoRa radio has 4 config params:
+       ...)                             frequency, spreading factor,
+                                        bandwidth and coding rate
+                                        (Bor, Vidler, and Roedig 2016).
+                                        SigFox uses ultranarrow band ,
+                                        key for scalable, high-capacity
+                                        network and also provides
+                                        mono|bi-irectional com., freq.
+                                        hopping (avoid signal interception)
+                                      • SigFox is NOT an open protocol.
+                                      • 1-5$ LoRawAN, 5$ SigFxo              • <5$ per client-module
+    • Gover.Body: IEEE                • Gov.Body: LoRa Alliance/Sigfox       • Governing Body: 3GPP
+    • Coverage: ???                   • 149 dB LoRaWAN, 164 SigFox           • 160 dB
+    • Location Support: ???           • Location Support:                    • Needs GPS
+                                        LoRawWAN: yes, SigFox: no
+                                      • LoRawWAN Stats: *1
+                                        2.7+M gateways.
+                                        225M IoT end nodes.
+                                        163+ public/private Network Operators
+                                        50%+ non-cellular LPWA connections
+                                        will feature LoRa by 2026
+
+    *1: https://www.semtech.com/lora
+    ```
+
+## The things network (TTN) [[{network.wireless.lora.TTN,standards.TTN]]
+<https://www.thethingsnetwork.org/>
+* 42.2M messages per day (2022-01-14)
+* 151 countries
+* 998 Certified Developers
+* 162K members
+* 20.2K Gateways
+* 1.5M YouTube views
+* 650+ GitHub Starts.
+[[}]]
+
+

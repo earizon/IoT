@@ -1,0 +1,273 @@
+# Hardware: Integrated uBoards
+
+## transformerless power supplies [[{hardware.101]]
+* <https://hackaday.com/2017/04/04/the-shocking-truth-about-transformerless-power-supplies/>
+[[hardware.101]}]]
+
+## circuitpython IoT Catalog [[{doc_has.catalog]]
+* Extensive Catalog/DDBB of mCPU "ready to run" boards on circuitpython.org:<br/>
+  ej., to check LoRa enabled IoT Devices:
+ * <https://circuitpython.org/downloads?q=lora><br/>
+* From "top" IoT builders (Adafruit ,Arduino ,Electronic Cats ,Espressif,
+  JPConstantineau ,NXP ,NXP ,Oak Dev.Tech ,Particle ,Pimoroni ,PJRC
+  PyCubed.org ,hardware.raspberry Pi ,SEEED ,SparkFun ,ST ,Unexpected Maker, ...)
+[[}]]
+
+## ~1$ HT48C06 8-bit MCU [[{use_case.alarms,hardware.pcb,hardware.mcpu.Holtek,PM.price.to_0.5€,network.wireless.lora,]]
+* HT stands for Holtek
+https://www.holtek.com/productdetail?p_p_auth=q0FpqQ4D
+- HT48C06: 8-bit mCPU, 64 bytes of RAM, 1024 words of ROM, 13 GPIO, 4/8mhz.
+[[}]]
+
+## <$0.10 RISC-V MCU [[{hardware.mcpu,oltek,PM.price.to_0.1€,]]
+<https://github.com/openwch/ch32v003>
+  CH32V003: ultra-cheap RISC-V MCU:
+FEATURES:
+- QingKe 32-bit RISC-V2A processor, supporting 2 levels of interrupt nesting
+- Maximum 48MHz system main frequency
+- 2KB SRAM, 16KB Flash
+- Power supply voltage: 3.3/5V
+- Multiple low-power modes: SLEEP, STANDBY
+- Power on/off reset, programmable voltage detector
+- 1 group of 1-channel general-purpose DMA controller
+- 1 group of op-amp comparator
+- 1 group of 10-bit ADC
+- 1×16-bit advanced-control timer, 1×16-bit general-purpose timer
+- 2 WDOG, 1×32-bit SysTick
+- 1 USART interface, 1 group of I2C interface, 1 group of SPI interface
+- 18 I/O ports, mapping an external interrupt
+- 64-bit chip unique ID
+- 1-wire serial debug interface (SDI)
+- Package: TSSOP20, QFN20, SOP16, SOP8
+
+See also:
+* <http://www.lcdwiki.com/CH32F203C8T6_Board>
+[[}]]
+
+## DiY: ICs at home [[{101]]
+<https://hackaday.com/2012/07/09/make-your-own-integrated-circuits-at-home/>
+* The Nyan Cat you see above is only 600 micrometers from head to tail.
+  To put that into perspective, that’s about 10 times the diameter of
+  a human hair. Also, that Nyan is etched into 200 nanometer thick
+  copper foil and is the work of the HomeCMOS team, who is developing a
+  hobbyist-friendly process to make integrated circuits and MEMS
+  devices at home.
+* The project is far from complete; HomeCMOS has yet to produce a
+  working IC but a few experiments – getting wet etching down pat and
+  even building an almost working quantum qbit – are remarkable given
+  the small amount of equipment and tools involved.
+* The HomeCMOS team has yet to actually make an integrated circuit or
+  MEMS device, [Jeri Ellsworth] has shown this is possible by making
+  transistors and integrated circuits at home. While there won’t be
+  chips with millions of transistors coming out of the HomeCMOS lab
+  anytime soon, it’s more than possible to see a few small-scale
+  integration-level tech such as a few logic gates or a regulator.
+[[}]]
+
+
+## PLC Programable Logic Controller [[{101,hardware.sbc.plc,use_case.industrial,real_time.PLC,]]
+<https://en.wikipedia.org/wiki/Programmable_logic_controller>
+(Autómata programable en Español)
+* PLCs were first developed in the automobile manufacturing industry to
+  provide flexible, ruggedized and easily programmable controllers to
+  replace hard-wired relays, timers and sequencers. Since then, they
+  have been widely adopted as high-reliability automation controllers
+  suitable for harsh environments. A PLC is an example of a "hard"
+  real-time system since output results must be produced in response to
+  input conditions within a limited time, otherwise unintended
+  operation will result.
+* A programmable logic controller (PLC) or programmable controller is an
+  industrial digital computer which has been ruggedized and adapted for the
+  control of manufacturing processes, such as assembly lines, or robotic devices
+  , or any activity that requires high reliability control and ease of
+  programming and process fault diagnosis.
+* Examples include Siemens S7 ,Allen Bradley ,Omron ,...
+
+* First PLC were designed to replace logical relés systems.
+[[}]]
+
+# Litex [[{hardware.FPGA.litex,]]
+https://github.com/enjoy-digital/litex
+* The LiteX framework provides a convenient and efficient
+  infrastructure to create FPGA Cores/SoCs, to explore various digital
+  design architectures and create full FPGA based systems.
+* LiteX provides all common components required to easily create an
+  FPGA Core/SoC:
+  * Buses and Streams (Wishbone, AXI, Avalon-ST) and their interconnect.
+  * Simple cores: RAM, ROM, Timer, UART, JTAG, etc….
+  * Complex cores through the ecosystem of cores: LiteDRAM, LitePCIe,
+    LiteEth, LiteSATA, etc...
+  * Various CPUs & ISAs: RISC-V, OpenRISC, LM32, Zynq, X86 (through a
+    PCIe), etc...
+  * Mixed languages support with
+    VHDL/Verilog/(n)Migen/Spinal-HDL/etc... integration capabilities.
+  * Powerful debug infrastructure through the various bridges and
+    Litescope.
+  * Direct/Fast simulation through Verilator.
+  * Build backends for open-source and vendors toolchains.
+  * And a lot more... :)
+* Typical LiteX design flow:
+  ```
+  |                  ┌───────────────┐
+  |                  │FPGA toolchains│
+  |                  └────^─────┼────┘
+  |                       ·     ·
+  |                    ┌──┴─────v──┐
+  |         ┌───────┐  │           │
+  |         │ Migen +··>           │
+  |         └───────┘  │           │   Your design
+  |                    │   LiteX   ├·> ready to be
+  |                    │           │   used!
+  |    ┌────────────┐  │           │
+  |    │LiteX Cores ├─·>           │
+  |    │Ecosystem   ├─·>           │
+  |    └────────────┘  └─^───────^─┘
+  | (Eth,SATA,DRAM,USB,  ·       ·
+  |  PCIe, Video,        +       +
+  |  etc...)            board   target
+  |                     file    file
+  ```
+[[hardware.FPGA.litex}]]
+
+## VisionFive 2 [[{hardware.mcpu.RiscV,price.to_30€,]]
+
+* World’s first high-performance RISC-V single board computer (SBC)
+  with an integrated GPU.
+* Processor: StarFive JH7110 U74 quad-core at 1.5 GHz
+* Memory: 2GB, 4GB, 8GB LPDDR4
+* Ubuntu 23.04 Now Works on StarFive’s VisionFive 2 RISC-V SBC
+  <https://9to5linux.com/ubuntu-23-04-now-works-on-starfives-visionfive-2-risc-v-single-board-computer>
+[[}]]
+
+
+## 3$ Linux Card 32MB RAM [[{price.to_5€,,hardware.mcpu.ARM,]]
+* <https://www.thirtythreeforty.net/posts/2019/12/my-business-card-runs-linux/>
+* ```
+  | Component            Price
+  | Allwiner ARM F1C100s $1.42 <·· includes CPU + RAM in chip
+  |                                bought on Taobao.
+  | PCB         $0.80              bought on from LCSC.
+  | 8MB flash   $0.17
+  | Others      $0.49
+  | Total       $2.88
+  |
+  | """I fabricated the PCBs with JLC. For $8 I got 10 copies.
+  | JLC boards are not quite as nice as the ones from OSHPark,
+  | but they look great, especially for the price. """
+  ```
+[[}]]
+
+## 4$ Raspberry Pi Pico [[{hardware.raspberry.pico,PM.price.to_5€,]]
+* <https://www.infoq.com/news/2021/01/raspberry-pico-versatility-size/>
+- 21mm x 51mm
+- custom-designed RP2040 chip.
+  - 2 ARM Cortex-M0+ cores up-to-133MHz
+  - 264KB internal SRAM
+  - 2MB QSPI Flash (external memories).
+
+- SDK: C+MicroPython via USB.
+  - Reprogramming the Pico Flash can be done using a USB dragging a
+    special ‘.uf2’ file onto the disk will write this file to the
+    Flash and restart the Pico.
+  - Code may be executed directly from external memory through a
+    dedicated SPI, DSPI, or QSPI interface. A small cache improves
+    performance for typical applications. The Serial Wire Debug (SWD)
+    port can be used to interactively debug code running on the RP2040.
+
+- I/O options:
+  - 8 Programmable I/O state machines for custom peripheral support.
+    - GPIO 0-22 : digital.
+    - GPIO 26-28: digital | ADC inputs.
+    - Programmable state machine  → custom communication protocols "outside" CPU.
+  - 2 UARTs
+  - 2 SPI controllers    : commonly used by RFID card reader modules and
+    2.4 GHz wireless transmitter/receivers.
+  - 2 two I2C controllers: temperature sensors, accelerometers, magnetometers, ...
+  - 16 PWM channels      : control analog devices such as servomotors.
+    PWM == Pulse Width Modulation
+  - 1 USB 1.1 controller
+
+### Raspberry Pi Zero "BUTs"
+* even in its lowest power mode it will consume on the order of 100 milliwatts;
+* no support for analog input;
+* general-purpose OS (Linux) is not well suited to low-latency control of individual I/O pins.
+[[hardware.raspberry.pico}]]
+
+## $6 C-SKY RISC-V Board [[{hardware.sbc,PM.price.to_5€]]
+* <https://www.cnx-software.com/2018/11/12/c-sky-linux-development-board-gx6605s-media-soc/>
+* C-SKY Linux development board key features and specifications:
+  * SoC – Nationalchip GX6605S C-SKY ISA V1 CK610M 32-bit processor @
+    574 MHz with 64MB DDR2 RAM, built-in DVB-S2/S demodulator
+  * Storage – 4MB SPI flash for bootloader and media player program
+  * Video Output – HDMI output up to 1080p; framebuffer resolution
+  * (for UI): 1280×720
+  * Video Playback – H.264 up to 1080p
+  * USB – 2x USB2.0 host ports
+  * Expansion – 5-pin header with 3x GPIOs, 3.3V, GND
+  * Debugging
+    - JTAG via XX32F103C8T6 USB-JTAG chip (micro USB port)
+    - UART console via CH340g USB-UART chip (micro USB port)
+  * Misc – 5 user buttons, reset button, 4x LEDs
+  * Power Supply – 5V/1A via micro USB port (JTAG or UART)
+[[}]]
+
+## beagleboard Making Computers open again [[{hardware.sbc,]]
+* <http://beagleboard.org/>
+[[}]]
+
+[[{hardware.raspberry.PiServer,scalability,use_case.industrial,use_case.education]]
+## Disklet boot R-PI "cluster"
+* <https://www.raspberrypi.org/blog/piserver/>
+* ... We have developed a new piece of software called PiServer.
+  ... easily set up a network of client Raspberry Pis connected to
+  a single x86-based server via Ethernet.
+* With PiServer, you don’t need SD cards, you can control all
+  clients via the server, and you can add and configure user accounts
+[[hardware.raspberry.PiServer}]]
+
+
+[[{hardware.FPGA.AutoFPGA,qa.best_patterns]]
+## AutoFPGA
+* <https://github.com/ZipCPU/autofpga>
+* After now having built several FPGA designs, such as the xulalx25soc,
+  s6soc, openarty, zbasic, icozip, and even a Basys-3 design of my own
+  that hasn't been published, I started recognizing that all of these
+  designs have a lot in common. In particular, they all have a set of
+  bus masters, such as the UART-to-wishbone bridge that I use, the
+  hexbus debugging bus that offers a simpler version of the same, or
+  even the zipcpu. Many of these designs have also started to use (and
+  reuse) many of the peripherals I've developed, such as the generic
+  UART, the QSPI flash controller, the SD-card controller, the block
+  RAM controller, the RMII Ethernet Controller, the Real-Time Clock,
+  the Real-Time Date, the Organic LED controller, Xilinx's Internal
+  Configuration Access Port, the wishbone scope, the GPS controlled
+  clock, or even the PWM Audio Controller. All of these peripherals
+  have a very similar format when included within a top level design,
+  all of these require a certain amount of care and feeding as part of
+  that top level design, but yet rebuilding that top level design over
+  and over just to repeat this information becomes a pain.
+[[hardware.FPGA.AutoFPGA}]]
+
+[[{hardware.FPGA.nextpnr]]
+## nextpnr
+* vendor neutral, timing driven, FOSS FPGA place and route tool.
+Currently nextpnr supports:
+* Lattice iCE40 devices supported by Project IceStorm
+* Lattice ECP5 devices supported by Project Trellis
+* Lattice Nexus devices supported by Project Oxide
+* Gowin LittleBee devices supported by Project Apicula
+* (experimental) Cyclone V devices supported by Mistral
+* (experimental) Lattice MachXO2 devices supported by Project Trellis
+* (experimental) a "generic" back-end for user-defined architectures
+* (initial  WiP) Xilinx
+[[hardware.FPGA.nextpnr}]]
+
+
+[[{hardware.raspberry.vendor]]
+## sparkfun
+* <https://www.sparkfun.com/>
+* Approved RPi Reseller.
+* Web has tutorials for GPSs, FRID, FPGAs,...
+[[hardware.raspberry.vendor}]]
+
+

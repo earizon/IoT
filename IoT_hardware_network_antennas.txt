@@ -1,0 +1,61 @@
+# Antennas
+## GPS Timing Antennas [[{hardware.antennas,sensors.gps,]]
+
+* GPS Timing Antennas and Portable UFH Antenna offer High Levels of
+  Precision and Performance In many applications, across a wide range
+  of industries, the need for network time synchronization and
+  precision frequency reference is required.
+* Additionally in many test and monitoring applications the need for high performance,
+  field tunable UHF antennas is essential.
+  http://search.l-com.com/search?keywords=GPS%2FGLNSS
+  http://www.l-com.com/wireless-antenna-0-dbi-tunable-telescopic-portable-antenna-118-174-mhz-bnc-connector
+
+* To address these applications we have just released a new line of
+  GPS Timing Antennas and a portable UHF Antenna.
+  Features Include:
+  * 1575-1610 MHz Frequency Range (GPS Antennas)
+  * High Selectivity Dual Filter RF Architecture (GPS Antennas)
+  * Outdoor-Rated Design
+  * 118-174 MHz Frequency Range (UHF Antenna)
+  * Telescopic Radiator (UHF Antenna)
+  * Field tunable (UHF Antenna)
+[[}]]
+
+## Antennas for Launch Vehicles [[{network.wireless,]]
+- Portland State Aerospace
+  PSAS is a student aerospace engineering project at Portland
+  State University. We’re building ultra-low-cost, open source rockets
+  that feature some of the most sophisticated amateur rocket avionics
+  systems in the world.
+
+- <http://psas.pdx.edu/projects/>
+
+- <https://github.com/psas/antennas>
+  repo has information on antennas for PSAS launch vehicles,
+  including linearly polarized cylindrical patch antennas (CPAs).
+
+- <https://github.com/natronics/rust-psas-telemetry>
+  Rust crate to read, write, and manuplate binary telemetry
+  data messages in the PSAS rocket framework.
+[[}]]
+
+## WiFi/WiMAx/RFID/Ultra WideB... Antennas [[{network.wireless.antennas,hardware.antennas,]]
+* <http://www.smartant.com/>
+[[}]]
+
+## WiFI over TV antenna [[{hardware.antennas,network.wireless.LoRa,]]
+http://www.slashgear.com/rice-university-graduate-student-extends-wifi-for-a-mile-using-empty-tv-stations-28149043/
+[[}]]
+
+## L-Com WiFi/MIMO/CBRS Antennas [[{use_case.fleet_tracking,hardware.antennas,network.wireless,]]
+* L-com Introduces New Antennas to Address Wi-Fi 6/6e, MIMO and CBRS Applications
+  "...  We have just launched a new series of directional flat panel
+   and omnidirectional antennas to address a wide range of wireless
+   connectivity applications.
+
+   These new antennas offer high-performance and throughput while
+   supporting frequencies from 617 MHz to 7.2 GHz covering applications
+   including IoT, public safety, connected cars, fleet management, 5G
+   and cellular networks.
+  "
+[[}]]

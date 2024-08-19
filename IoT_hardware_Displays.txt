@@ -1,0 +1,22 @@
+# Hardware Displays
+
+## DiY: e-Ink Magic Mirror under $100 [[{hardware.display,price.to_100€,]]
+* <https://liliputing.com/2019/05/you-can-build-a-diy-e-ink-magic-mirror-for-under-100.html>
+
+* smart picture frame that can display calendar appointments, weather 
+  forecasts, news updates, incoming messages, and other information.
+* It uses a low-power, high-contrast E Ink display. 
+* Most of the components seem pretty easy to source and assemble.
+* Only a few pieces of hardware involved:
+  * a Raspberry Pi Zero W ($10).
+  * 7.5 inch Waveshare E Ink display ($50ish).
+  * microSD card.
+  * micro USB power adapter.
+* Software:
+  * open source MagicMirror2 platform with customization to run on black and white
+    E Ink displays.
+[[}]]
+
+## Control RGBW LED Strip with PWM [[{hardware.output.RGB,]]
+* <https://www.easyprogramming.net/raspberrypi/rgbw_led_strip.php>
+[[}]]

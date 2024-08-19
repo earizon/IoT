@@ -1,0 +1,202 @@
+# Hardware: Sensors 
+
+## Quick Look at Advanced IoT Sensors (InfoQ) 
+* <https://www.infoq.com/articles/iot-sensors-enterprise/>
+* Advanced sensors include:
+  - stereo vision sensors.
+  - electricity sensors.
+  - inclination sensors
+  - object detection
+  - ...
+* An especially promising new technology is battery-less sensors
+  which have very low power requirements and can be deployed at larger
+  scale
+
+
+
+## Tessel: Light/temperature/movement/...
+* <https://tessel.io/>
+* Python, Javascript, Rust programable
+
+[[{hardware.sensors.bricklets,hardware.display,hardware.input,]]
+## Bricklets 
+* <https://www.tinkerforge.com/en/doc/Primer.html#primer-bricklets>
+* (prebuilt IoT)
+  ```
+  | Name                        Description
+  | Accelerometer               Measures acceleration in three axis
+  | Air Quality                 Measures IAQ index, temperature, humidity and air pressure
+  | Ambient Light 2.0           Measures ambient light up to 64000lux
+  | Analog In 3.0               Measures DC voltage between 0V and 42V
+  | Analog Out 2.0              Generates configurable DC voltage between 0V and 12V
+  | Analog Out 3.0              Generates configurable DC voltage between 0V and 12V
+  | Barometer                   Measures air pressure and altitude changes
+  | Barometer 2.0               Measures air pressure and altitude changes
+  | Breakout                    Makes all Bricklet signals available
+  | CAN                         Communicates with CAN bus devices
+  | CAN 2.0                     Communicates with CAN bus devices
+  | CO2                         Measures CO2 concentration in ppm
+  | Color                       Measures color (RGB value), illuminance and color temperature
+  | Distance IR                 Measures distance up to 150cm with infrared light
+  | Distance IR 2.0             Measures distance up to 150cm with infrared light
+  | DMX                         DMX master and slave
+  | Dual Button                 Two tactile buttons with built-in blue LEDs
+  | Dual Button 2.0             Two tactile buttons with built-in blue LEDs
+  | Dual Relay                  Two relays to switch AC/DC devices
+  | Dust Detector               Measures dust density
+  | GPS 2.0                     Determine position, velocity and altitude using GPS
+  | Hall Effect                 Detects presence of magnetic field
+  | Humidity 2.0                Measures relative humidity
+  | Industrial Analog Out       Generates configurable DC voltage and current, 0V to 10V and 4mA to 20mA
+  | Industrial Analog Out 2.0   Generates configurable DC voltage and current, 0V to 10V and 4mA to 20mA
+  | Industrial Counter          4 channel counter up to 4MHz
+  | Industrial Digital In 4 2.0 4 galvanically isolated digital inputs
+  | Industrial Digital Out 4    4 galvanically isolated digital outputs
+  | Industrial Digital Out 4 2. 4 galvanically isolated digital outputs
+  | Industrial Dual 0-20mA      Measures two DC currents between 0mA and 20mA (IEC 60381-1)
+  | Industrial Dual 0-20mA 2.0  Measures two DC currents between 0mA and 20mA (IEC 60381-1)
+  | Industrial Dual Analog In   Measures two DC voltages between -35V and +35V with 24bit resolution each
+  | Industrial Dual Analog In 2.Measures two DC voltages between -35V and +35V with 24bit resolution each
+  | Industrial Dual Relay                                     Two relays to switch AC/DC devices
+  | Industrial Quad Relay 2.0   4 galvanically isolated solid state relays
+  | IO-16                       16-channel digital input/output
+  | IO-16 2.0                   16-channel digital input/output
+  | IO-4 2.0                    4-channel digital input/output
+  | Isolator                    Galvanically isolates any Bricklet from any Brick
+  | Joystick                    2-axis joystick with push-button
+  | Laser Range Finder          Measures distance up to 40m with laser light
+  | LCD 128x64                  7.1cm (2.8inch) display with 128x64 pixel and touch screen
+  | LCD 20x4                    20x4 character alphanumeric display with blue backlight
+  | LED Strip 2.0               Controls up to 2048 RGB(W) LEDs
+  | Line                        Measures reflectivity of a surface
+  | Linear Poti                 59mm linear potentiometer
+  | Load Cell 2.0               Measures weight with a load cell
+  | Moisture                    Measures soil moisture
+  | Motion Detector             Passive infrared (PIR) motion sensor, 7m range
+  | Motion Detector 2.0         Passive infrared (PIR) motion sensor, 12m range
+  | Motorized Linear Poti       Motorized Linear Potentiometer
+  | Multi Touch                 Capacitive touch sensor for 12 electrodes
+  | NFC                         NFC tag read/write, NFC P2P and Card Emulation
+  | OLED 128x64                 3.3cm (1.3inch) OLED display with 128x64 pixels
+  | OLED 128x64 2.0             3.3cm (1.3inch) OLED display with 128x64 pixels
+  | OLED 64x48                  1.68cm (0.66inch) OLED display with 64x48 pixels
+  | One Wire                    Communicates with up 64 1-Wire devices
+  | Outdoor Weather             433MHz receiver for outdoor weather station
+  | Particulate Matter          Measures Particulate Matter concentration (PM1.0, PM2.5 and PM10)
+  | Piezo Speaker               Creates beep with configurable frequency
+  | PTC 2.0                     Reads temperatures from Pt100 und Pt1000 sensors
+  | Real-Time Clock             Battery-backed real-time clock
+  | Real-Time Clock 2.0         Battery-backed real-time clock
+  | Remote Switch 2.0           Controls remote mains switches
+  | RGB LED                     Controls one RGB LED
+  | RGB LED Button              Push button with built-in RGB LED
+  | Rotary Encoder 2.0          360° rotary encoder with push-button
+  | Rotary Poti                 300° rotary potentiometer
+  | RS232                       Communicates with RS232 devices
+  | RS232 2.0                   Communicates with RS232 devices
+  | RS485                       Communicates with RS485/Modbus devices with full- or half-duplex
+  | Segment Display 4x7         Four 7-segment displays with switchable colon
+  | Solid State Relay           Controls AC and DC Solid State Relays
+  | Solid State Relay 2.0       Controls AC and DC Solid State Relays
+  | Sound Intensity             Measures sound intensity
+  | Sound Pressure Level        Measures Sound Pressure Level in dB(A/B/C/D/Z)
+  | Temperature                 Measures ambient temperature with 0.5°C accuracy
+  | Temperature 2.0             Measures ambient temperature with 0.2°C accuracy
+  | Temperature IR 2.0          Measures contactless object temperature between -70°C and +380°C
+  | Thermal Imaging             80x60 pixel thermal imaging camera
+  | Thermocouple 2.0            Measures temperature with thermocouples
+  | Tilt                        Detects inclination of Bricklet (tilt switch open/closed)
+  | UV Light                    Measures UV light
+  | UV Light 2.0                Measures UV-A, UV-B and UV index
+  | Voltage/Current 2.0         Measures power, DC voltage and DC current up to 720W/36V/20A0
+  ```
+[[hardware.sensors.bricklets}]]
+
+## chromatic-sensors [[{hardware.sensors.chromatics}]]
+* <https://www.micro-epsilon.com/sensors/confocal-chromatic-sensors/>
+
+## Controlling UVC power with l14u1 sensor [[{hardware.sensors.UVC}]]
+* <http://www.lightinmotion.com/en/technical-articles/63-controlling-uvc-power-with-the-l14u1-sensor>
+
+## Sensor tracking firefighters [[{hardware.sensors.motion}]]
+* <https://insights.globalspec.com/article/11310/researchers-create-sensor-capable-of-tracking-firefighters-in-burning-buildings>
+* Researchers at Canada’s McMaster University in collaboration with 
+  other universities have developed a motion-powered and fire-proof 
+  sensor capable of tracking the movements of those working in 
+  high-risk professions including firefighting, mining and steel 
+  working.
+* The inexpensive sensor, which is roughly the size of a button-cell 
+  watch battery, can fit easily into the sole of a boot or under the 
+  arm of a jacket — any location where motion produces a pattern of 
+  consistent contact and release to power the sensor. In other words, 
+  the sensor relies on triboelectric (or friction-generated) charging, 
+  taking electricity from movement the way one might when moving over a 
+  carpeted surface wearing socks and picking up static electricity.
+
+## High Temperature Harsh Environment Sensors 
+* <https://www.locon.net/high-temperature-harsh-environment-sensors.html>
+* Inductive, Capacitive and Photoelectric sensonrs.
+
+## Differential Pressure Sensor: [[{hardware.sensors.presure}]]
+* <https://pages.first-sensor.com/en/buyersguide-differential-pressure-sensor>
+
+
+## l-com.com Sensors [[{sensors.presure,doc_has.catalog]]
+* <http://www.l-com.com>
+* IOT: http://www.l-com.com/iot?cmp=LM1
+  * Pressure Sensor (37)
+  * Differential Pressure Sensor (9)
+  * Pressure Transmitter (22)
+  * Level Transmitter (14)
+[[}]]
+
+## Titan Pressure Sensor [[{sensors.preasure,sensors.accelerometer,]]
+<https://www.titanfiresystem.com/en/productos/>
+- Accelerometers.
+
+- WIRELESS MANOMETER SYSTEM
+""" First sensor Worldwide able to meassure with milibars precission."""
+- NFC connections to interact remotely and safely.
+[[}]]
+
+## counterfeit Fake DS18B20 sensors [[{security,sensors.temperature,,]]
+* <https://github.com/cpetrich/counterfeit_DS18B20><br/>
+  " How to tell original from fake DS18B20 temperature sensors "
+[[}]]
+
+
+## CEPTON low cost lidars [[{use_case.automotive,hardware.input.lidar,]]
+* <https://www.cepton.com/>
+* Range of up to 200 m at 10%
+* Resolution of up to 0.13°
+* Field of view of up to 120° (H) x 20° (V)
+[[}]]
+
+## Sensors Transducers and Detectors [[{sensors.transducers,]]
+* <https://www.globalspec.com/productfinder/sensors_transducers_detectors>
+[[}]]
+
+## How to build low cost IoT sensor networks [[{101,sensors.sound,sensors.motion,]]
+<https://www.networkworld.com/article/3233309/how-to-build-low-cost-iot-sensor-networks.html>
+* <./SensorFusionForPublicSpaceUtilizationMonitoringInASmartCity.pdf> is simply the best
+  read for IoT product designers, developers and implementers.
+  Original Source: <https://arxiv.org/pdf/1710.01581>
+* Sound sensors over video sensors were chosen ... Cameras are computationally expensive,
+* Renewable Wide Area Sensor Network (RWSN) eliminates hardwired power and
+  battery replacement.
+  It uses low-power XBee transmitter modules (IEEE 802.15.4 ) to interconnect the sensors
+  to the Xbee receiver. Raspberry Pi used as backhaul.
+  Using Xbee relays, researchers built a wireless mesh network to increase coverage.
+  An Environmental Monitoring Sensor Node, including a barometer,
+  thermometer, light intensity, resistive rain, ultra-violet (UV)
+  index, humidity, motion, and noise sensors, is included in the
+  network to provide calibration data to remove the effects of
+  environmental conditions, such as rain interfering with sound
+  readings.
+* Inexpensive Pyroelectric Infrared (PIR) sensors, also known as
+  passive infrared sensors, were used to detect motion. And inexpensive
+  analog sound sensors, essentially microphones, were used to record
+  sound.
+[[}]]
+
+

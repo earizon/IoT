@@ -1,0 +1,146 @@
+## ESP32 online ide  [[{]]
+* <https://www.youtube.com/watch?v=S_p0YV-JlfU>
+* <https://easyeda.com/es>
+[[}]]
+
+
+[[{PM.price.to_1€,hardware.ESP32,low_cost,OS.moddable,dev_lang.javascript,doc_has.comparative,]]
+##  >1$ Moddable JS (ESP32) on 32KB RAM 
+-  Moddable XS7 release targets ES201 with 99% ES2018 Compliance
+- Runs on 32KB RAM and sub-1$ devices
+- It combines XS JavaScript engine with graphics,
+  networking, and various tools including debugger
+  and simulator.
+- SDK also includes the Piu user interface framework
+  designed to run on microcontrollers.
+
+- It compares favorably to other microcontroller focused engines with
+  regards to support for newer JavaScript language features at a size
+  suitable for microcontrollers.
+- System requirements and specification support for various engines include:
+  - Duktape 160KB flash RAM and 64KB system RAM, complete ES5.1 support, subset of ES2015 and newer features
+  - Espruino 128KB flash RAM and 8KB system RAM, partial ES2015 support
+  - JerryScript, 64KB flash RAM and 200KB ROM, complete ES5.1 support
+  - mJS, 50KB flash RAM, 1KB system RAM, subset of ES2015 support
+
+- Licenses: GPL 3.0, LGPL 3.0, Apache 2.0, and Creative Commons
+  Attribution 4.0 and commercial license.
+
+### moddable-zero
+<http://www.moddable.com/moddable-zero.php>
+- 20$ easy-way to add touch-scr to IoT
+"""All the components in Moddable Zero have been selected to keep the cost low
+. The two main components are the NodeMCU board and the touch screen. The
+NodeMCU module carries the ESP8266, Wi-Fi antenna, Flash ROM, FTDI chip, and
+USB connector. The touch screen is an unbranded QVGA (240 x 320) display with
+16-bit pixels driven by an ILI9341 display controller and an XPT2046
+resistive touch controller. We’d like to use a capacitive touch display, but
+the prices are still considerably higher. That said, our touch driver
+delivers reliable touch input with the XPT2046."""
+
+The Moddable SDK has four key features that make it realistic to build modern
+user experiences on Moddable Zero.
+
+    Tools. Getting images that look good onto an inexpensive microcontroller
+is challenging. The Moddable SDK contains tools that convert PNG, JPEG, BMP,
+and animated GIFs into formats that can be rendered efficiently and stored
+compact on the microcontroller. There are also tools to compress anti-aliased
+fonts for use on the device.
+
+    Graphics library. The Commodetto graphics library is used for all image
+loading and rendering in the Moddable SDK. It contains the Poco rendering
+engine which provides high speed rendering, with alpha channel support,
+blending, and clipping.
+
+    UI framework. The Piu user interface framework is a true object oriented
+user interface library that tightly integrates with Poco to provide cascading
+styles, timeline animations, text layout, localization, touch handling, and
+more.
+
+    JavaScript. Most developers find implementing a user interface in
+JavaScript to be faster and easier than using C or C++ as is common today on
+microcontrollers. Both Piu and Commodetto are designed to work efficiently
+with the XS JavaScript engine at the core of the Moddable SDK.
+[[}]]
+
+## ESP32 Ultra-low power CPU [[{hardware.mcpu.ESP32,]]
+http://esp32.net/
+Ultra low power co-processor: allows you to do ADC conversions, computation,
+and level thresholds while in deep sleep.
+Created by Espressif Systems, ESP32 is a low-cost, low-power system on a chip
+(SoC) series with Wi-Fi & dual-mode Bluetooth capabilities! The ESP32 family
+includes the chips ESP32-D0WDQ6 (and ESP32-D0WD), ESP32-D2WD, ESP32-S0WD, and
+the system in package (SiP) ESP32-PICO-D4. At its heart, there's a dual-core
+or single-core Tensilica Xtensa LX6 microprocessor with a clock rate of up to
+240 MHz. ESP32 is highly integrated with built-in antenna switches, RF balun,
+power amplifier, low-noise receive amplifier, filters, and power management
+modules. Engineered for mobile devices, wearable electronics, and IoT
+applications, ESP32 achieves ultra-low power consumption through power saving
+features including fine resolution clock gating, multiple power modes, and
+dynamic power scaling.
+[[hardware.mcpu.ESP32}]]
+
+## ESP32 vs STM32 [[{doc_has.comparative,hardware.esp32,hardware.stm32]]
+  https://www.utmel.com/components/esp32-vs-stm32-which-one-is-better?id=1383
+[[}]]
+
+## Direct link ESP-to-Linux [[{]]
+<https://github.com/thomasfla/Linux-ESPNOW>
+
+- An attempt at implementing a direct link between a linux station and
+  an ESP module using ESPNOW protocol for real time robot control
+
+Project description here: https://hackaday.io/project/161896
+[[}]]
+
+## ESP 32 security bug [[{]]
+https://www.infoq.com/news/2019/12/esp32-fatal-fury/
+- A security researcher has identified a local-access technique that
+  enables a complete bypass of all security within the popular ESP32
+  IoT chip, where malware can be implanted and never removed.
+- The ESP32 chipset is significant to the industry, as it offers a dual
+  core chip with WiFi and bluetooth to underly many devices. In January
+  2018, the manufacturer Espressif announced its milestone of having
+  shipped over 100 million devices. ESP32 is a key component of many
+  devices, including LiFX lightbulbs, and is also featured as a
+  compatible device with AWS FreeRTOS within AWS IoT as well as
+  Microsoft Azure IoT.
+[[}]]
+
+## ESP8266 [[{hardware.wireless.esp8266,hardware.arduino,]]
+ESP8266: arduino WIFI module.
+- https://www.hwlibre.com/esp8266/
+- https://github.com/natronics/ESP8266-Sensor
+
+- https://www.hwlibre.com/programacion-en-arduino/
+[[}]]
+
+## G4lie0 projects [[{101,network.wireless.loRa,hardware.mcpu.esp32,network.wirless.satellite,]]
+https://github.com/G4lile0?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=
+https://github.com/G4lile0/Comunicaciones_LoRa !!!!
+
+C&P: https://bricolabs.cc/wiki/guias/lora_ttn
+- LoRa es una tecnología de transmisión inalámbrica, desarrollada
+  entre 2008 y 2013 en Francia y adquirida y patentada por la
+  compañía Semtech, que permite comunicar datos a muy larga distancia
+  y con bajo consumo de energía (~100mW).
+
+- *Se alcanzan fácilmente 2km en área urbana y más de 10 km en       *
+  *área rural. ¡Actualmente el récord tierra-tierra es de 210 km con *
+  *una shield de Arduino de 16$! (febrero 2017) y globo-tierra 702 km  *
+  *(agosto 2017).*
+[[}]]
+
+## precise NTP time for ESP32 [[{hardware.mcpu.esp32,]]
++ <https://github.com/SensorsIot/DCF77-Transmitter-for-ESP32>
+[[}]]
+
+
+## ESP Drone
+* <https://github.com/SelfTide/ESP_Drone>
+*  Drone using ESP for flight controller and video
+
+
+# Wokwi Online Arduino and ESP32 Simulator [[{]]
+https://wokwi.com/
+[[}]]

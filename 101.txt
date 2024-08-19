@@ -1,0 +1,63 @@
+## Apropos:
+Content is versioned in git.  commits, issues and pull-requests welcome!<br/>
+<https://www.github.com/earizon/IoT>
+
+## External Resources [[{]]
+- IoT Tags at stackExchange:
+  <https://iot.stackexchange.com/tags>
+- Free tutorials:
+  <https://www.thethingsnetwork.org/>
+- Iot: Electrical Engineering Stack Exchange
+  <https://electronics.stackexchange.com/>
+[[}]]
+
+# 101
+
+## All IoT Devs. are doomed [[{security.101,qa.101]]
+* <https://www.zdnet.com/article/all-your-iot-devices-are-doomed/>
+* Until we look to emulate the open models of Wi-Fi and PCs, IoT will
+  always be a source of never-ending e-waste.
+* The problem is not as simple as IoTs and the companies supporting
+  them going belly-up. It's more along the lines of the vendors
+  themselves being willfully negligent in providing a path to community
+  support for these devices and penalizing their early adopters.
+[[}]]
+
+## i2c bus [[{101,hardware.bus.i2c,]]
+* i2c interconnect-to-circuit bus
+* <https://github.com/jamesbowman/i2cdriver>
+* I2CDriver: tool for controlling any I2C device from your PC's USB
+  port, and can also monitor and capture I2C traffic. It connects as a
+  standard USB serial device, so there are no drivers to install. On
+  the main site i2cdriver.com, there are drivers for
+[[}]]
+
+## HomeCMOS [[{]]
+* HomeCMOS project is dedicated to developing hobbyist-friendly
+  processes for the microfabrication of CMOS and MEMS devices,
+  providing documentation for these under the BSD open source licence.
+  The project may be some way from being able to produce a usable IC,
+  but the team has had success with a number of processes that make use
+  of easily available materials, and have demonstrated etching a 600um
+  long image into 200nm thick copper film."
+* ... The HomeCMOS team has yet to actually make an integrated circuit or
+  MEMS device, [Jeri Ellsworth] has shown this is possible by making
+  transistors and integrated circuits at home. While there won’t be
+  chips with millions of transistors coming out of the HomeCMOS lab
+  anytime soon, it’s more than possible to see a few small-scale
+  integration-level tech such as a few logic gates or a regulator.
+[[}]]
+
+## pregnant chip: As powerful as first IBM PCs [[{]]
+* 2 photosensors + 2 LEDs + LCD + battery + mCPU.
+* <https://twitter.com/Foone/status/1301707401024827392>
+ "... When the wick gets wet, it starts conducting electricity, and 
+  this device turns on..."
+
+## 101 código morse
+* radioaficionados demostraron en 1956 que tan solo 78 milivatios 
+puede ser energía suficiente para transmitir desde Massachusetts a 
+Dinamarca utilizando código morse.
+
+
+[[}]]

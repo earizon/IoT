@@ -1,0 +1,49 @@
+[[{PM.101]]
+# STMicroelectronics next-generation microcontroller range
+
+* STMicroelectronics announced launch of next-gen. wireless components
+for extra slim consumer devices such as wearables, health monitors
+and "smart" objects. ... supports short-range wavelengths 
+including Zigbee, Bluetooth and Thread[[{PM.TODO}]], with the latter
+appealing to smart utility meter operators and smart buildings. 
+... flagship product: STM32WBA55 with several connectivity modes,
+(BT LE 5.4 and Matter, Zigbee and Thread).<br/>
+... Matter border router networks use the Matter standard [[{PM.TODO}]]
+as a low-power Wi-Fi alternative, connecting sensors and other IoT
+units in a single mesh setup.<br/>
+  ... STM32WBA5 intended to house all wireless functionalities on a 
+single chip ... accessible via development software in the existing
+STM32 microcontroller ecosystem.
+[[PM.101}]]
+
+
+# STM32 uController
+
+* Warn: STM32 (2005, by STM Microele.) looks to be "deprecated" in 
+  favor of the newer ESP32 (2016, by Espriff).
+
+## STM32 embedded Soft [[{hardware.mcpu.stm32,]]
+* <https://www.st.com/en/embedded-software/stm32-embedded-software.html>
+- Low-level drivers, hardware abstraction layers, and middleware
+  including RTOS, USB, TCP/IP, and graphic stacks, are indispensable
+  bricks for a fast and efficient application development.
+
+* For STM32 microcontrollers and microprocessors, ST proposes a large
+  range of embedded software components including:
+  - Audio (MP3, WMA, voice services, and more)
+  - Connectivity (USB, TCP/IP, Bluetooth, Zigbee RF4CE, and more)
+  - Graphical interfaces
+  - Cryptography (Free STM32 Library with public key, symmetric and hash algorithms)
+  - Motor Control and Safety (IEC 61508 SIL for industrial, IEC/UL
+    60335/60730 Class B for Home Appliance applications)
+
+* <https://github.com/pms67/STM32F4-Reference-PCB>
+* KiCad + STM32F4 + USB + Buck converter video reference/test PCB.
+  - design your own STM32-based PCB (<https://youtu.be/x_5rYfAyqq0>)!
+  - write firmware for the STM32 microcontroller (<https://youtu.be/C7-8nUU6e3E>)!
+* ... order this board (incl. SMT assembly) at <https://www.jlcpcb.com>
+  Gerber and assembly files are in the relevant repo folders.
+* <Related: https://github.com/bennymeg/JLC-Plugin-for-KiCad>
+  - Fabrication Toolkit - An JLC PCB Plugin for KiCad
+[[}]]
+
